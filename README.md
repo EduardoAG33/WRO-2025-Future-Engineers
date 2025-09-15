@@ -26,12 +26,16 @@ Image 1.2" steering system photo"
 
 
 
+
+
+
+
 <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/46e202f6-aba2-4c50-96f0-182f83e499fe" />
 Image 2.1" "
 <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/f3185aaf-427e-4545-b5fc-99059a3537b4" />
-
-[manual direction.pdf](https://github.com/user-attachments/files/22270572/manual.direction.pdf)
 Image 2.2" "
+[manual direction.pdf](https://github.com/user-attachments/files/22270572/manual.direction.pdf)
+
 
 We also designed the movement and traction system that will drive our vehicle. Initially, we considered using a single LEGO medium motor with a differential system to power both wheels; however, this motor did not provide enough power. To achieve more efficient movement, a second medium motor was added to the differential system, along with a transmission that converts the motor’s energy into mechanical energy for the wheels.
 
