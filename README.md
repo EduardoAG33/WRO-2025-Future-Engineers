@@ -49,7 +49,7 @@ When the vehicle turns: the outer wheel rotates faster than the inner wheel.
 
 Power output: Each axle connected to the wheels receives the appropriate torque.
 
-<img width="670" height="462" alt="image" src="https://github.com/user-attachments/assets/841f8551-b8cd-43e2-a964-24c97eb4f7ce" />
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/841f8551-b8cd-43e2-a964-24c97eb4f7ce" />
 
 
 
