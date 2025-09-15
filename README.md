@@ -90,6 +90,7 @@ The transmission consists of 20-tooth gears directly connected to 12-tooth gears
   <p><em>Image 3.2: Render back part</em></p>
 </div>
 
+[Differential Manual PDF](https://github.com/user-attachments/files/22326888/Diferencial.manual.pdf)
 ---
 
 ### Differential
@@ -113,7 +114,7 @@ The differential is responsible for distributing engine torque to the wheels.
   <p><em>Image 4.1: Differential example</em></p>
 </div>
 
-[Differential Manual PDF](https://github.com/user-attachments/files/22326888/Diferencial.manual.pdf)
+
 
 ---
 
