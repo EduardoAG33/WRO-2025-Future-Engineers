@@ -18,7 +18,7 @@ Image 1.1 "Chasis photo"
 
 For the steering system, we opted for the medium motor from the EV3 Core Set. The gear mechanism converts and transmits the motor’s rotation into steering movement. Additionally, the wheels are connected through a linkage bar that ensures both rotate simultaneously and in a coordinated manner.
 
-<img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/813a3d07-1033-4852-a699-a6eef89279d8" />
+<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/813a3d07-1033-4852-a699-a6eef89279d8" />
 Image 1.2" steering system photo"
 
 
