@@ -34,6 +34,7 @@ The transmission consists of 20-tooth gears directly connected to 12-tooth gears
 
 
 What is a differential?
+
 It is a mechanical component located on the drive axle of a vehicle.
 
 Operating principle:
