@@ -10,8 +10,7 @@ We built our vehicle using LEGO pieces, chosen for their accessibility and for a
 
 
 
-<div align="center">
-<img width="soo" height="300" alt="image" src="https://github.com/user-attachments/assets/f0f2ec53-35a1-495b-a551-b19bc37c49a3" />
+<div align="center"> <img width="soo" height="300" alt="image" src="https://github.com/user-attachments/assets/f0f2ec53-35a1-495b-a551-b19bc37c49a3" />
 *Image 1.1 Chasis photo*
 
 
