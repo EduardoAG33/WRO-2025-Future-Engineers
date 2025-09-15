@@ -5,11 +5,13 @@ Official repository of Team Los Grises Superiores for the Future Engineers – W
 
 Mobility management
 
-We built our car using LEGO pieces. First, we designed the prototype with Studio 2.0 software to identify suitable LEGO parts for the chassis. Then, we tested different steering system methods and adapted them to our custom chassis, while carefully considering the required measurements. 
+We built our vehicle using LEGO pieces, chosen for their accessibility and for allowing a compact and efficient design, which ensures good performance on the track. Initially, we designed the prototype using Studio 2.0 software to identify the most suitable LEGO parts for the chassis. Then, we evaluated different steering system methods and adapted them to our custom chassis, paying close attention to the required measurements and proportions.
 
 
-For our steering system, we decided to use the medium-size motor from the EV3 Core Set. The gear mechanism transmits and transforms the motor’s rotation into steering movement. To rotate the wheels, we connected them through a linkage bar that ensures both wheels turn simultaneously 
+![photo chasis](https://github.com/user-attachments/assets/4573dd90-cef9-41f7-b2d2-24384ebe13be)
 
+
+For the steering system, we opted for the medium motor from the EV3 Core Set. The gear mechanism converts and transmits the motor’s rotation into steering movement. Additionally, the wheels are connected through a linkage bar that ensures both rotate simultaneously and in a coordinated manner.
 
 
 
