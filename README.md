@@ -1,8 +1,8 @@
 # WRO-2025-Future-Engineers
 
 Official repository of Team Los Grises Superiores for the Future Engineers – World Robot Olympiad 2025.
+![Imagen de WhatsApp 2025-09-15 a las 14 11 21_7e2237b7](https://github.com/user-attachments/assets/74787053-e8f2-4ae4-ad07-bec30750ece0)
 
-<img width="1000" height="300" alt="image" src="https://github.com/user-attachments/assets/fa720338-2e61-403f-84ec-15e703379e87" />
 
 ---
 
