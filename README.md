@@ -9,8 +9,6 @@ We built our car using LEGO pieces. First, we designed the prototype with Studio
 
 
 
-For our steering system, we decided to use the medium-size motor from the EV3 Core Set. The gear mechanism transmits and transforms the motor’s rotation into steering movement. To rotate the wheels, we connected them through a linkage bar that ensures both wheels turn simultaneously 
-
 
 
 
@@ -21,6 +19,8 @@ For our steering system, we decided to use the medium-size motor from the EV3 Co
 
 
 
+
+For our steering system, we decided to use the medium-size motor from the EV3 Core Set. The gear mechanism transmits and transforms the motor’s rotation into steering movement. To rotate the wheels, we connected them through a linkage bar that ensures both wheels turn simultaneously 
 
 
 
