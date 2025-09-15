@@ -1,4 +1,5 @@
 # WRO-2025-Future-Engineers
+
 Official repository of Team Los Grises Superiores for the Future Engineers – World Robot Olympiad 2025.
 
 <img width="1000" height="300" alt="image" src="https://github.com/user-attachments/assets/fa720338-2e61-403f-84ec-15e703379e87" />
@@ -7,13 +8,18 @@ Official repository of Team Los Grises Superiores for the Future Engineers – W
 
 ## Contents
 
-- [Mobility Management](#mobility-management)
-  - [Chassis](#chassis)
-  - [Steering System](#steering-system)
-  - [Movement and Traction System](#movement-and-traction-system)
-  - [Differential](#differential)
-- [Manual Direction PDF](#manual-direction-pdf)
-- [Differential Manual PDF](#differential-manual-pdf)
+* [Mobility Management](#mobility-management)
+
+  * [Chassis](#chassis)
+  * [Steering System](#steering-system)
+  * [Movement and Traction System](#movement-and-traction-system)
+  * [Differential](#differential)
+* [Power and Sense Management](#power-and-sense-management)
+
+  * [Power Management](#power-management)
+  * [Sense Management](#sense-management)
+* [Manual Direction PDF](#manual-direction-pdf)
+* [Differential Manual PDF](#differential-manual-pdf)
 
 ---
 
@@ -75,18 +81,19 @@ The transmission consists of 20-tooth gears directly connected to 12-tooth gears
 
 ### Differential
 
-What is a differential?
+**What is a differential?**
 
 It is a mechanical component located on the drive axle of a vehicle.
 
-**Operating principle:**  
+**Operating principle:**
 The differential is responsible for distributing engine torque to the wheels.
 
-- **Power input:** The motor transmits torque to the pinion and crown (bevel gear) of the differential.  
-- **Torque distribution:** Inside the differential, planetary or satellite gears allow:
-  - When the vehicle moves straight: both wheels rotate at the same speed.
-  - When the vehicle turns: the outer wheel rotates faster than the inner wheel.
-- **Power output:** Each axle connected to the wheels receives the appropriate torque.
+* **Power input:** The motor transmits torque to the pinion and crown (bevel gear) of the differential.
+* **Torque distribution:** Inside the differential, planetary or satellite gears allow:
+
+  * When the vehicle moves straight: both wheels rotate at the same speed.
+  * When the vehicle turns: the outer wheel rotates faster than the inner wheel.
+* **Power output:** Each axle connected to the wheels receives the appropriate torque.
 
 <div align="center">
   <img width="500" height="400" alt="Differential example" src="https://github.com/user-attachments/assets/841f8551-b8cd-43e2-a964-24c97eb4f7ce" />
@@ -95,25 +102,37 @@ The differential is responsible for distributing engine torque to the wheels.
 
 [Differential Manual PDF](https://github.com/user-attachments/files/22326888/Diferencial.manual.pdf)
 
+---
 
-# Power and sense management
+## Power and Sense Management
 
 <img width="825" height="237" alt="image" src="https://github.com/user-attachments/assets/9167d4d9-a9f3-4ca6-bf3f-da7acba2cc4e" />
 
-
-### Power management
+### Power Management
 
 Our main controller is the EV3 Brick from LEGO Mindstorms. This device receives information from the sensors and is responsible for controlling the motors. The controller features 4 motor ports (A, B, C, D) and 4 sensor ports (1, 2, 3, 4).
-It is powered by a rechargeable lithium battery with an output of 10 V and 2050 mAh capacity. We consulted the hardware manual to understand the power consumption specifications of both motors and sensors, in order to optimize battery performance and select the most suitable sensors for our Car.
-<img width="406" height="297" alt="image" src="https://github.com/user-attachments/assets/35571866-e5ca-4a87-aad3-f22cd2aee42c" />
 
-<img width="326" height="96" alt="image" src="https://github.com/user-attachments/assets/ea92cc7c-aa1b-4ce5-b05f-c80b4cd0d48a" />
+It is powered by a rechargeable lithium battery with an output of 10 V and 2050 mAh capacity. We consulted the hardware manual to understand the power consumption specifications of both motors and sensors, in order to optimize battery performance and select the most suitable sensors for our car.
 
+Our robot uses three EV3 Medium Motors:
 
-[hardware_developer_kit.pdf](https://github.com/user-attachments/files/22328277/hardware_developer_kit.pdf)
+* **Two motors for movement:** Each connected to a transmission system and a differential, providing efficient power distribution to the wheels. These motors typically consume **150–250 mA** under normal operation, with peaks of **500–800 mA** under heavy load or during startup.
+* **One motor for steering:** This motor generally operates under a lighter load, consuming **120–250 mA**, with brief peaks around **400–500 mA**.
 
-### Sense management
-Open MV H7 plus
+<div align="center">
+  <img width="406" height="297" alt="image" src="https://github.com/user-attachments/assets/35571866-e5ca-4a87-aad3-f22cd2aee42c" />
+</div>
+
+<div align="center">
+  <img width="326" height="96" alt="image" src="https://github.com/user-attachments/assets/ea92cc7c-aa1b-4ce5-b05f-c80b4cd0d48a" />
+</div>
+
+[Hardware Developer Kit PDF](https://github.com/user-attachments/files/22328277/hardware_developer_kit.pdf)
+
+### Sense Management
+
+For visual processing, we are using **OpenMV H7 Plus cameras**. These cameras are connected through custom PCBs that adapt their signals to the EV3 sensor ports, allowing for seamless integration and communication with the EV3 Brick. This setup enables real-time image capture and processing for advanced navigation and obstacle detection tasks.
+
 
 
 
