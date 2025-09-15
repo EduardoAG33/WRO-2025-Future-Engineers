@@ -21,8 +21,7 @@ For our steering system, we decided to use the medium-size motor from the EV3 Co
 
 
 
-For our steering system, we decided to use the medium-size motor from the EV3 Core Set. The gear mechanism transmits and transforms the motor’s rotation into steering movement. To rotate the wheels, we connected them through a linkage bar that ensures both wheels turn simultaneously 
-
+F
 
 
 <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/6d06e1fc-8637-4078-b9ca-1b4b27277880" />
