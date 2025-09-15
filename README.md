@@ -1,6 +1,6 @@
 # WRO-2025-Future-Engineers
 Official repository of Team Los Grises Superiores for the Future Engineers – World Robot Olympiad 2025.
-<img width="1280" height="721" alt="image" src="https://github.com/user-attachments/assets/fa720338-2e61-403f-84ec-15e703379e87" />
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/fa720338-2e61-403f-84ec-15e703379e87" />
 
 
 Mobility management
