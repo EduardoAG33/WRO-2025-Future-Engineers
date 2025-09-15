@@ -131,8 +131,8 @@ It is powered by a rechargeable lithium battery with an output of 10 V and 2050 
 
 Our robot uses three EV3 Medium Motors:
 
-* **Two motors for movement:** Each connected to a transmission system and a differential, providing efficient power distribution to the wheels. These motors typically consume **150–250 mA** under normal operation, with peaks of **500–800 mA** under heavy load or during startup.
-* **One motor for steering:** This motor generally operates under a lighter load, consuming **120–250 mA**, with brief peaks around **400–500 mA**.
+* **Two motors for movement:** Each connected to a transmission system and a differential, providing efficient power distribution to the wheels. These motors typically consume **150–250 mA**.
+* **One motor for steering:** This motor generally operates under a lighter load, consuming **120–250 mA**.
 
 <div align="center">
   <img width="406" height="297" alt="EV3 Brick" src="https://github.com/user-attachments/assets/35571866-e5ca-4a87-aad3-f22cd2aee42c" />
