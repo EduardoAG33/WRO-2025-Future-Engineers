@@ -131,7 +131,9 @@ Our robot uses three EV3 Medium Motors:
 
 ### Sense Management
 
-For visual processing, we are using **OpenMV H7 Plus cameras**. These cameras are connected through custom PCBs that adapt their signals to the EV3 sensor ports, allowing for seamless integration and communication with the EV3 Brick. This setup enables real-time image capture and processing for advanced navigation and obstacle detection tasks.
+
+<img width="452" height="567" alt="image" src="https://github.com/user-attachments/assets/e2bb0995-a4e0-47b4-b147-fb7336de7c5f" />
+
 
 
 
