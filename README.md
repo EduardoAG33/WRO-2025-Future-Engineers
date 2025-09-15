@@ -89,8 +89,8 @@ The transmission consists of 20-tooth gears directly connected to 12-tooth gears
   <img width="300" height="300" alt="Render back part" src="https://github.com/user-attachments/assets/992c28f3-348e-4574-af18-7d5bda827877" />
   <p><em>Image 3.2: Render back part</em></p>
 </div>
-
 [Differential Manual PDF](https://github.com/user-attachments/files/22326888/Diferencial.manual.pdf)
+
 ---
 
 ### Differential
