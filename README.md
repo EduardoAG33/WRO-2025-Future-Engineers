@@ -107,6 +107,7 @@ The differential is responsible for distributing engine torque to the wheels.
 ## Power and Sense Management
 
 <img width="825" height="237" alt="image" src="https://github.com/user-attachments/assets/9167d4d9-a9f3-4ca6-bf3f-da7acba2cc4e" />
+ <p><em>Image 4.1: Diagram</em></p>
 
 ### Power Management
 
@@ -121,18 +122,18 @@ Our robot uses three EV3 Medium Motors:
 
 <div align="center">
   <img width="406" height="297" alt="image" src="https://github.com/user-attachments/assets/35571866-e5ca-4a87-aad3-f22cd2aee42c" />
-</div>
+</div> <p><em>Image 4.1: Ev3</em></p>
 
 <div align="center">
   <img width="326" height="96" alt="image" src="https://github.com/user-attachments/assets/ea92cc7c-aa1b-4ce5-b05f-c80b4cd0d48a" />
-</div>
+</div> <p><em>Image 4.1: Medium Motor voltage</em></p>
 
 [Hardware Developer Kit PDF](https://github.com/user-attachments/files/22328277/hardware_developer_kit.pdf)
 
 ### Sense Management
+For the sensor system, we used two OpenMV H7 cameras: one is responsible for avoiding collisions with walls, while the other detects traffic lights, counts lines, and locates the parking area. We also calculated the cameras’ positions on the vehicle to ensure correct vision using wide-angle lenses. We selected these cameras due to their low power consumption, which does not affect the EV3, and their compact size, making them easy to integrate into the chassis. Each camera draws up to 480 mA at 3.3 V. To connect them to the EV3, we designed a PCB in EasyEDA that enables communication through the RX, TX, Vin, and GND ports. The cameras also include their own IDE for programming in Python.
 
-
-<img width="452" height="567" alt="image" src="https://github.com/user-attachments/assets/e2bb0995-a4e0-47b4-b147-fb7336de7c5f" />
+<img width="452" height="567" alt="image" src="https://github.com/user-attachments/assets/e2bb0995-a4e0-47b4-b147-fb7336de7c5f" /> <p><em>Image 4.1: camera information</em></p>
 
 
 
