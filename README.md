@@ -44,6 +44,7 @@ Power input: The motor transmits torque to the pinion and crown (bevel gear) of 
 
 Torque distribution: Inside the differential, planetary or satellite gears allow:
 
+
 When the vehicle moves straight: both wheels rotate at the same speed.
 
 When the vehicle turns: the outer wheel rotates faster than the inner wheel.
