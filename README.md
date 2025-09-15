@@ -19,16 +19,38 @@ For our steering system, we decided to use the medium-size motor from the EV3 Co
 [manual direction.pdf](https://github.com/user-attachments/files/22270572/manual.direction.pdf)
 
 
+We also designed the movement and traction system that will drive our vehicle. Initially, we considered using a single LEGO medium motor with a differential system to power both wheels; however, this motor did not provide enough power. To achieve more efficient movement, a second medium motor was added to the differential system, along with a transmission that converts the motor’s energy into mechanical energy for the wheels.
 
+Using medium motors provides fast and precise movements, with a position accuracy of ±1°, a torque of 0.08 Nm, and a no-load speed of 240 RPM.
 
+The transmission consists of 20-tooth gears directly connected to 12-tooth gears. This setup increases the rotational speed delivered to the differential, which then transmits the motion through shafts to a 28-tooth gear, subsequently connected to a 20-tooth gear that drives the wheels on both sides of the vehicle.
 
 
 
 <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/6d06e1fc-8637-4078-b9ca-1b4b27277880" />
 <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/992c28f3-348e-4574-af18-7d5bda827877" />
 
+[Diferencial manual.pdf](https://github.com/user-attachments/files/22326888/Diferencial.manual.pdf)
 
-[Uploading Diferencial manual.pdf…]()
+
+What is a differential?
+It is a mechanical component located on the drive axle of a vehicle.
+
+Operating principle:
+The differential is responsible for distributing engine torque to the wheels.
+
+Power input: The motor transmits torque to the pinion and crown (bevel gear) of the differential.
+
+Torque distribution: Inside the differential, planetary or satellite gears allow:
+
+When the vehicle moves straight: both wheels rotate at the same speed.
+
+When the vehicle turns: the outer wheel rotates faster than the inner wheel.
+
+Power output: Each axle connected to the wheels receives the appropriate torque.
+
+
+<img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/6e4a5443-65f3-4e1f-8e34-7ab748e7abf1" />
 
 
 
