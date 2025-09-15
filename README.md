@@ -96,6 +96,15 @@ The differential is responsible for distributing engine torque to the wheels.
 [Differential Manual PDF](https://github.com/user-attachments/files/22326888/Diferencial.manual.pdf)
 
 
+# Power and sense management
+
+<img width="825" height="237" alt="image" src="https://github.com/user-attachments/assets/9167d4d9-a9f3-4ca6-bf3f-da7acba2cc4e" />
+# Power management
+
+EV3
+Open MV H7 plus
+
+
 
 
 
