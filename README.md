@@ -24,9 +24,9 @@ Image 1.2" steering system photo"
 
 
 <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/46e202f6-aba2-4c50-96f0-182f83e499fe" />
-Image 2.1" "
+Image 2.1"set 1"
 <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/f3185aaf-427e-4545-b5fc-99059a3537b4" />
-Image 2.2" "
+Image 2.2"Render front part "
 
 
 [manual direction.pdf](https://github.com/user-attachments/files/22270572/manual.direction.pdf)
@@ -41,9 +41,9 @@ The transmission consists of 20-tooth gears directly connected to 12-tooth gears
 
 
 <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/6d06e1fc-8637-4078-b9ca-1b4b27277880" />
-Image 2.2" "
+Image 3.1"set 2"
 <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/992c28f3-348e-4574-af18-7d5bda827877" />
-Image 2.2" "
+Image 3.2"Render back part "
 
 [Diferencial manual.pdf](https://github.com/user-attachments/files/22326888/Diferencial.manual.pdf)
 
@@ -67,7 +67,7 @@ When the vehicle turns: the outer wheel rotates faster than the inner wheel.
 Power output: Each axle connected to the wheels receives the appropriate torque.
 
 <img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/841f8551-b8cd-43e2-a964-24c97eb4f7ce" />
-Image 2.2" "
+Image 4.1"diferencial example"
 
 
 
