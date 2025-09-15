@@ -8,7 +8,9 @@ Mobility management
 We built our vehicle using LEGO pieces, chosen for their accessibility and for allowing a compact and efficient design, which ensures good performance on the track. Initially, we designed the prototype using Studio 2.0 software to identify the most suitable LEGO parts for the chassis. Then, we evaluated different steering system methods and adapted them to our custom chassis, paying close attention to the required measurements and proportions.
 
 
-![photo chasis](https://github.com/user-attachments/assets/4573dd90-cef9-41f7-b2d2-24384ebe13be)
+
+
+
 
 
 For the steering system, we opted for the medium motor from the EV3 Core Set. The gear mechanism converts and transmits the motor’s rotation into steering movement. Additionally, the wheels are connected through a linkage bar that ensures both rotate simultaneously and in a coordinated manner.
