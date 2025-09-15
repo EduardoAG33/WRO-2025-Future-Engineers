@@ -102,14 +102,17 @@ The differential is responsible for distributing engine torque to the wheels.
 
 
 ### Power management
-<img width="1017" height="297" alt="image" src="https://github.com/user-attachments/assets/ed8bf6e5-c487-467c-922a-ca5e033e20a1" />
 
 Our main controller is the EV3 Brick from LEGO Mindstorms. This device receives information from the sensors and is responsible for controlling the motors. The controller features 4 motor ports (A, B, C, D) and 4 sensor ports (1, 2, 3, 4).
 It is powered by a rechargeable lithium battery with an output of 10 V and 2050 mAh capacity. We consulted the hardware manual to understand the power consumption specifications of both motors and sensors, in order to optimize battery performance and select the most suitable sensors for our Car.
+<img width="406" height="297" alt="image" src="https://github.com/user-attachments/assets/35571866-e5ca-4a87-aad3-f22cd2aee42c" />
 
-EV3
+<img width="326" height="96" alt="image" src="https://github.com/user-attachments/assets/ea92cc7c-aa1b-4ce5-b05f-c80b4cd0d48a" />
+
+
 [hardware_developer_kit.pdf](https://github.com/user-attachments/files/22328277/hardware_developer_kit.pdf)
 
+### Sense management
 Open MV H7 plus
 
 
