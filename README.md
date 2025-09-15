@@ -27,7 +27,8 @@ For our steering system, we decided to use the medium-size motor from the EV3 Co
 <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/6d06e1fc-8637-4078-b9ca-1b4b27277880" />
 <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/992c28f3-348e-4574-af18-7d5bda827877" />
 
-[direction manual.pdf](https://github.com/user-attachments/files/22325858/direction.manual.pdf)
+
+[Uploading Diferencial manual.pdf…]()
 
 
 
