@@ -43,7 +43,7 @@ Official repository of Team Los Grises Superiores for the Future Engineers – W
 We built our vehicle using LEGO pieces, chosen for their accessibility and for allowing a compact and efficient design, which ensures good performance on the track. Initially, we designed the prototype using Studio 2.0 software to identify the most suitable LEGO parts for the chassis. Then, we evaluated different steering system methods and adapted them to our custom chassis, paying close attention to the required measurements and proportions.
 
 <div align="center">
-  <img width="500" height="300" alt="Chassis" src="https://github.com/user-attachments/assets/f0f2ec53-35a1-495b-a551-b19bc37c49a3" />
+  <img width="500" height="500" alt="Chassis" src="https://github.com/user-attachments/assets/f0f2ec53-35a1-495b-a551-b19bc37c49a3" />
   <p><em>Image 1.1: Chassis photo</em></p>
 </div>
 
