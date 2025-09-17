@@ -168,7 +168,7 @@ For the sensor system, we used two OpenMV H7 cameras: one is responsible for avo
 
 ### Obstacle management
 
-##Vision System
+## Vision System
 
 The vision system is one of the fundamental components of the robot, as it enables real-time interpretation of the competition environment and decision-making. For this purpose, an OpenMV camera was employed, configured and optimized during different stages of the project.
 
@@ -181,14 +181,14 @@ Red = turn right
 
 Green = turn left
 
-Calibration
+## Calibration
 
 During the first tests, instabilities in color identification were detected due to variations in ambient light.
 To solve this, camera parameters such as auto-gain, auto-white balance, and exposure were fixed, ensuring more stable detection.
 
 Additionally, a progressive adjustment of LAB thresholds was performed for the key track colors (white, red, green, blue, orange). This process allowed the system to operate more consistently under different lighting conditions.
 
-1.1 ROI Evolution
+##  ROI Evolution
 
 Initial stage: A central dynamic ROI anchored to the white floor was used, focused on following the main line.
 
@@ -208,7 +208,7 @@ High ROI: Support in curves and far obstacle detection.
 
 Black ROI: Collision alerts in case of dark-area detection.
 
-Detection and Avoidance Strategies
+## Detection and Avoidance Strategies
 
 The vision system was also designed to support obstacle avoidance logic.
 The X coordinate at the base of the blob was chosen as the main metric, as it proved more reliable than the object area, which sometimes produced inconsistent data.
@@ -267,5 +267,4 @@ Data transmission was simplified by unifying metrics into specific slots and rem
 
 
 
-## Obstacle management
 
