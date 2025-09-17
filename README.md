@@ -3,8 +3,6 @@
 Official repository of Team Los Grises Superiores for the Future Engineers – World Robot Olympiad 2025.
 <img width="1000" height="500" alt="image" src="https://github.com/user-attachments/assets/b3e384a1-e19b-4c7f-addf-655aeb32bc3a" />
 
-
-
 ---
 
 ## Contents
@@ -22,6 +20,7 @@ Official repository of Team Los Grises Superiores for the Future Engineers – W
     - Image 3.2: Render back part
   * [Differential](#differential)  
     - Image 4.1: Differential example
+
 * [Power and Sense Management](#power-and-sense-management)
 
   * [Power Management](#power-management)  
@@ -31,11 +30,15 @@ Official repository of Team Los Grises Superiores for the Future Engineers – W
   * [Sense Management](#sense-management)  
     - Image 5.4: Camera Information  
     - Image 5.5: PCB Design
-* [Manual Direction PDF](#manual-direction-pdf)
-* [Differential Manual PDF](#differential-manual-pdf)
+
+* [Obstacle Management](#obstacle-management)
+
+* [Manual Direction PDF](#manual-direction-pdf)  
+* [Differential Manual PDF](#differential-manual-pdf)  
 * [Hardware Developer Kit PDF](#hardware-developer-kit-pdf)
 
 ---
+
 
 ## Mobility Management
 
