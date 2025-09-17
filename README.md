@@ -167,7 +167,8 @@ For the sensor system, we used two OpenMV H7 cameras: one is responsible for avo
 </div>
 
 ### Obstacle management
-Vision System
+
+##Vision System
 
 The vision system is one of the fundamental components of the robot, as it enables real-time interpretation of the competition environment and decision-making. For this purpose, an OpenMV camera was employed, configured and optimized during different stages of the project.
 
