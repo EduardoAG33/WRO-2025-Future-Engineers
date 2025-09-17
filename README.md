@@ -184,6 +184,9 @@ Red = turn right
 
 Green = turn left
 
+<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/48693250-7ba7-493a-86be-2a29e5a18f01" />
+
+
 ## Calibration
 
 During the first tests, instabilities in color identification were detected due to variations in ambient light.
@@ -210,6 +213,9 @@ Middle ROI: Detection of intermediate obstacles (red, green, orange).
 High ROI: Support in curves and far obstacle detection.
 
 Black ROI: Collision alerts in case of dark-area detection.
+
+<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/dee862a6-c428-40a0-a374-5bb7fc4154d8" />
+
 
 ## Detection and Avoidance Strategies
 
