@@ -166,7 +166,7 @@ For the sensor system, we used two OpenMV H7 cameras: one is responsible for avo
   <p><em>Image 5.5: PCB Design</em></p>
 </div>
 
-### Obstacle management
+## Obstacle management
 
 ## Vision System
 
