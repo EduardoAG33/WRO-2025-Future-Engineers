@@ -166,6 +166,105 @@ For the sensor system, we used two OpenMV H7 cameras: one is responsible for avo
   <p><em>Image 5.5: PCB Design</em></p>
 </div>
 
+### Obstacle management
+Vision System
+
+The vision system is one of the fundamental components of the robot, as it enables real-time interpretation of the competition environment and decision-making. For this purpose, an OpenMV camera was employed, configured and optimized during different stages of the project.
+
+The development included color calibration processes, definition and evolution of Regions of Interest (ROIs), and the design of strategies for obstacle detection and collision prevention.
+The system detects key colors (white, red, green, blue, and orange) through LAB calibration, using four ROIs (low, middle, high, and black) for line tracking, corridor width regulation, obstacle detection, and collision alerts.
+
+The X position of the blobs determines the avoidance maneuver according to the competition rules:
+
+Red = turn right
+
+Green = turn left
+
+Calibration
+
+During the first tests, instabilities in color identification were detected due to variations in ambient light.
+To solve this, camera parameters such as auto-gain, auto-white balance, and exposure were fixed, ensuring more stable detection.
+
+Additionally, a progressive adjustment of LAB thresholds was performed for the key track colors (white, red, green, blue, orange). This process allowed the system to operate more consistently under different lighting conditions.
+
+1.1 ROI Evolution
+
+Initial stage: A central dynamic ROI anchored to the white floor was used, focused on following the main line.
+
+Improvement proposal: Trapezoidal ROIs were considered to cover both the path and pillars.
+
+September: A system of three horizontal ROIs (low, middle, high) was incorporated, initially fixed and later transformed into dynamic ones, always anchored to the white floor. These allowed better detection of wide/narrow corridors and provided support on curves.
+
+Additional ROI: A black ROI was introduced to specifically alert collisions, replacing direct pillar detection in critical cases.
+
+Currently, the robot uses four main ROIs:
+
+Low ROI: Line tracking and detection of floor-level colors.
+
+Middle ROI: Detection of intermediate obstacles (red, green, orange).
+
+High ROI: Support in curves and far obstacle detection.
+
+Black ROI: Collision alerts in case of dark-area detection.
+
+Detection and Avoidance Strategies
+
+The vision system was also designed to support obstacle avoidance logic.
+The X coordinate at the base of the blob was chosen as the main metric, as it proved more reliable than the object area, which sometimes produced inconsistent data.
+
+Additionally, the EV3 logic uses competition rules to define maneuvers:
+
+Red pillar = turn right
+
+Green pillar = turn left
+
+| Identified Problem                                             | Implemented Solution                                                                                           |
+| -------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| Light variations caused unstable detections.                   | Fixed **auto-gain**, **auto-white balance**, and **exposure** parameters in OpenMV, ensuring stable detection. |
+| In curves, the robot lost sight of far pillars.                | Added a compensation strategy with blob base position and extended dynamic ROIs.                               |
+| The robot detected oversized blobs, generating confusing data. | Adopted **X coordinate at blob base** as the main metric; area kept only as secondary reference.               |
+| OpenMV scripts were redundant, complicating EV3 integration.   | Unified data transmission in **LPF2 slots**, removing redundancies like `PRINT_EVERY` and `SEND_EVERY`.        |
+| Line follower was not reactive to corridor width changes.      | Incorporated corridor width as a proportional correction variable (**KP adjustment in EV3**).                  |
+| Risk of collision when pillars were not properly detected.     | Replaced pillar ROI with a **black ROI**, dedicated to collision alerts.                                       |
+
+Line Tracking
+
+To improve response, a dynamic horizontal ROI scheme was added, allowing the identification of the relative line position at different image heights.
+
+The position error is translated into a proportional signal inside the EV3, where the initial KP = 1, later tuned for better sensitivity in both curves and straights.
+
+Corridor Width Regulation
+
+One of the key improvements was the use of corridor width as a control metric.
+
+From the OpenMV data (width detected in lower ROIs), a proportional calculation was integrated inside the EV3 controller. This allowed the robot to adjust its trajectory based on available free space, achieving more adaptive navigation.
+
+Obstacle Avoidance
+
+The obstacle avoidance logic followed competition rules:
+
+Red pillar = right turn
+
+Green pillar = left turn
+
+The maneuver side was determined by the difference between the X position detected by the camera and a predefined X target, ensuring reliable decision-making.
+
+Data Communication (OpenMV → EV3)
+
+Communication between OpenMV and EV3 is done via the LPF2 protocol.
+Data transmission was simplified by unifying metrics into specific slots and removing redundant functions such as PRINT_EVERY and SEND_EVERY.
+
+| Sensor / Source      | Extracted Metric                                            | Usage in Control System                            |
+| -------------------- | ----------------------------------------------------------- | -------------------------------------------------- |
+| OpenMV – Low ROI     | Line error (relative floor position)                        | Main trajectory tracking                           |
+| OpenMV – Middle ROI  | Corridor width and intermediate colors (red, green, orange) | Proportional regulation & obstacle anticipation    |
+| OpenMV – High ROI    | Far obstacle position                                       | Curve support & avoidance preparation              |
+| OpenMV – Black ROI   | Dark areas detection                                        | Collision alert (binary indicator sent to EV3)     |
+| OpenMV – Color Blobs | X coordinate at object base Y                               | Defines avoidance side (Red = right, Green = left) |
+| EV3 – Motor Encoders | Speed and distance traveled                                 | Smooth speed and maneuver control                  |
+| EV3 – Internal Logic | Proportional variable (KP)                                  | Dynamic correction in curves and straights         |
+
+
 
 ## Obstacle management
 
