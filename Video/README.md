@@ -1,4 +1,4 @@
-# VIDEO OPEN
+# VIDEO OPEN CHALLENGE
 
 
 
@@ -6,3 +6,11 @@
 
 link:
 [https://youtu.be/ddZvpzC4xFE](https://youtu.be/ddZvpzC4xFE)
+
+
+# VIDEO OBSTACLE CHALLENGE
+
+
+
+Link:
+[Ver en YouTube](https://youtu.be/6IZq3YB_JEY)
