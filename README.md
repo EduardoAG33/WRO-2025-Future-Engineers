@@ -3,7 +3,30 @@
 Official repository of Team Los Grises Superiores for the Future Engineers – World Robot Olympiad 2025.
 <img width="1000" height="500" alt="image" src="https://github.com/user-attachments/assets/b3e384a1-e19b-4c7f-addf-655aeb32bc3a" />
 
+## Team
+
+### Eric Daniel Guerrero Uresti
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/9e1509ca-ad50-48b9-ab44-2787fcce8e0e" alt="Eric Guerrero photo" width="200" height="200">
+</div>
+
+**Role:** Programming & Mechanics  
+
+I started participating in robotics tournaments from 2016 to 2019, achieving **two second places** in the Mexican Robotics Tournament (TMR).  
+Due to the **Covid-19 pandemic**, I couldn’t compete again until 2024, when I returned as a **coach** in TMR and WRO, earning a spot at the international competition.  
+I am currently in my final year of **Mechatronics Engineering**.
+
 ---
+
+### Paulina Ibarra Martínez
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/86413c8a-610a-4270-a92d-cb3ed135d41b" alt="Paulina Martinez photo" width="200" height="200">
+</div>
+
+**Role:** Programming & Electronics  
+
+I have been part of the **Robotics Club** at *Escuela Normal Superior “Profr. Moisés Sáenz Garza”* for three years, participating in **two Mexican Robotics Tournaments**, achieving **5th place** in the most recent one.  
+Starting in 2024, I became a **junior coach**, achieving **third place** in WRO 2024 and **first place nationally** in the Mexican Robotics Tournament 2025.
 
 ## Contents
 
