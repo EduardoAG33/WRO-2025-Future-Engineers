@@ -77,6 +77,8 @@ For full rules and official specifications:
 🔗 [WRO 2025 Future Engineers – General Rules (PDF)](https://wro-association.org/wp-content/uploads/WRO-2025-Future-Engineers-Self-Driving-Cars-General-Rules.pdf)
 
 ---
+## Vehicle photos
+
 
 ## Mobility Management
 
@@ -261,8 +263,3 @@ LPF2 protocol: data unified into slots, redundancies removed.
 
 ---
 
-## WRO 2025 Competition Info
-- [Future Engineers General Rules PDF](https://wro-association.org/wp-content/uploads/WRO-2025-Future-Engineers-Self-Driving-Cars-General-Rules.pdf)  
-- **Open Challenge:** 3 laps, randomized starting position & direction  
-- **Obstacle Challenge:** 3 laps + pillars (Red = right, Green = left)  
-- Documentation mandatory: code, CAD, reports
