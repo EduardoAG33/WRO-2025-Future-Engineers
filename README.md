@@ -1,197 +1,162 @@
-# WRO-2025-Future-Engineers
-
-Official repository of Team Los Grises Superiores for the Future Engineers – World Robot Olympiad 2025.
-<img width="1000" height="500" alt="image" src="https://github.com/user-attachments/assets/b3e384a1-e19b-4c7f-addf-655aeb32bc3a" />
-
-## Team photo
 <div align="center">
-   <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/8c940a8b-cdcd-43a6-ab31-e2c4029053f1" />
-
-
-
-### Eric Daniel Guerrero Uresti
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/9e1509ca-ad50-48b9-ab44-2787fcce8e0e" alt="Eric Guerrero photo" width="200" height="200">
+  <img src="https://github.com/user-attachments/assets/b3e384a1-e19b-4c7f-addf-655aeb32bc3a" width="850">
+  <h1>World Robot Olympiad 2025 – Future Engineers</h1>
+  <h3>Team Los Grises Superiores</h3>
+  <p><em>Official repository for the Future Engineers category of the World Robot Olympiad 2025.</em></p>
 </div>
-
-**Role:** Programming & Mechanics  
-
-I started participating in robotics tournaments from 2016 to 2019, achieving **two second places** in the Mexican Robotics Tournament (TMR).  
-Due to the **Covid-19 pandemic**, I couldn’t compete again until 2024, when I returned as a **coach** in TMR and WRO, earning a spot at the international competition.  
-I am currently in my final year of **Mechatronics Engineering**.
 
 ---
 
-### Paulina Ibarra Martínez
+## Team Members
+
+| Member | Role | Photo |
+|--------|------|-------|
+| **Eric Daniel Guerrero Uresti** | Programming & Mechanics | <img src="https://github.com/user-attachments/assets/9e1509ca-ad50-48b9-ab44-2787fcce8e0e" width="120"> |
+| **Paulina Ibarra Martínez** | Programming & Electronics | <img src="https://github.com/user-attachments/assets/86413c8a-610a-4270-a92d-cb3ed135d41b" width="120"> |
+
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/86413c8a-610a-4270-a92d-cb3ed135d41b" alt="Paulina Martinez photo" width="200" height="200">
+  <img src="https://github.com/user-attachments/assets/8c940a8b-cdcd-43a6-ab31-e2c4029053f1" width="400" alt="Team Photo">
+  <p><em>Team Los Grises Superiores – 2025</em></p>
 </div>
-
-**Role:** Programming & Electronics  
-
-I have been part of the **Robotics Club** at *Escuela Normal Superior “Profr. Moisés Sáenz Garza”* for three years, participating in **two Mexican Robotics Tournaments**, achieving **5th place** in the most recent one.  
-Starting in 2024, I became a **junior coach**, achieving **third place** in WRO 2024 and **first place nationally** in the Mexican Robotics Tournament 2025.
-
-## Contents
-
-* [Mobility Management](#mobility-management)
-
-  * [Chassis](#chassis)  
-    - Image 1.1: Chassis photo
-  * [Steering System](#steering-system)  
-    - Image 1.2: Steering system photo  
-    - Image 2.1: Set 1  
-    - Image 2.2: Render front part
-  * [Movement and Traction System](#movement-and-traction-system)  
-    - Image 3.1: Set 2  
-    - Image 3.2: Render back part
-  * [Differential](#differential)  
-    - Image 4.1: Differential example
-
-* [Power and Sense Management](#power-and-sense-management)
-
-  * [Power Management](#power-management)  
-    - Image 5.1: Power and Sense Diagram  
-    - Image 5.2: EV3 Brick  
-    - Image 5.3: Medium Motor Voltage
-  * [Sense Management](#sense-management)  
-    - Image 5.4: Camera Information  
-    - Image 5.5: PCB Design
-
-* [Obstacle Management](#obstacle-management)
-
-  * [Vision System](#vision-system)
-    - Image 6.1: Color detection example
-    - Image 6.2: ROI example
-
-* [Manual Direction PDF](#manual-direction-pdf)  
-* [Differential Manual PDF](#differential-manual-pdf)  
-* [Hardware Developer Kit PDF](#hardware-developer-kit-pdf)
 
 ---
 
+## Table of Contents
+- [Mobility Management](#mobility-management)
+- [Power and Sense Management](#power-and-sense-management)
+- [Obstacle Management](#obstacle-management)
+- [Calibration](#calibration)
+- [ROI Evolution](#roi-evolution)
+- [Detection and Avoidance Strategies](#detection-and-avoidance-strategies)
+- [Resources](#resources)
+- [Acknowledgments](#acknowledgments)
+- [License](#license)
+
+---
 
 ## Mobility Management
 
 ### Chassis
 
-We built our vehicle using LEGO pieces, chosen for their accessibility and for allowing a compact and efficient design, which ensures good performance on the track. Initially, we designed the prototype using Studio 2.0 software to identify the most suitable LEGO parts for the chassis. Then, we evaluated different steering system methods and adapted them to our custom chassis, paying close attention to the required measurements and proportions.
+The chassis was built using LEGO components, chosen for their accessibility, modularity, and precision.  
+Initial design work was conducted in **Studio 2.0**, which allowed part optimization and dimension validation.  
+After evaluating various steering mechanisms, a customized compact layout was selected to balance weight and stability.
 
 <div align="center">
-  <img width="500" height="500" alt="Chassis" src="https://github.com/user-attachments/assets/f0f2ec53-35a1-495b-a551-b19bc37c49a3" />
-  <p><em>Image 1.1: Chassis photo</em></p>
+  <img width="400" src="https://github.com/user-attachments/assets/f0f2ec53-35a1-495b-a551-b19bc37c49a3" alt="Chassis Photo">
+  <sub><em>Image 1.1: Chassis assembly</em></sub>
 </div>
 
 ---
 
 ### Steering System
 
-For the steering system, we opted for the medium motor from the EV3 Core Set. The gear mechanism converts and transmits the motor’s rotation into steering movement, with a maximum steering angle of 45°. On the steering motor, a 12-tooth double bevel gear transmits motion to a 12-tooth single gear, which, through a proportional shaft, transfers the movement generated by the motor to the wheels. Additionally, the wheels are connected through a linkage bar that ensures both rotate simultaneously and in a coordinated manner, providing precise control during turns and track navigation.
+The steering system is powered by a **LEGO EV3 Medium Motor**.  
+A gear mechanism converts the motor’s rotation into steering movement with a **maximum angle of 45°**.  
+A 12-tooth double bevel gear transfers motion through a proportional shaft connected to the wheels.  
+A linkage bar ensures synchronized wheel rotation for precise directional control.
 
 <div align="center">
-  <img width="300" height="300" alt="Steering system" src="https://github.com/user-attachments/assets/813a3d07-1033-4852-a699-a6eef89279d8" />
-  <p><em>Image 1.2: Steering system photo</em></p>
+  <img width="300" src="https://github.com/user-attachments/assets/813a3d07-1033-4852-a699-a6eef89279d8" alt="Steering System">
+  <sub><em>Image 1.2: Steering system</em></sub>
 </div>
 
 <div align="center">
-  <img width="300" height="300" alt="Set 1" src="https://github.com/user-attachments/assets/46e202f6-aba2-4c50-96f0-182f83e499fe" />
-  <p><em>Image 2.1: Set 1</em></p>
+  <img width="300" src="https://github.com/user-attachments/assets/46e202f6-aba2-4c50-96f0-182f83e499fe" alt="Set 1">
+  <sub><em>Image 2.1: Set 1</em></sub>
 </div>
 
 <div align="center">
-  <img width="300" height="300" alt="Render front part" src="https://github.com/user-attachments/assets/f3185aaf-427e-4545-b5fc-99059a3537b4" />
-  <p><em>Image 2.2: Render front part</em></p>
+  <img width="300" src="https://github.com/user-attachments/assets/f3185aaf-427e-4545-b5fc-99059a3537b4" alt="Render Front Part">
+  <sub><em>Image 2.2: Front render</em></sub>
 </div>
-
-[Manual Direction PDF](https://github.com/user-attachments/files/22270572/manual.direction.pdf)
 
 ---
 
 ### Movement and Traction System
 
-We also designed the movement and traction system that will drive our vehicle. Initially, we considered using a single LEGO medium motor with a differential system to power both wheels; however, this motor did not provide enough power. To achieve more efficient movement, a second medium motor was added to the differential system, along with a transmission that converts the motor’s energy into mechanical energy for the wheels.
+The movement system employs **two EV3 Medium Motors** powering a **differential**.  
+Initially, one motor was tested but lacked sufficient torque; thus, a second motor was added for improved performance.  
 
-Using medium motors provides fast and precise movements, with a position accuracy of ±1°, a torque of 0.08 Nm, and a no-load speed of 240 RPM.
+Each medium motor provides:
+- **Position accuracy:** ±1°  
+- **Torque:** 0.08 Nm  
+- **Speed:** 240 RPM (no-load)
 
-The transmission consists of 20-tooth gears directly connected to 12-tooth gears. This setup increases the rotational speed delivered to the differential, which then transmits the motion through shafts to a 28-tooth gear, subsequently connected to a 20-tooth gear that drives the wheels on both sides of the vehicle.
+The transmission utilizes a **20-tooth to 12-tooth** gear ratio, increasing rotational speed at the differential input.  
+This motion is transmitted to a **28-tooth to 20-tooth** system that drives both rear wheels.
 
 <div align="center">
-  <img width="300" height="300" alt="Set 2" src="https://github.com/user-attachments/assets/6d06e1fc-8637-4078-b9ca-1b4b27277880" />
-  <p><em>Image 3.1: Set 2</em></p>
+  <img width="300" src="https://github.com/user-attachments/assets/6d06e1fc-8637-4078-b9ca-1b4b27277880" alt="Set 2">
+  <sub><em>Image 3.1: Traction system set</em></sub>
 </div>
 
 <div align="center">
-  <img width="300" height="300" alt="Render back part" src="https://github.com/user-attachments/assets/992c28f3-348e-4574-af18-7d5bda827877" />
-  <p><em>Image 3.2: Render back part</em></p>
+  <img width="300" src="https://github.com/user-attachments/assets/992c28f3-348e-4574-af18-7d5bda827877" alt="Render Back Part">
+  <sub><em>Image 3.2: Rear render</em></sub>
 </div>
-
-[Differential Manual PDF](https://github.com/user-attachments/files/22326888/Diferencial.manual.pdf)
 
 ---
 
 ### Differential
 
-**What is a differential?**
+The **differential** distributes torque between the left and right wheels.  
+Its key functions include:
 
-It is a mechanical component located on the drive axle of a vehicle.
-
-**Operating principle:**
-The differential is responsible for distributing engine torque to the wheels.
-
-* **Power input:** The motor transmits torque to the pinion and crown (bevel gear) of the differential.
-* **Torque distribution:** Inside the differential, planetary or satellite gears allow:
-
-  * When the vehicle moves straight: both wheels rotate at the same speed.
-  * When the vehicle turns: the outer wheel rotates faster than the inner wheel.
-* **Power output:** Each axle connected to the wheels receives the appropriate torque.
+- **Straight motion:** both wheels rotate at equal speed.  
+- **Turning:** the outer wheel rotates faster than the inner wheel, allowing smooth cornering.
 
 <div align="center">
-  <img width="500" height="400" alt="Differential example" src="https://github.com/user-attachments/assets/841f8551-b8cd-43e2-a964-24c97eb4f7ce" />
-  <p><em>Image 4.1: Differential example</em></p>
+  <img width="500" src="https://github.com/user-attachments/assets/841f8551-b8cd-43e2-a964-24c97eb4f7ce" alt="Differential Example">
+  <sub><em>Image 4.1: Differential example</em></sub>
 </div>
 
 ---
 
 ## Power and Sense Management
 
-<img width="825" height="237" alt="Power and Sense Diagram" src="https://github.com/user-attachments/assets/9167d4d9-a9f3-4ca6-bf3f-da7acba2cc4e" />
-<p><em>Image 5.1: Power and Sense Diagram</em></p>
+<div align="center">
+  <img width="800" src="https://github.com/user-attachments/assets/9167d4d9-a9f3-4ca6-bf3f-da7acba2cc4e" alt="Power and Sense Diagram">
+  <sub><em>Image 5.1: Power and sense diagram</em></sub>
+</div>
 
 ### Power Management
 
-Our main controller is the EV3 Brick from LEGO Mindstorms. This device receives information from the sensors and is responsible for controlling the motors. The controller features 4 motor ports (A, B, C, D) and 4 sensor ports (1, 2, 3, 4).
+The main controller is the **LEGO EV3 Brick**, equipped with four motor and four sensor ports.  
+It is powered by a **10V, 2050 mAh lithium battery**.  
 
-It is powered by a rechargeable lithium battery with an output of 10 V and 2050 mAh capacity. We consulted the hardware manual to understand the power consumption specifications of both motors and sensors, in order to optimize battery performance and select the most suitable sensors for our car.
-
-Our robot uses three EV3 Medium Motors:
-
-* **Two motors for movement:** Each connected to a transmission system and a differential, providing efficient power distribution to the wheels. These motors typically consume **150–250 mA**.
-* **One motor for steering:** This motor generally operates under a lighter load, consuming **120–250 mA**.
+**Power consumption:**
+- Two movement motors: 150–250 mA each  
+- Steering motor: 120–250 mA  
 
 <div align="center">
-  <img width="406" height="297" alt="EV3 Brick" src="https://github.com/user-attachments/assets/35571866-e5ca-4a87-aad3-f22cd2aee42c" />
-  <p><em>Image 5.2: EV3 Brick</em></p>
+  <img width="400" src="https://github.com/user-attachments/assets/35571866-e5ca-4a87-aad3-f22cd2aee42c" alt="EV3 Brick">
+  <sub><em>Image 5.2: EV3 Brick</em></sub>
 </div>
 
 <div align="center">
-  <img width="326" height="96" alt="Medium Motor Voltage" src="https://github.com/user-attachments/assets/ea92cc7c-aa1b-4ce5-b05f-c80b4cd0d48a" />
-  <p><em>Image 5.3: Medium Motor Voltage</em></p>
+  <img width="300" src="https://github.com/user-attachments/assets/ea92cc7c-aa1b-4ce5-b05f-c80b4cd0d48a" alt="Medium Motor Voltage">
+  <sub><em>Image 5.3: Medium motor voltage reference</em></sub>
 </div>
 
-[Hardware Developer Kit PDF](https://github.com/user-attachments/files/22328277/hardware_developer_kit.pdf)
+---
 
 ### Sense Management
 
-For the sensor system, we used two OpenMV H7 cameras: one is responsible for avoiding collisions with walls, while the other detects traffic lights, counts lines, and locates the parking area. We also calculated the cameras’ positions on the vehicle to ensure correct vision using wide-angle lenses. We selected these cameras due to their low power consumption, which does not affect the EV3, and their compact size, making them easy to integrate into the chassis. Each camera draws up to 480 mA at 3.3 V. To connect them to the EV3, we designed a PCB in EasyEDA that enables communication through the RX, TX, Vin, and GND ports. The cameras also include their own IDE for programming in Python.
+Two **OpenMV H7 cameras** are integrated for environmental awareness:
+- **Camera 1:** wall avoidance  
+- **Camera 2:** traffic light detection, line counting, and parking area localization  
+
+Each camera operates at **3.3V / 480 mA** and communicates with the EV3 through a custom **EasyEDA-designed PCB** via RX, TX, Vin, and GND.
 
 <div align="center">
-  <img width="452" height="567" alt="Camera Information" src="https://github.com/user-attachments/assets/e2bb0995-a4e0-47b4-b147-fb7336de7c5f" />
-  <p><em>Image 5.4: Camera Information</em></p>
+  <img width="400" src="https://github.com/user-attachments/assets/e2bb0995-a4e0-47b4-b147-fb7336de7c5f" alt="Camera Info">
+  <sub><em>Image 5.4: Camera specifications</em></sub>
 </div>
 
 <div align="center">
-  <img width="400" height="300" alt="PCB Design" src="https://github.com/user-attachments/assets/7615369a-8065-4bf4-945b-35ec4d5ec838" />
-  <p><em>Image 5.5: PCB Design</em></p>
+  <img width="400" src="https://github.com/user-attachments/assets/7615369a-8065-4bf4-945b-35ec4d5ec838" alt="PCB Design">
+  <sub><em>Image 5.5: Custom PCB design</em></sub>
 </div>
 
 ---
@@ -200,118 +165,122 @@ For the sensor system, we used two OpenMV H7 cameras: one is responsible for avo
 
 ### Vision System
 
-The vision system is one of the fundamental components of the robot, as it enables real-time interpretation of the competition environment and decision-making. For this purpose, an OpenMV camera was employed, configured and optimized during different stages of the project.
+The vision system interprets the competition field in real time using **LAB color calibration**.  
+Four **Regions of Interest (ROIs)** are defined for dynamic detection and decision-making:
 
-The development included color calibration processes, definition and evolution of Regions of Interest (ROIs), and the design of strategies for obstacle detection and collision prevention.
-The system detects key colors (white, red, green, blue, and orange) through LAB calibration, using four ROIs (low, middle, high, and black) for line tracking, corridor width regulation, obstacle detection, and collision alerts.
+- **Low ROI:** line tracking  
+- **Middle ROI:** obstacle and color detection  
+- **High ROI:** long-distance obstacle prediction  
+- **Black ROI:** collision alerts  
 
-The X position of the blobs determines the avoidance maneuver according to the competition rules:
-
-Red = turn right  
-Green = turn left
+Detected colors determine avoidance maneuvers:
+- **Red = turn right**  
+- **Green = turn left**
 
 <div align="center">
-  <img width="400" height="300" alt="Color detection example" src="https://github.com/user-attachments/assets/48693250-7ba7-493a-86be-2a29e5a18f01" />
-  <p><em>Image 6.1: Color detection example</em></p>
+  <img width="400" src="https://github.com/user-attachments/assets/48693250-7ba7-493a-86be-2a29e5a18f01" alt="Color Detection Example">
+  <sub><em>Image 6.1: Color detection example</em></sub>
 </div>
 
 ---
 
 ## Calibration
 
-During the first tests, instabilities in color identification were detected due to variations in ambient light.
-To solve this, camera parameters such as auto-gain, auto-white balance, and exposure were fixed, ensuring more stable detection.
-
-Additionally, a progressive adjustment of LAB thresholds was performed for the key track colors (white, red, green, blue, orange). This process allowed the system to operate more consistently under different lighting conditions.
+Initial tests revealed color detection instability under varying light conditions.  
+To address this, **auto-gain**, **auto-white balance**, and **exposure** parameters were fixed, ensuring stable detection.  
+Progressive LAB threshold tuning was conducted for white, red, green, blue, and orange.
 
 ---
 
 ## ROI Evolution
 
-Initial stage: A central dynamic ROI anchored to the white floor was used, focused on following the main line.
+The ROI system evolved through iterative testing:
 
-Improvement proposal: Trapezoidal ROIs were considered to cover both the path and pillars.
-
-September: A system of three horizontal ROIs (low, middle, high) was incorporated, initially fixed and later transformed into dynamic ones, always anchored to the white floor. These allowed better detection of wide/narrow corridors and provided support on curves.
-
-Additional ROI: A black ROI was introduced to specifically alert collisions, replacing direct pillar detection in critical cases.
-
-Currently, the robot uses four main ROIs:
-
-Low ROI: Line tracking and detection of floor-level colors.
-
-Middle ROI: Detection of intermediate obstacles (red, green, orange).
-
-High ROI: Support in curves and far obstacle detection.
-
-Black ROI: Collision alerts in case of dark-area detection.
+| Stage | Description |
+|--------|-------------|
+| Initial | Single central ROI for line following. |
+| Intermediate | Trapezoidal ROIs covering both track and pillars. |
+| September | Three horizontal dynamic ROIs anchored to the floor. |
+| Current | Four ROIs: Low, Middle, High, and Black, ensuring full scene awareness. |
 
 <div align="center">
-  <img width="400" height="300" alt="ROI example" src="https://github.com/user-attachments/assets/dee862a6-c428-40a0-a374-5bb7fc4154d8" />
-  <p><em>Image 6.2: ROI example</em></p>
+  <img width="400" src="https://github.com/user-attachments/assets/dee862a6-c428-40a0-a374-5bb7fc4154d8" alt="ROI Example">
+  <sub><em>Image 6.2: ROI configuration example</em></sub>
 </div>
 
 ---
 
 ## Detection and Avoidance Strategies
 
-The vision system was also designed to support obstacle avoidance logic.
-The X coordinate at the base of the blob was chosen as the main metric, as it proved more reliable than the object area, which sometimes produced inconsistent data.
-
-Additionally, the EV3 logic uses competition rules to define maneuvers:
-
-Red pillar = turn right  
-Green pillar = turn left
-
-| Identified Problem                                             | Implemented Solution                                                                                           |
-| -------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| Light variations caused unstable detections.                   | Fixed **auto-gain**, **auto-white balance**, and **exposure** parameters in OpenMV, ensuring stable detection. |
-| In curves, the robot lost sight of far pillars.                | Added a compensation strategy with blob base position and extended dynamic ROIs.                               |
-| The robot detected oversized blobs, generating confusing data. | Adopted **X coordinate at blob base** as the main metric; area kept only as secondary reference.               |
-| OpenMV scripts were redundant, complicating EV3 integration.   | Unified data transmission in **LPF2 slots**, removing redundancies like `PRINT_EVERY` and `SEND_EVERY`.        |
-| Line follower was not reactive to corridor width changes.      | Incorporated corridor width as a proportional correction variable (**KP adjustment in EV3**).                  |
-| Risk of collision when pillars were not properly detected.     | Replaced pillar ROI with a **black ROI**, dedicated to collision alerts.                                       |
+| Identified Issue | Implemented Solution |
+|------------------|----------------------|
+| Light variations caused unstable color readings. | Fixed exposure, gain, and white balance parameters. |
+| Far pillars lost during curves. | Introduced dynamic ROIs and base-X compensation. |
+| Oversized blobs created confusion. | X coordinate at blob base adopted as main metric. |
+| Redundant OpenMV scripts. | Unified data transmission using LPF2 protocol. |
+| Poor line tracking in variable-width corridors. | Integrated corridor width as proportional control (KP adjustment). |
+| Missed collision cases. | Added dedicated Black ROI for collision alerts. |
 
 ---
 
 ### Line Tracking
 
-To improve response, a dynamic horizontal ROI scheme was added, allowing the identification of the relative line position at different image heights.
-
-The position error is translated into a proportional signal inside the EV3, where the initial KP = 1, later tuned for better sensitivity in both curves and straights.
+Dynamic horizontal ROIs provide responsive feedback for line deviation.  
+The position error is converted into a proportional control signal within the EV3 (initial **KP = 1**).
 
 ---
 
 ### Corridor Width Regulation
 
-One of the key improvements was the use of corridor width as a control metric.
-
-From the OpenMV data (width detected in lower ROIs), a proportional calculation was integrated inside the EV3 controller. This allowed the robot to adjust its trajectory based on available free space, achieving more adaptive navigation.
+Using corridor width data from the **Middle ROI**, the EV3 dynamically adjusts motor speeds to maintain central alignment within narrow or wide corridors.
 
 ---
 
 ### Obstacle Avoidance
 
-The obstacle avoidance logic followed competition rules:
+Avoidance behavior follows WRO rules:
+- **Red pillar → right turn**  
+- **Green pillar → left turn**
 
-Red pillar = right turn  
-Green pillar = left turn
-
-The maneuver side was determined by the difference between the X position detected by the camera and a predefined X target, ensuring reliable decision-making.
+The maneuver direction is defined by comparing the blob’s X coordinate to a predefined reference.
 
 ---
 
 ### Data Communication (OpenMV → EV3)
 
-Communication between OpenMV and EV3 is done via the LPF2 protocol.
-Data transmission was simplified by unifying metrics into specific slots and removing redundant functions such as PRINT_EVERY and SEND_EVERY.
+Communication is achieved via the **LPF2 protocol**, streamlining data exchange.  
 
-| Sensor / Source      | Extracted Metric                                            | Usage in Control System                            |
-| -------------------- | ----------------------------------------------------------- | -------------------------------------------------- |
-| OpenMV – Low ROI     | Line error (relative floor position)                        | Main trajectory tracking                           |
-| OpenMV – Middle ROI  | Corridor width and intermediate colors (red, green, orange) | Proportional regulation & obstacle anticipation    |
-| OpenMV – High ROI    | Far obstacle position                                       | Curve support & avoidance preparation              |
-| OpenMV – Black ROI   | Dark areas detection                                        | Collision alert (binary indicator sent to EV3)     |
-| OpenMV – Color Blobs | X coordinate at object base Y                               | Defines avoidance side (Red = right, Green = left) |
-| EV3 – Motor Encoders | Speed and distance traveled                                 | Smooth speed and maneuver control                  |
-| EV3 – Internal Logic | Proportional variable (KP)                                  | Dynamic correction in curves and straights         |
+| Source | Metric | Application |
+|---------|---------|-------------|
+| OpenMV – Low ROI | Line error | Main trajectory correction |
+| OpenMV – Middle ROI | Corridor width & color | Width regulation & obstacle prediction |
+| OpenMV – High ROI | Distant obstacles | Curve anticipation |
+| OpenMV – Black ROI | Dark area detection | Collision alerts |
+| OpenMV – Color Blobs | X position (base Y) | Avoidance side |
+| EV3 – Motor Encoders | Speed & distance | Smooth control |
+| EV3 – Internal Logic | KP variable | Dynamic correction tuning |
+
+---
+
+## Resources
+
+| Document | Description |
+|-----------|-------------|
+| [Manual Direction PDF](https://github.com/user-attachments/files/22270572/manual.direction.pdf) | Assembly and steering system guide |
+| [Differential Manual PDF](https://github.com/user-attachments/files/22326888/Diferencial.manual.pdf) | Differential system documentation |
+| [Hardware Developer Kit PDF](https://github.com/user-attachments/files/22328277/hardware_developer_kit.pdf) | Hardware and electrical reference |
+
+---
+
+## Acknowledgments
+
+This project was developed for the **World Robot Olympiad 2025 – Future Engineers** category.  
+Special thanks to mentors, partners, and supporting institutions for their guidance throughout the design and testing stages.
+
+---
+
+## License
+
+This repository is released under the [MIT License](LICENSE).
+
+---
