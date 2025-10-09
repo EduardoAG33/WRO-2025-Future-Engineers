@@ -57,6 +57,8 @@ In addition to performance, **technical documentation** is a critical evaluation
 For full competition details, refer to the official WRO guidelines:  
 🔗 [WRO 2025 Future Engineers – General Rules (PDF)](https://wro-association.org/wp-content/uploads/WRO-2025-Future-Engineers-Self-Driving-Cars-General-Rules.pdf)
 
+## Vehicle photos
+
 ---
 
 ## Mobility Management
