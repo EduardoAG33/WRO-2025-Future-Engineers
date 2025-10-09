@@ -5,7 +5,7 @@ Official repository of Team Los Grises Superiores for the Future Engineers – W
 
 ## Team photo
 
-<img width="768" height="1344" alt="image" src="https://github.com/user-attachments/assets/8c940a8b-cdcd-43a6-ab31-e2c4029053f1" />
+<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/8c940a8b-cdcd-43a6-ab31-e2c4029053f1" />
 
 
 
