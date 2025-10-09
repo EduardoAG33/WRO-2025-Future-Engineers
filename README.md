@@ -33,7 +33,15 @@
 - [License](#license)
 
 ---
+## Introduction
 
+We present a **development and implementation of a autonomous vehicle** for the **WORD ROBOT OLYMPIAD 2025** The category calls "Future engineers",that this consist in two types of challenges for solve with our vehicle(Open and Obstacles ): 
+**Open challenge:** the vehicle have to complete three laps on a track, the starts and direction of the vehicle is choose of random 
+**Obstacles:** In this case the same form the vehicle have complete 3 laps but while detect of pilars read and green that function is like a traffic signs.
+**Red pilars**: The vehicle turn right of the side.
+**Green pilars**: The vehicle turn left of the side. 
+**Documentation**: The documentation is a important part of the challenge because this is a relevant part of a engineering process, So the teams need works with a public repository.
+**For more information consult here:** https://wro-association.org/wp-content/uploads/WRO-2025-Future-Engineers-Self-Driving-Cars-General-Rules.pdf checa la informacion y mejora el texto
 ## Mobility Management
 
 ### Chassis
