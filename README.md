@@ -79,7 +79,110 @@ For full rules and official specifications:
 ---
 ## Vehicle photos
 
+## Components and Hardware
+⚙️ Components Overview
 
+Below is the categorized list of all hardware components used in our autonomous vehicle.
+Each group can be expanded to show a short description, image, and purchase link.
+
+🧱 Structure & Core System
+<details> <summary>🧩 <b>45544 LEGO MINDSTORMS Education EV3 Core Set</b></summary>
+
+Description:
+This set forms the foundational structure and chassis of the vehicle.
+
+Image:
+<img src="https://www.lego.com/cdn/cs/set/assets/blt7fef7c0f41e34f78/45544.png" width="300">
+
+Purchase Link:
+🔗 Buy here
+
+</details>
+🧠 Control & Processing
+<details> <summary>⚙️ <b>Arduino Nano</b></summary>
+
+Description:
+ATmega328-based microcontroller with 8 analog and 14 digital pins for component control and communication.
+
+Image:
+<img src="https://www.steren.com.mx/media/catalog/product/cache/6/image/1200x/040ec09b1e35df139433887a97daa66f/p/l/placa-de-desarrollo-nano-arduinonano.jpg" width="300">
+
+Purchase Link:
+🔗 Buy here
+
+</details> <details> <summary>📷 <b>OpenMV Cam H7 Plus</b></summary>
+
+Description:
+A smart vision camera used for free navigation and obstacle detection.
+
+Image:
+<img src="https://openmv.io/cdn/shop/products/H7PLUS_2_1024x1024.jpg?v=1595356532" width="300">
+
+Purchase Link:
+🔗 Buy here
+
+</details>
+🧭 Sensors & Measurement
+<details> <summary>🌊 <b>HC-SR04 Ultrasonic Sensor</b></summary>
+
+Description:
+Measures distance between the robot and obstacles using ultrasonic waves.
+
+Image:
+<img src="https://uelectronics.com/wp-content/uploads/2018/09/HC-SR04-1.jpg" width="300">
+
+Purchase Link:
+🔗 Buy here
+
+</details> <details> <summary>🔦 <b>VL53L0X Time-of-Flight (ToF) Sensor</b></summary>
+
+Description:
+Laser distance sensor using infrared light for high-precision measurements.
+
+Image:
+<img src="https://uelectronics.com/wp-content/uploads/2018/10/VL53L0X-2.jpg" width="300">
+
+Purchase Link:
+🔗 Buy here
+
+</details> <details> <summary>🧭 <b>Gravity: 10 DOF IMU AHRS BNO055 + BMP280</b></summary>
+
+Description:
+Combines orientation (IMU) and barometric sensors for accurate navigation and stability control.
+
+Image:
+<img src="https://dfimg.dfrobot.com/nobody/wiki/2264.jpg" width="300">
+
+Purchase Link:
+🔗 Buy here
+
+</details>
+💡 Indicators & Display
+<details> <summary>✨ <b>4x4 RGB LED Matrix</b></summary>
+
+Description:
+Compact 16-pixel WS2812 LED matrix for status indicators and animations.
+
+Image:
+<img src="https://cdn-shop.adafruit.com/1200x900/1617-02.jpg" width="300">
+
+Purchase Link:
+🔗 Search online
+
+</details>
+⚡ Power Management
+<details> <summary>🔋 <b>LTC1871 DC-DC Step-up Boost Converter</b></summary>
+
+Description:
+Boosts low input voltage to a higher, stable output to power the electronic components.
+
+Image:
+<img src="https://uelectronics.com/wp-content/uploads/2019/06/LTC1871-1.jpg" width="300">
+
+Purchase Link:
+🔗 Buy here
+
+</details>
 ## Mobility Management
 
 ### Chassis
