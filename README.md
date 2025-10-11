@@ -32,16 +32,18 @@ I have been part of the **Robotics Club** at *Escuela Normal Superior “Profr. 
 
 ## Contents
 * [Project Overview](#project-overview)
+* [Vehicle Photos](#vehicle-photos)
+* [Components and Hardware](#components-and-hardware)
 * [Mobility Management](#mobility-management)
-  * [Chassis](#chassis) - Image 1.1: Chassis photo
-  * [Steering System](#steering-system) - Image 1.2: Steering system photo - Image 2.1: Set 1 - Image 2.2: Render front part
-  * [Movement and Traction System](#movement-and-traction-system) - Image 3.1: Set 2 - Image 3.2: Render back part
-  * [Differential](#differential) - Image 4.1: Differential example
+  * [Chassis](#chassis)
+  * [Steering System](#steering-system)
+  * [Movement and Traction System](#movement-and-traction-system)
+  * [Differential](#differential)
 * [Power and Sense Management](#power-and-sense-management)
-  * [Power Management](#power-management) - Image 5.1: Power and Sense Diagram - Image 5.2: EV3 Brick - Image 5.3: Medium Motor Voltage
-  * [Sense Management](#sense-management) - Image 5.4: Camera Information - Image 5.5: PCB Design
+  * [Power Management](#power-management)
+  * [Sense Management](#sense-management)
 * [Obstacle Management](#obstacle-management)
-  * [Vision System](#vision-system) - Image 6.1: Color detection example - Image 6.2: ROI example
+  * [Vision System](#vision-system)
 * [Calibration](#calibration)
 * [ROI Evolution](#roi-evolution)
 * [Detection and Avoidance Strategies](#detection-and-avoidance-strategies)
@@ -77,32 +79,27 @@ For full rules and official specifications:
 🔗 [WRO 2025 Future Engineers – General Rules (PDF)](https://wro-association.org/wp-content/uploads/WRO-2025-Future-Engineers-Self-Driving-Cars-General-Rules.pdf)
 
 ---
-## Vehicle photos
+
+## Vehicle Photos
+
+---
 
 ## Components and Hardware
-⚙️ Components Overview
-🧱 Structure & Core System	Description	Image	Purchase Link
-45544 LEGO MINDSTORMS Education EV3 Core Set	Forms the foundational structure and chassis of the vehicle.	<img src="https://www.lego.com/cdn/cs/set/assets/blt7fef7c0f41e34f78/45544.png" width="180">	Buy here
-🧠 Control & Processing	Description	Image	Purchase Link
-Arduino Nano	ATmega328-based microcontroller with 8 analog and 14 digital pins for control and communication.	<img src="https://www.steren.com.mx/media/catalog/product/cache/6/image/1200x/040ec09b1e35df139433887a97daa66f/p/l/placa-de-desarrollo-nano-arduinonano.jpg" width="180">	Buy here
 
-OpenMV Cam H7 Plus	Smart vision camera for autonomous navigation and obstacle detection.	<img src="https://openmv.io/cdn/shop/products/H7PLUS_2_1024x1024.jpg?v=1595356532" width="180">	Buy here
-🧭 Sensors & Measurement	Description	Image	Purchase Link
-HC-SR04 Ultrasonic Sensor	Measures distance using ultrasonic waves to detect walls and obstacles.	<img src="https://uelectronics.com/wp-content/uploads/2018/09/HC-SR04-1.jpg" width="180">	Buy here
-
-VL53L0X Time-of-Flight (ToF) Sensor	Laser-based distance sensor using infrared light for precision measurement.	<img src="https://uelectronics.com/wp-content/uploads/2018/10/VL53L0X-2.jpg" width="180">	Buy here
-
-Gravity: 10 DOF IMU AHRS BNO055 + BMP280	Combines orientation and barometric sensors for navigation and stability.	<img src="https://dfimg.dfrobot.com/nobody/wiki/2264.jpg" width="180">	Buy here
-💡 Indicators & Display	Description	Image	Purchase Link
-4x4 RGB LED Matrix	Compact WS2812 LED matrix for status indicators and animations.	<img src="https://cdn-shop.adafruit.com/1200x900/1617-02.jpg" width="180">	Search online
-⚡ Power Management	Description	Image	Purchase Link
-LTC1871 DC-DC Step-up Boost Converter	Boosts low input voltage to a higher, stable output for powering components.	<img src="https://uelectronics.com/wp-content/uploads/2019/06/LTC1871-1.jpg" width="180">	Buy here
-
-</details>
+| Component | Description | Image | Purchase Link |
+|-----------|------------|-------|---------------|
+| **45544 LEGO MINDSTORMS Education EV3 Core Set** | Forms the foundational structure and chassis. | <img src="https://m.media-amazon.com/images/I/61g5AOfU3GL._AC_SL1500_.jpg" width="100"> | [Buy here](https://bricks-store.com/esp/item/585/66/45544-set-base-lego-mindstorms-education-ev3) |
+| **OpenMV Cam H7 Plus** | Smart camera for navigation and obstacle detection. | <img src="https://cdn.shopify.com/s/files/1/0045/8930/5332/products/openmv-cam-h7-plus-01.jpg?v=1614693959" width="100"> | [Buy here](https://openmv.io/products/openmv-cam-h7-plus) |
+| **HC-SR04 Ultrasonic Sensor** | Distance measurement around the vehicle. | <img src="https://uelectronics.com/wp-content/uploads/2020/07/HC-SR04.jpg" width="100"> | [Buy here](https://uelectronics.com/producto/sensor-ultrasonico-hc-sr04/) |
+| **VL53L0X Time-of-Flight (ToF) Sensor** | Laser distance sensor for high-accuracy measurements. | <img src="https://uelectronics.com/wp-content/uploads/2020/07/VL53L0X.jpg" width="100"> | [Buy here](https://uelectronics.com/producto/vl53l0x-medidor-de-distancia-laser-i2c-940nm-tof/) |
+| **Arduino Nano** | ATmega328-based microcontroller for control tasks. | <img src="https://www.steren.com.mx/media/catalog/product/cache/926507dc7f93631a094422215b778fe0/2/1/210-042_1.jpg" width="100"> | [Buy here](https://www.steren.com.mx/placa-de-desarrollo-nano.html) |
+| **Gravity: 10 DOF IMU AHRS BNO055 + BMP280** | Orientation, navigation, and stability sensors. | <img src="https://dfimg.dfrobot.com/nobody/wiki/faa48bdb3c53e0aaf0b3ec68e35d8b44.png" width="100"> | [Buy here](https://www.dfrobot.com/product-2264.html) |
+| **4x4 RGB LED Matrix** | 16 addressable LEDs for indicators or animations. | <img src="https://cdn.sparkfun.com//assets/parts/1/1/4/0/8/14648-04.jpg" width="100"> | [Buy here](https://www.google.com/search?q=matriz+de+led+rgb+4x4+ws2812+16bits) |
+| **LTC1871 DC-DC Step-up Boost Converter** | Increases low input voltage to a stable higher output. | <img src="https://cdn.sparkfun.com/assets/parts/1/3/2/5/8/15208-Boost_Converter-02.jpg" width="100"> | [Buy here](https://www.google.com/search?q=ltc1871+dc-dc+step+up+boost+converter) |
 ## Mobility Management
 
 ### Chassis
-We built our vehicle using LEGO pieces, chosen for their accessibility and for allowing a compact and efficient design, which ensures good performance on the track. Initially, we designed the prototype using Studio 2.0 software to identify the most suitable LEGO parts for the chassis. Then, we evaluated different steering system methods and adapted them to our custom chassis, paying close attention to the required measurements and proportions.
+We built our vehicle using LEGO pieces, designed with Studio 2.0 software to identify the most suitable parts. Then, we tested different steering methods and adapted them to our chassis, paying close attention to measurements.
 
 <div align="center">
   <img width="500" height="500" alt="Chassis" src="https://github.com/user-attachments/assets/f0f2ec53-35a1-495b-a551-b19bc37c49a3" />
@@ -114,7 +111,7 @@ We built our vehicle using LEGO pieces, chosen for their accessibility and for a
 ---
 
 ### Steering System
-For the steering system, we opted for the medium motor from the EV3 Core Set. The gear mechanism converts and transmits the motor’s rotation into steering movement, with a maximum steering angle of 45°. On the steering motor, a 12-tooth double bevel gear transmits motion to a 12-tooth single gear, which, through a proportional shaft, transfers the movement generated by the motor to the wheels. Additionally, the wheels are connected through a linkage bar that ensures both rotate simultaneously and in a coordinated manner, providing precise control during turns and track navigation.
+Medium motor from EV3 Core Set converts rotation into steering movement (max 45°). Gear train transfers motion, wheels connected via linkage bar.
 
 <div align="center">
   <img width="300" height="300" alt="Steering system" src="https://github.com/user-attachments/assets/813a3d07-1033-4852-a699-a6eef89279d8" />
@@ -134,7 +131,7 @@ For the steering system, we opted for the medium motor from the EV3 Core Set. Th
 ---
 
 ### Movement and Traction System
-We also designed the movement and traction system that will drive our vehicle. Initially, we considered using a single LEGO medium motor with a differential system to power both wheels; however, this motor did not provide enough power. To achieve more efficient movement, a second medium motor was added to the differential system, along with a transmission that converts the motor’s energy into mechanical energy for the wheels. Using medium motors provides fast and precise movements, with a position accuracy of ±1°, a torque of 0.08 Nm, and a no-load speed of 240 RPM. The transmission consists of 20-tooth gears directly connected to 12-tooth gears. This setup increases the rotational speed delivered to the differential, which then transmits the motion through shafts to a 28-tooth gear, subsequently connected to a 20-tooth gear that drives the wheels on both sides of the vehicle.
+Two medium motors with differential system transmit energy to wheels. Transmission: 20-tooth → 12-tooth gears → 28-tooth → 20-tooth driving wheels. Position accuracy ±1°, torque 0.08 Nm, speed 240 RPM.
 
 <div align="center">
   <img width="300" height="300" alt="Set 2" src="https://github.com/user-attachments/assets/6d06e1fc-8637-4078-b9ca-1b4b27277880" />
@@ -151,13 +148,7 @@ We also designed the movement and traction system that will drive our vehicle. I
 ---
 
 ### Differential
-**What is a differential?** It is a mechanical component located on the drive axle of a vehicle. **Operating principle:** The differential distributes torque to the wheels, enabling smooth cornering while maintaining straight-line efficiency.
-
-- **Power input:** Motor torque transmitted via pinion and crown gears.  
-- **Torque distribution:**  
-  - Straight motion → both wheels rotate equally.  
-  - Turning → outer wheel rotates faster than inner wheel.  
-- **Power output:** Appropriate torque delivered to each wheel axle.
+Distributes torque to wheels, enabling smooth cornering. Input via pinion and crown gears. Outer wheel rotates faster in turns, inner wheel slower, straight motion equal.
 
 <div align="center">
   <img width="500" height="400" alt="Differential example" src="https://github.com/user-attachments/assets/841f8551-b8cd-43e2-a964-24c97eb4f7ce" />
@@ -172,10 +163,9 @@ We also designed the movement and traction system that will drive our vehicle. I
 <p><em>Image 5.1: Power and Sense Diagram</em></p>
 
 ### Power Management
-Our main controller is the EV3 Brick from LEGO Mindstorms. The EV3 receives sensor information and controls all motors. Powered by a **10V 2050 mAh lithium battery**, the EV3 optimizes energy distribution for the three medium motors:
-
-- **Movement motors (2)** → 150–250 mA each  
-- **Steering motor (1)** → 120–250 mA  
+EV3 Brick controls all motors. Powered by 10V 2050 mAh battery.  
+- Movement motors (2): 150–250 mA  
+- Steering motor (1): 120–250 mA
 
 <div align="center">
   <img width="406" height="297" alt="EV3 Brick" src="https://github.com/user-attachments/assets/35571866-e5ca-4a87-aad3-f22cd2aee42c" />
@@ -190,12 +180,10 @@ Our main controller is the EV3 Brick from LEGO Mindstorms. The EV3 receives sens
 [Hardware Developer Kit PDF](https://github.com/user-attachments/files/22328277/hardware_developer_kit.pdf)
 
 ### Sense Management
-Two **OpenMV H7 cameras** are integrated:  
-
+Two OpenMV H7 cameras:  
 - Camera 1 → Wall avoidance  
 - Camera 2 → Color detection, line counting, parking recognition  
-
-Cameras are powered at **3.3 V, max 480 mA**, connected via a custom **PCB** to EV3 using RX/TX, Vin, GND.  
+Powered at 3.3V, max 480 mA, connected via custom PCB to EV3.
 
 <div align="center">
   <img width="452" height="567" alt="Camera Information" src="https://github.com/user-attachments/assets/e2bb0995-a4e0-47b4-b147-fb7336de7c5f" />
@@ -212,10 +200,7 @@ Cameras are powered at **3.3 V, max 480 mA**, connected via a custom **PCB** to 
 ## Obstacle Management
 
 ### Vision System
-OpenMV cameras allow real-time obstacle detection and decision-making. **Color calibration** and **ROI evolution** improve detection stability:  
-
-- **ROIs:** Low, Middle, High, Black  
-- **Red blobs → Right turn**, **Green blobs → Left turn**  
+OpenMV cameras detect obstacles and pillars in real-time. ROIs: Low, Middle, High, Black. Red → Right, Green → Left.
 
 <div align="center">
   <img width="400" height="300" alt="Color detection example" src="https://github.com/user-attachments/assets/48693250-7ba7-493a-86be-2a29e5a18f01" />
@@ -230,7 +215,7 @@ OpenMV cameras allow real-time obstacle detection and decision-making. **Color c
 ---
 
 ## Calibration
-Camera parameters (auto-gain, auto-white balance, exposure) were fixed to reduce light variation instability. LAB thresholds were progressively adjusted for **white, red, green, blue, orange** colors.
+Fixed camera parameters (auto-gain, auto-white balance, exposure). LAB thresholds adjusted for white, red, green, blue, orange.
 
 ---
 
@@ -245,7 +230,7 @@ Camera parameters (auto-gain, auto-white balance, exposure) were fixed to reduce
 ---
 
 ## Detection and Avoidance Strategies
-**Main metric:** X coordinate at blob base  
+**Metric:** X coordinate at blob base  
 
 | Problem | Solution |
 |---------|---------|
@@ -256,19 +241,17 @@ Camera parameters (auto-gain, auto-white balance, exposure) were fixed to reduce
 | Non-reactive line follower | Corridor width as proportional KP |
 | Missed pillars → collision risk | Dedicated Black ROI |
 
----
-
 ### Line Tracking
-Dynamic horizontal ROIs provide position error, translated to proportional KP signal in EV3.
+Dynamic ROIs provide position error → proportional KP in EV3.
 
 ### Corridor Width Regulation
-Proportional correction based on corridor width from lower ROIs.
+Proportional correction from lower ROIs.
 
 ### Obstacle Avoidance
-Decision based on X coordinate vs predefined target: Red → right, Green → left.
+Red → right, Green → left based on X coordinate vs target.
 
 ### Data Communication (OpenMV → EV3)
-LPF2 protocol: data unified into slots, redundancies removed.  
+LPF2 protocol: unified data slots.
 
 | Sensor / Source | Metric | Usage |
 |-----------------|--------|-------|
@@ -279,6 +262,3 @@ LPF2 protocol: data unified into slots, redundancies removed.
 | Color blobs | X coordinate | Defines avoidance side |
 | EV3 Motors | Speed, distance | Smooth control |
 | EV3 Logic | KP | Dynamic correction |
-
----
-
