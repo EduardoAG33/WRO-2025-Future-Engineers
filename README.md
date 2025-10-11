@@ -88,14 +88,22 @@ For full rules and official specifications:
 
 | Component | Description | Image | Purchase Link |
 |-----------|------------|-------|---------------|
-| **45544 LEGO MINDSTORMS Education EV3 Core Set** | Forms the foundational structure and chassis. | <img src="https://m.media-amazon.com/images/I/61g5AOfU3GL._AC_SL1500_.jpg" width="100"> | [Buy here](https://bricks-store.com/esp/item/585/66/45544-set-base-lego-mindstorms-education-ev3) |
-| **OpenMV Cam H7 Plus** | Smart camera for navigation and obstacle detection. | <img src="https://cdn.shopify.com/s/files/1/0045/8930/5332/products/openmv-cam-h7-plus-01.jpg?v=1614693959" width="100"> | [Buy here](https://openmv.io/products/openmv-cam-h7-plus) |
-| **HC-SR04 Ultrasonic Sensor** | Distance measurement around the vehicle. | <img src="https://uelectronics.com/wp-content/uploads/2020/07/HC-SR04.jpg" width="100"> | [Buy here](https://uelectronics.com/producto/sensor-ultrasonico-hc-sr04/) |
-| **VL53L0X Time-of-Flight (ToF) Sensor** | Laser distance sensor for high-accuracy measurements. | <img src="https://uelectronics.com/wp-content/uploads/2020/07/VL53L0X.jpg" width="100"> | [Buy here](https://uelectronics.com/producto/vl53l0x-medidor-de-distancia-laser-i2c-940nm-tof/) |
-| **Arduino Nano** | ATmega328-based microcontroller for control tasks. | <img src="https://www.steren.com.mx/media/catalog/product/cache/926507dc7f93631a094422215b778fe0/2/1/210-042_1.jpg" width="100"> | [Buy here](https://www.steren.com.mx/placa-de-desarrollo-nano.html) |
-| **Gravity: 10 DOF IMU AHRS BNO055 + BMP280** | Orientation, navigation, and stability sensors. | <img src="https://dfimg.dfrobot.com/nobody/wiki/faa48bdb3c53e0aaf0b3ec68e35d8b44.png" width="100"> | [Buy here](https://www.dfrobot.com/product-2264.html) |
-| **4x4 RGB LED Matrix** | 16 addressable LEDs for indicators or animations. | <img src="https://cdn.sparkfun.com//assets/parts/1/1/4/0/8/14648-04.jpg" width="100"> | [Buy here](https://www.google.com/search?q=matriz+de+led+rgb+4x4+ws2812+16bits) |
-| **LTC1871 DC-DC Step-up Boost Converter** | Increases low input voltage to a stable higher output. | <img src="https://cdn.sparkfun.com/assets/parts/1/3/2/5/8/15208-Boost_Converter-02.jpg" width="100"> | [Buy here](https://www.google.com/search?q=ltc1871+dc-dc+step+up+boost+converter) |
+| **45544 LEGO MINDSTORMS Education EV3 Core Set** | Forms the foundational structure and chassis. | <img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/a725c977-b28b-4b5d-b95c-506c84cd6706" />
+ | [Buy here](https://bricks-store.com/esp/item/585/66/45544-set-base-lego-mindstorms-education-ev3) |
+| **OpenMV Cam H7 Plus** | Smart camera for navigation and obstacle detection. | <img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/2f1dc12c-a2f9-4e47-b665-d9b37091a8ce" />
+ | [Buy here](https://openmv.io/products/openmv-cam-h7-plus) |
+| **HC-SR04 Ultrasonic Sensor** | Distance measurement around the vehicle. | <img width="100" height="1000" alt="image" src="https://github.com/user-attachments/assets/f55c9c1f-b8f7-4d51-9b24-01f51de329b8" />
+| [Buy here](https://uelectronics.com/producto/sensor-ultrasonico-hc-sr04/) |
+| **VL53L0X Time-of-Flight (ToF) Sensor** | Laser distance sensor for high-accuracy measurements. | <img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/70b79b45-c77b-4598-b073-30de6af06385" />
+ | [Buy here](https://uelectronics.com/producto/vl53l0x-medidor-de-distancia-laser-i2c-940nm-tof/) |
+| **Arduino Nano** | ATmega328-based microcontroller for control tasks. | <img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/22e8f59c-909d-4ff2-b637-dc03e15f4de6" />
+ | [Buy here](https://www.steren.com.mx/placa-de-desarrollo-nano.html) |
+| **Gravity: 10 DOF IMU AHRS BNO055 + BMP280** | Orientation, navigation, and stability sensors. | <img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/34e24ba7-8fd3-42b4-8fca-bf5bb044a141" />
+ | [Buy here](https://www.dfrobot.com/product-2264.html) |
+| **4x4 RGB LED Matrix** | 16 addressable LEDs for indicators or animations. | <img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/1dfe866c-7431-4e3f-93b5-e756a8c59637" />
+ | [Buy here](https://mvelectronica.com/producto/matriz-de-led-rgb-4x4-ws2812-16bits-a-5v-led-5050) |
+| **LTC1871 DC-DC Step-up Boost Converter** | Increases low input voltage to a stable higher output. | <img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/5ebb04f5-a49e-4a5f-b0ff-865bd1fc2c5e" />
+ | [Buy here](https://mvelectronica.com/producto/elevador-de-voltaje-ltc1871-dc-dc-step-up-boost-entrada-3-35v-salida-3-5-35v-6a#2) |
 ## Mobility Management
 
 ### Chassis
