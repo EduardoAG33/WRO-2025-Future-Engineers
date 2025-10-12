@@ -97,8 +97,25 @@ For full rules and official specifications:
 ## Mobility Management
 
 ### Chassis
-We principal chassis consists of LEGO pieces chosen for their accessibility and for allowing a compact and efficient design. Initially, we designed the prototype using Studio 2.0 software.
+The main chassis consists of LEGO pieces selected for their accessibility and for enabling a compact and efficient design. Initially, the prototype was designed using Studio 2.0 software to ensure proper part selection and structural balance.
+For the second level, an acrylic base (acrylate polymer) was used to support the ultrasonic sensors. The shape of this base was customized as part of the design by applying heat to specific areas to mold it into the desired form.
+This level integrates five ultrasonic sensors, strategically distributed to enhance environmental detection and obstacle avoidance.
 
+## Chassis Ultrasonic Base:
+<div align="center">
+<img width="400" height="400" alt="Ultrasonic and PCB Base" src="https://github.com/user-attachments/assets/48febdb7-b3fb-46fc-b429-0648d3b4971d" />
+
+  The elaboration process:
+  Using a heat gun, each side of the acrylic base designated for the sensors was carefully heated. Once the material reached the appropriate temperature, it was bent using a mold to achieve the 90° angle required for the optimal positioning and field of view of the sensors.
+
+<div align="center">
+  <img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/53dec651-0a3b-47fa-895d-e4c19290b290" />     <img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/6d716c07-a7b4-4b70-b3c2-c8264ffc2f77" />
+
+
+
+
+
+This base is attached to the chassis using four screws in the middle to give it stability, 
 
 <div align="center">
   <img width="500" height="500" alt="Chassis" src="https://github.com/user-attachments/assets/f0f2ec53-35a1-495b-a551-b19bc37c49a3" />
