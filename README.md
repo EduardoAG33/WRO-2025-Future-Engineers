@@ -234,8 +234,6 @@ Powered at 3.3V, max 480 mA, connected via custom PCB to EV3.
 <div align="center">
   <img width="400" height="300" alt="PCB Design" src="https://github.com/user-attachments/assets/7615369
 
----
-
 ## Detection and Avoidance Strategies
 
 **Metric:** X coordinate at blob base  
