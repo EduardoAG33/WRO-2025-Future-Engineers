@@ -1,4 +1,4 @@
-# WRO-2025-Future-Engineers
+[HC-SR04_Datasheet_with_Dimensions.pdf](https://github.com/user-attachments/files/22874563/HC-SR04_Datasheet_with_Dimensions.pdf)# WRO-2025-Future-Engineers
 
 Official repository of Team Los Grises Superiores for the Future Engineers – World Robot Olympiad 2025.  
 <img width="1000" height="500" alt="image" src="https://github.com/user-attachments/assets/b3e384a1-e19b-4c7f-addf-655aeb32bc3a" />
@@ -119,8 +119,14 @@ it was bent using a mold to achieve the 90° angle required for the optimal posi
 
 This base is attached to the chassis using four screws in the middle to give it stability, and on top of this locate the PCB is located where the ultrasonic sensors are connected
 
+ChatGPT said:
+
+The measurements for the sensor support can be found in the datasheet.
+
 <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/034fa407-525b-413a-86d8-a455544e789a" />
 
+## DATASHEET:
+[Uploading HC-SR04_Datasheet_with_Dimensions.pdf…]()
 
 
 
