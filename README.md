@@ -102,8 +102,8 @@ For full rules and official specifications:
 ## Mobility Management
 
 ### Chassis
-The main chassis consists of LEGO pieces selected for their accessibility and for enabling a compact and efficient design. Initially, the prototype was designed using Studio 2.0 software to ensure proper part selection and structural balance.
-For the second level, an acrylic base (acrylate polymer) was used to support the ultrasonic sensors. The shape of this base was customized as part of the design by applying heat to specific areas to mold it into the desired form.
+The main chassis consists of LEGO pieces selected for their accessibility and for enabling a compact and efficient design. Initially, the prototype was designed using Studio 2.0 software to ensure proper part selection and structural balance.  
+For the second level, an acrylic base (acrylate polymer) was used to support the ultrasonic sensors. The shape of this base was customized as part of the design by applying heat to specific areas to mold it into the desired form.  
 This level integrates five ultrasonic sensors, strategically distributed to enhance environmental detection and obstacle avoidance.
 
 <div align="center">
@@ -112,8 +112,7 @@ This level integrates five ultrasonic sensors, strategically distributed to enha
 
 The elaboration process:
 
-Using a heat gun, each side of the acrylic base designated for the sensors was carefully heated. Once the material reached the appropriate temperature,
-it was bent using a mold to achieve the 90° angle required for the optimal positioning and field of view of the sensors.
+Using a heat gun, each side of the acrylic base designated for the sensors was carefully heated. Once the material reached the appropriate temperature, it was bent using a mold to achieve the 90° angle required for the optimal positioning and field of view of the sensors.
 
 <div align="center">
   <img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/53dec651-0a3b-47fa-895d-e4c19290b290" />     
@@ -136,7 +135,7 @@ The measurements for the sensor support can be found in the datasheet.
 ## DATASHEET:
 [ HC-SR04_Datasheet_with_Dimensions.pdf…]()
 
-And for the nevel more high of the robot we have the support for the camera and the light, 
+And for the upper level of the robot, we have the support for the camera and the light:  
 
 <div align="center">
 <img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/9702fe8a-fe0b-4031-91d4-b61f5b70ece4" />
@@ -231,8 +230,7 @@ Powered at 3.3V, max 480 mA, connected via custom PCB to EV3.
   <p><em>Image 5.4: Camera Information</em></p>
 </div>
 
-<div align="center">
-  <img width="400" height="300" alt="PCB Design" src="https://github.com/user-attachments/assets/7615369
+---
 
 ## Detection and Avoidance Strategies
 
@@ -270,6 +268,7 @@ LPF2 protocol: unified data slots.
 | EV3 Logic | KP | Dynamic correction |
 
 ---
+
 ## Calibration
 Fixed camera parameters (auto-gain, auto-white balance, exposure). LAB thresholds adjusted for white, red, green, blue, orange.
 
