@@ -272,7 +272,6 @@ LPF2 protocol: unified data slots.
 | EV3 Logic | KP | Dynamic correction |
 
 ---
-
 ## Calibration
 Fixed camera parameters (auto-gain, auto-white balance, exposure). LAB thresholds adjusted for white, red, green, blue, orange.
 
