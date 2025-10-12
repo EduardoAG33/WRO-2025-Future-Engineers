@@ -119,6 +119,13 @@ it was bent using a mold to achieve the 90° angle required for the optimal posi
 
 This base is attached to the chassis using four screws in the middle to give it stability, and on top of this locate the PCB where the ultrasonic sensors are connected
 
+And for the nevel more high of the robot we have the support for the camara and the light, 
+
+<div align="center">
+<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/9702fe8a-fe0b-4031-91d4-b61f5b70ece4" />
+
+
+
 <div align="center">
   <img width="500" height="500" alt="Chassis" src="https://github.com/user-attachments/assets/f0f2ec53-35a1-495b-a551-b19bc37c49a3" />
   <p><em>Image 1.1: Chassis photo</em></p>
