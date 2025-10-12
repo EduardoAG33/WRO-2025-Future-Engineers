@@ -218,8 +218,7 @@ Protocol: **LPF2 data exchange**
 
 ---
 
-### 🏆 Acknowledgments
-Special thanks to **WRO México**, **TMR**, and **Autotecno** for the technical support and learning resources that made this project possible.
+
 
 ---
 
