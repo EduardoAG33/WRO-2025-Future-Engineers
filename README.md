@@ -114,11 +114,8 @@ it was bent using a mold to achieve the 90° angle required for the optimal posi
   <img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/53dec651-0a3b-47fa-895d-e4c19290b290" />     <img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/6d716c07-a7b4-4b70-b3c2-c8264ffc2f77" />
 
  ## The final result is mounted on the robot  
-  <div align="center">
+<div align="center">
 <img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/7e76597a-44b9-4264-923c-65cb95d99f65" />
-
-
-
 
 This base is attached to the chassis using four screws in the middle to give it stability, 
 
