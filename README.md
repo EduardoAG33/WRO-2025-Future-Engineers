@@ -116,10 +116,7 @@ it was bent using a mold to achieve the 90° angle required for the optimal posi
  ## The final result is mounted on the robot  
 <div align="center">
 <img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/7e76597a-44b9-4264-923c-65cb95d99f65" />
-
 This base is attached to the chassis using four screws in the middle to give it stability, and on top of this locate the PCB is located where the ultrasonic sensors are connected
-
-
 <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/034fa407-525b-413a-86d8-a455544e789a" />
 
 
