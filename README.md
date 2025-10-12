@@ -117,9 +117,16 @@ it was bent using a mold to achieve the 90° angle required for the optimal posi
 <div align="center">
 <img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/7e76597a-44b9-4264-923c-65cb95d99f65" />
 
-This base is attached to the chassis using four screws in the middle to give it stability, and on top of this locate the PCB where the ultrasonic sensors are connected
+This base is attached to the chassis using four screws in the middle to give it stability, and on top of this locate the PCB is located where the ultrasonic sensors are connected
 
-And for the nevel more high of the robot we have the support for the camara and the light, 
+
+<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/034fa407-525b-413a-86d8-a455544e789a" />
+
+
+
+
+
+And for the nevel more high of the robot we have the support for the camera and the light, 
 
 <div align="center">
 <img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/9702fe8a-fe0b-4031-91d4-b61f5b70ece4" />
