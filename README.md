@@ -140,10 +140,6 @@ And for the upper level of the robot, we have the support for the camera and the
 <div align="center">
 <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/e680e149-5586-4c7b-b0e2-6f53eb4f0bf5" />
 
-this support have a 70 degrees of inclination using a lego 
-<div align="center">
-<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/9702fe8a-fe0b-4031-91d4-b61f5b70ece4" />
-</div>
 The support is positioned at a 70° inclination to ensure the vehicle remains within the maximum allowed height. This angle was carefully chosen to optimize the camera’s field of view, as detailed in the Power and Sense Management section.
 
 <div align="center">
