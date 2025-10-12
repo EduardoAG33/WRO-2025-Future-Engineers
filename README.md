@@ -133,6 +133,7 @@ The measurements for the sensor support can be found in the datasheet.
 </div>
 
 ## DATASHEET:
+https://github.com/EduardoAG33/WRO-2025-Future-Engineers/blob/main/Others/HC-SR04_Datasheet_with_Dimensions%20(1).pdf
 
 
 
