@@ -133,7 +133,8 @@ The measurements for the sensor support can be found in the datasheet.
 </div>
 
 ## DATASHEET:
-[ HC-SR04_Datasheet_with_Dimensions.pdf…]()
+<a href="HC-SR04_Datasheet_with_Dimensions.pdf" target="_blank">HC-SR04 Datasheet with Dimensions</a>
+
 
 And for the upper level of the robot, we have the support for the camera and the light:  
 
