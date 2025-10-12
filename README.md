@@ -92,13 +92,13 @@ For full rules and official specifications:
 | **OpenMV Cam H7 Plus** | Smart camera for navigation and obstacle detection. | <img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/2f1dc12c-a2f9-4e47-b665-d9b37091a8ce" />| [Buy here](https://openmv.io/products/openmv-cam-h7-plus) |
 | **HC-SR04 Ultrasonic Sensor** | Distance measurement sensor | <img width="100" height="1000" alt="image" src="https://github.com/user-attachments/assets/f55c9c1f-b8f7-4d51-9b24-01f51de329b8" />| [Buy here](https://uelectronics.com/producto/sensor-ultrasonico-hc-sr04/) |
 | **Arduino Nano** | ATmega328-based microcontroller for control tasks. | <img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/22e8f59c-909d-4ff2-b637-dc03e15f4de6" /> | [Buy here](https://www.steren.com.mx/placa-de-desarrollo-nano.html) |
-| **Gravity: 10 DOF IMU AHRS BNO055 + BMP280** | Orientation, navigation, and stability sensors. | <img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/34e24ba7-8fd3-42b4-8fca-bf5bb044a141" />| [Buy here](https://www.dfrobot.com/product-2264.html) |
 | **4x4 RGB LED Matrix** |Compact display module consisting of 16 individual LEDs arranged in a 4-row by 4-column grid | <img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/1dfe866c-7431-4e3f-93b5-e756a8c59637" />| [Buy here](https://mvelectronica.com/producto/matriz-de-led-rgb-4x4-ws2812-16bits-a-5v-led-5050) |
 | **LTC1871 DC-DC Step-up Boost Converter** | Increases low input voltage to a stable higher output. | <img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/5ebb04f5-a49e-4a5f-b0ff-865bd1fc2c5e" /> | [Buy here](https://mvelectronica.com/producto/elevador-de-voltaje-ltc1871-dc-dc-step-up-boost-entrada-3-35v-salida-3-5-35v-6a#2) |
 ## Mobility Management
 
 ### Chassis
-We built our vehicle using LEGO pieces, designed with Studio 2.0 software to identify the most suitable parts. Then, we tested different steering methods and adapted them to our chassis, paying close attention to measurements.
+We principal chassis consists of LEGO pieces chosen for their accessibility and for allowing a compact and efficient design. Initially, we designed the prototype using Studio 2.0 software.
+
 
 <div align="center">
   <img width="500" height="500" alt="Chassis" src="https://github.com/user-attachments/assets/f0f2ec53-35a1-495b-a551-b19bc37c49a3" />
