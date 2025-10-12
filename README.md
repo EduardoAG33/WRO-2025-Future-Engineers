@@ -135,13 +135,16 @@ The measurements for the sensor support can be found in the datasheet.
 ## DATASHEET:
 https://github.com/EduardoAG33/WRO-2025-Future-Engineers/blob/main/Others/HC-SR04_Datasheet_with_Dimensions%20(1).pdf
 
+And for the upper level of the robot, we have the support for the camera and the Neo pixel light:  
 
+<div align="center">
+<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/e680e149-5586-4c7b-b0e2-6f53eb4f0bf5" />
 
-And for the upper level of the robot, we have the support for the camera and the light:  
-
+this support have a 70 degrees of inclination using a lego 
 <div align="center">
 <img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/9702fe8a-fe0b-4031-91d4-b61f5b70ece4" />
 </div>
+The support is positioned at a 70° inclination to ensure the vehicle remains within the maximum allowed height. This angle was carefully chosen to optimize the camera’s field of view, as detailed in the Power and Sense Management section.
 
 <div align="center">
   <img width="500" height="500" alt="Chassis" src="https://github.com/user-attachments/assets/f0f2ec53-35a1-495b-a551-b19bc37c49a3" />
