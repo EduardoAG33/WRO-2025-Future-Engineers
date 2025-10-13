@@ -241,8 +241,9 @@ Battery 18650
 | **Cycle Life**          | 300–500 cycles (typical)                       |
 | **Protection Circuit**  | Optional (PCB for overcharge/discharge/cutoff)|
 
-
-
+The 18650 is Li-ion battery is a high-capacity rechargeable cell widely used in electronics and robotics due to its stable voltage output, high energy density, and long cycle life.
+can safely deliver continuous currents of 5–10 A and occasional peak currents up to 20 A,When paired with a protection circuit, it safeguards against overcharging, over-discharging, and short circuits, increasing safety and durability.
+In this case we use the 18650 to aliment the arduino nano for the control of the ultrasonic sensor.
 ### Power Management
 EV3 Brick controls all motors. Powered by 10V 2050 mAh battery.  
 - Movement motors (2): 150–250 mA  
