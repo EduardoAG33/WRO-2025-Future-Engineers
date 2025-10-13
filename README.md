@@ -208,6 +208,8 @@ Wheel connection: The ends of the rack are linked to the wheels through steering
 ### Movement and Traction System
 Two medium motors with differential system transmit energy to wheels. Transmission: 20-tooth → 12-tooth gears → 28-tooth → 20-tooth driving wheels. Position accuracy ±1°, torque 0.08 Nm, speed 240 RPM.
 
+**material that makes up the structure of the traction system:**
+
 <div align="center">
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/5b2d5fdf-bf02-4cb2-97f9-ac3fb9f56719" />
 
