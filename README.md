@@ -298,9 +298,13 @@ It operates at 5V and can be powered through a Mini USB connection, a regulated 
 
 It operates at 9V DC and is designed to provide a balance between speed and torque, making it suitable for medium-load
 We connect these motors directly to the EV3, and control them directly with the programming block for these motors, which in our robot consumes the following:
+
+
 EV3 Brick controls all motors. Powered by 10V 2050 mAh battery.  
 - **Movement motors (2):** 150–250 mA  
 - **Steering motor (1):** 120–250 mA
+
+  
 In terms of power consumption, the motor typically draws around 250–300 mA under normal load, but this can increase up to 1.2 A when operating under heavy load or stall conditions. Its power output reaches approximately 2.5 W, depending on the applied voltage and load.
 
 
