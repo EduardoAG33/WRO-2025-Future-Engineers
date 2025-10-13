@@ -129,6 +129,10 @@ This base is attached to the chassis using four screws in the middle to give it 
 The measurements for the sensor support can be found in the datasheet.
 
 <div align="center">
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/5a8c0801-5dba-4137-ac2b-e9e2eaf370f1" />
+
+
+<div align="center">
 <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/034fa407-525b-413a-86d8-a455544e789a" />
 </div>
 
