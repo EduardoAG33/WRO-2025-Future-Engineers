@@ -186,21 +186,22 @@ Wheel connection: The ends of the rack are linked to the wheels through steering
 
 </div>
 
-  **Sterring system render**
+  **Steering system render**
 
 <div align="center">
   <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/7d3d6e34-4af9-4f2e-b322-6381a5fed5f1" />
 
 </div>
 
-**material that makes up the structure of the chassis:**
+**material that makes up the structure of the steering:**
 <div align="center">
  <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/5f12ed7e-0da7-49d1-aecc-cf8525e78320" />
-
+  
+**Assembly manual**
 </div>
 [Sterring system manual.pdf](https://github.com/user-attachments/files/22892572/Sterring.system.manual.pdf)
 
-**Assembly manual**
+
 
 ---
 
