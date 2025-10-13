@@ -335,16 +335,40 @@ We found the information about the motor here:
 <div align="center">
 <img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/70af811b-02ed-4663-bd44-6418958fd6bd" />
 
+## Specifications
 
-Two OpenMV H7 cameras:  
-- Camera 1 → Wall avoidance  
-- Camera 2 → Color detection, line counting, parking recognition  
+| Feature              | Details                                                                 |
+|----------------------|-------------------------------------------------------------------------|
+| Processor            | ARM® Cortex®-M7, 32-bit, 480 MHz with Double Precision FPU             |
+| RAM                  | 512 KB SRAM                                                              |
+| Flash Memory         | 2 MB Flash                                                               |
+| Image Sensor         | OV5640 (5 MP) or MT9M114 (1/3") with M12 lens mount                     |
+| Resolution           | Up to 2592×1944 (OV5640) or 640×480 (MT9M114)                           |
+| Frame Rate           | Up to 80 FPS (MT9M114), 75 FPS (OV5640)                                 |
+| Image Formats        | Grayscale, RGB565, JPEG, BAYER, YUV422                                  |
+| Connectivity         | Full-speed USB (12 Mbps), microSD card socket (up to 64 GB), SPI, I2C, CAN, UART |
+| GPIO Pins            | 10 I/O pins (3.3V logic, 5V tolerant), supports PWM and interrupts      |
+| Power Supply         | 5V via USB or VIN pin, 3.3V regulated output                             |
+| Onboard LEDs         | RGB LED and two high-power 850nm IR LEDs                                  |
+| Programming Language | MicroPython via OpenMV IDE                                               |
+| Operating Voltage    | 5V DC                                                                    |
+| Dimensions           | 40 mm × 40 mm × 15 mm                                                    |
+| Weight               | Approximately 25 g                                                       |
+
+The OpenMV H7 Pro is a low-power machine vision camera designed for embedded systems. It operates at 5V, drawing a typical current of 250–300 mA during normal operation, and up to 480 mA when all peripherals are active.
+Key considerations for energy management:
+
+**IR LEDs:** High current draw when enabled; use sparingly to extend battery life.
+
+**MicroSD Logging:** Writing images or logs increases power usage slightly.
+
+**Processing Load:** More complex algorithms (e.g., object recognition, color tracking) increase CPU activity and power draw.
+
+**GPIO Outputs:** PWM and other peripherals also consume extra current.
+  
 Powered at 3.3V, max 480 mA, connected via custom PCB to EV3.
 
-<div align="center">
-  <img width="452" height="567" alt="Camera Information" src="https://github.com/user-attachments/assets/e2bb0995-a4e0-47b4-b147-fb7336de7c5f" />
-  <p><em>Image 5.4: Camera Information</em></p>
-</div>
+
 
 ---
 
