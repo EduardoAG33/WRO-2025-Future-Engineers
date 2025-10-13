@@ -251,10 +251,6 @@ A differential is a mechanical component that allows wheels on the same axle to 
 | 4:1            | 0.13            | 0.80             | 28.6             |
 | 5:1            | 0.10            | 1.00             | 35.7             |
 
-**Notes:**  
-- **Wheel Speed** calculated as \(v = \frac{\omega \cdot r}{i}\)  
-- **Wheel Torque** calculated as \(T_{\text{wheel}} = T_{\text{motor}} \cdot i\)  
-- **Traction Force** calculated as \(F = \frac{T_{\text{wheel}}}{r}\)  
 - Assumes **motor speed = 170 rpm**, **torque = 0.2 N·m**, **wheel radius = 0.028 m**.
 
 
