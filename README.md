@@ -146,10 +146,7 @@ And for the upper level of the robot, we have the support for the camera and the
 
 The support is positioned at a 70° inclination to ensure the vehicle remains within the maximum allowed height. This angle was carefully chosen to optimize the camera’s field of view, as detailed in the Power and Sense Management section.
 
-<div align="center">
-  <img width="500" height="500" alt="Chassis" src="https://github.com/user-attachments/assets/f0f2ec53-35a1-495b-a551-b19bc37c49a3" />
-  <p><em>Image 1.1: Chassis photo</em></p>
-</div>
+
 
 **Chassis render**
 <div align="center">
