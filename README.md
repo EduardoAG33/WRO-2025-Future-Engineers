@@ -210,16 +210,38 @@ The Power and Sensor Management system of the vehicle is engineered to optimize 
    
    | Specification       | Details |
 |--------------------|--------|
-| Battery Type        | Rechargeable Lithium-Ion (Li-Ion)  |
-| Nominal Voltage     | 7.4 V (Li-Ion) |
-| Capacity            | 2000 mAh (Li-Ion) |
-| Typical Usage Time  | Approximately 1–2 hours with intensive use of motors and sensors |
-| Charging Time       | 1.5 – 2 hours (Li-Ion) |
-| Weight              | 160 g (Li-Ion) |
-| Connector           | Integrated in EV3 Brick |
-| Note                | Using the official rechargeable Li-Ion battery is recommended for optimal performance and to avoid voltage variation from AA batteries |
+| **Battery Type**       | Rechargeable Lithium-Ion (Li-Ion)  |
+| **Nominal Voltage**     | 7.4 V (Li-Ion) |
+| **Capacity**            | 2000 mAh (Li-Ion) |
+| **Typical Usage Time**  | Approximately 1–2 hours with intensive use of motors and sensors |
+| **Charging Time**       | 1.5 – 2 hours (Li-Ion) |
+| **Weight**              | 160 g (Li-Ion) |
+| **Connector**           | Integrated in EV3 Brick |
+| **Note**                | Using the official rechargeable Li-Ion battery is recommended for optimal performance and to avoid voltage variation from AA batteries |
 
-This battery is the recommended power source for the LEGO EV3. There are two options: the official rechargeable battery or six AA batteries. Using the official battery is preferable, as it provides a stable and consistent voltage, ensuring reliable operation of motors and sensors under varying loads. Additionally, it offers longer runtime, making it ideal for extended use and competitive scenarios.
+This battery is the recommended power source for the LEGO EV3. There are two options: the official rechargeable battery or six AA batteries. Using the official battery is preferable, as it provides a stable and consistent voltage, ensuring reliable operation of motors and sensors under varying loads. Additionally, it offers longer runtime, making it ideal for extended use and competitive.
+
+Battery 18650
+
+<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/343775dc-0e65-4a3e-8732-99fa9c5848e2" />
+
+**Specifications:**
+
+| Specification           | Description                                    |
+|-------------------------|------------------------------------------------|
+| **Type**                | Li-ion Rechargeable                            |
+| **Model**               | 18650                                          |
+| **Nominal Voltage**     | 3.7 V                                          |
+| **Full Charge Voltage** | 4.2 V                                          |
+| **Capacity**            | 2600–3500 mAh (typical)                        |
+| **Discharge Current**   | 5–10 A (continuous), up to 20 A (peak)        |
+| **Charging Current**    | 0.5–1 C                                        |
+| **Dimensions**          | 18 mm diameter × 65 mm length                  |
+| **Weight**              | ~45 g                                          |
+| **Cycle Life**          | 300–500 cycles (typical)                       |
+| **Protection Circuit**  | Optional (PCB for overcharge/discharge/cutoff)|
+
+
 
 ### Power Management
 EV3 Brick controls all motors. Powered by 10V 2050 mAh battery.  
