@@ -213,12 +213,16 @@ Two medium motors with differential system transmit energy to wheels. Transmissi
   <p><em>Image 3.1: Set 2</em></p>
 </div>
 
+**Traction system render**
+
 <div align="center">
-  <img width="300" height="300" alt="Render back part" src="https://github.com/user-attachments/assets/992c28f3-348e-4574-af18-7d5bda827877" />
-  <p><em>Image 3.2: Render back part</em></p>
+ <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/de4066aa-9ef0-4369-a0e5-4047937f75a1" />
+
 </div>
 
-[Differential Manual PDF](https://github.com/user-attachments/files/22326888/Diferencial.manual.pdf)
+**Traction system manual**
+[traction system manual.pdf](https://github.com/user-attachments/files/22892680/traction.system.manual.pdf)
+
 
 ---
 
