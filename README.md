@@ -408,6 +408,29 @@ Total current for 16 LEDs at full brightness: 16 × 60 mA = 960 mA
 
 We use Neopixel LED to support the camera, as they help improve the distinction of colors in obstacles and the parking lot. The Neopixels are controlled using the NeoPixel library in Arduino, which then sends data to the EV3. This setup allows the EV3 to adjust the intensity of the Neopixels dynamically, enhancing the robot’s color detection and visual accuracy.
 
+A 4x4 WS2812B matrix usually has 3 main pins:
+
+VCC (Power)
+
+Supplies 5V DC to the LEDs.
+
+Connect to the 5V pin on Arduino or an external 5V power source.
+
+GND (Ground)
+
+Common ground for power and data.
+
+Connect to Arduino GND and the negative terminal of the power supply.
+
+DIN (Data In)
+
+Receives the digital control signal from the Arduino.
+
+Connect to a digital pin on Arduino (e.g., D6).
+
+DOUT (Data Out) – optional for chaining
+
+Allows connection to the Data In of another matrix for cascading multiple matrices.
 
 
 
