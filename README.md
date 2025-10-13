@@ -407,6 +407,10 @@ Total current for 16 LEDs at full brightness: 16 × 60 mA = 960 mA
 **P = V × I = 5V × 0.96A ≈ 4.8 Watts**
 
 We use Neopixel LED to support the camera, as they help improve the distinction of colors in obstacles and the parking lot. The Neopixels are controlled using the NeoPixel library in Arduino, which then sends data to the EV3. This setup allows the EV3 to adjust the intensity of the Neopixels dynamically, enhancing the robot’s color detection and visual accuracy.
+
+
+
+
 ---
 ## Obstacle managament
 ## Detection and Avoidance Strategies
