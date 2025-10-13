@@ -200,12 +200,14 @@ Distributes torque to wheels, enabling smooth cornering. Input via pinion and cr
 
 ## Power and Sense Management
 The Power and Sensor Management system of the vehicle is engineered to optimize energy distribution and ensure reliable operation of all electronic components. It carefully regulates the power supply to motors and sensors, maintaining stability and efficiency under varying load conditions. This system enables precise control over sensor readings and motor performance, supporting accurate navigation, obstacle detection, and overall vehicle functionality.
+   
    **Battery for EV3:**
    
 <div align="center">
 <img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/baf83fc5-b1e4-444e-b0d3-33d77a03abcb" />
 
    **Specifications:**
+   
    | Specification       | Details |
 |--------------------|--------|
 | Battery Type        | Rechargeable Lithium-Ion (Li-Ion) or 6x AA batteries (optional) |
