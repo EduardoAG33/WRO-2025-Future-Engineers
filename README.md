@@ -274,15 +274,35 @@ In this setup, we use 18650 batteries to power the Arduino Nano for controlling 
 The Arduino Nano is a compact,microcontroller board based on the ATmega328P. Despite its small size, it offers full functionality with 14 digital I/O pins, 8 analog inputs, and a 16 MHz clock speed.
 It operates at 5V and can be powered through a Mini USB connection, a regulated 5V pin, or an external 7–12V input, we used this embedded system for programming the ultrasonic sensor and after pass the information to ev3,We chose this microcontroller because it provides sufficient performance for our project requirements, and its compact size fits perfectly within the available space of our design.
 
-### Power Management
-EV3 Brick controls all motors. Powered by 10V 2050 mAh battery.  
-- Movement motors (2): 150–250 mA  
-- Steering motor (1): 120–250 mA
+**Medium motor EV3**
 
 <div align="center">
-  <img width="406" height="297" alt="EV3 Brick" src="https://github.com/user-attachments/assets/35571866-e5ca-4a87-aad3-f22cd2aee42c" />
-  <p><em>Image 5.2: EV3 Brick</em></p>
-</div>
+<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/c0c91a6f-02e9-4b4f-8271-1a25b965384c" />
+
+**Specifications**
+
+| Specification              | Description |
+|-----------------------------|-------------|
+| **Model**                   | EV3 Medium Motor (45503) |
+| **Type**                    | Servo Motor with integrated rotation sensor |
+| **Operating Voltage**       | 9 V DC |
+| **Nominal Power**           | 2.5 W |
+| **No-load Speed**           | ~260 rpm |
+| **Stall Torque**            | ~8 N·cm (0.08 N·m) |
+| **Stall Current**           | ~0.7 A |
+| **Tacho Sensor Resolution** | 1° (360 counts per rotation) |
+| **Weight**                  | 75 g |
+| **Cable Length**            | 25 cm |
+| **Connector Type**          | EV3 Plug |
+| **Control Features**        | Speed, position, and direction control |
+
+It operates at 9V DC and is designed to provide a balance between speed and torque, making it suitable for medium-load
+We connect these motors directly to the EV3, and control them directly with the programming block for these motors, which in our robot consumes the following:
+EV3 Brick controls all motors. Powered by 10V 2050 mAh battery.  
+- **Movement motors (2):** 150–250 mA  
+- **Steering motor (1):** 120–250 mA
+In terms of power consumption, the motor typically draws around 250–300 mA under normal load, but this can increase up to 1.2 A when operating under heavy load or stall conditions. Its power output reaches approximately 2.5 W, depending on the applied voltage and load.
+
 
 <div align="center">
   <img width="326" height="96" alt="Medium Motor Voltage" src="https://github.com/user-attachments/assets/ea92cc7c-aa1b-4ce5-b05f-c80b4cd0d48a" />
