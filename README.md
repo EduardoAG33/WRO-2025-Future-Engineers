@@ -230,13 +230,86 @@ We decided to use two motors because they offer greater speed, power, and stabil
 
 ---
 
-### Differential
+### About Differential
 Distributes torque to wheels, enabling smooth cornering. Input via pinion and crown gears. Outer wheel rotates faster in turns, inner wheel slower, straight motion equal.
+
+
+A differential is a mechanical component that allows wheels on the same axle to rotate at different speeds while transmitting power from the motor. This is especially important when a vehicle turns, as the outer wheel needs to travel a greater distance than the inner wheel. The differential distributes torque between the wheels, ensuring smooth and efficient movement, reducing tire wear, and improving traction and stability. In our design, the differential receives motion from the transmission and transfers it to the tires, enabling precise control of the vehicle’s movement.
 
 <div align="center">
   <img width="500" height="400" alt="Differential example" src="https://github.com/user-attachments/assets/841f8551-b8cd-43e2-a964-24c97eb4f7ce" />
   <p><em>Image 4.1: Differential example</em></p>
 </div>
+
+# LEGO Differential Calculations
+
+
+
+## 1. Initial Data
+
+- **LEGO medium motor:** speed ≈ 170 rpm (no load)  
+- **Torque:** 0.2 N·m  
+- **Wheel diameter:** 56 mm  
+- **Differential gear ratio:** 1:1 (standard LEGO differential)  
+
+---
+
+## 2. Wheel Linear Speed
+
+The linear speed \(v\) is calculated as:  
+
+\[
+v = \omega \cdot r
+\]
+
+Where:  
+- \(\omega = \text{angular speed in rad/s}\)  
+- \(r = \text{wheel radius}\)
+
+Convert rpm to rad/s:  
+
+\[
+\omega = 170 \, \text{rpm} \cdot \frac{2\pi \, \text{rad}}{1 \, \text{rev}} \cdot \frac{1 \, \text{min}}{60 \, \text{s}} \approx 17.8 \, \text{rad/s}
+\]
+
+Wheel radius:  
+
+\[
+r = \frac{56 \, \text{mm}}{2} = 28 \, \text{mm} = 0.028 \, \text{m}
+\]
+
+\[
+v = 17.8 \cdot 0.028 \approx 0.50 \, \text{m/s}
+\]
+
+**Wheel linear speed:** ~0.5 m/s
+
+---
+
+## 3. Torque Transmitted to the Wheel
+
+For a 1:1 gear ratio (standard LEGO differential):  
+
+\[
+T_{\text{wheel}} = T_{\text{motor}} = 0.2 \, \text{N·m}
+\]
+
+If a gear reduction \(i\) is used, torque multiplies:  
+
+\[
+T_{\text{wheel}} = T_{\text{motor}} \cdot i
+\]
+
+---
+
+## 4. Maximum Traction Force
+
+\[
+F = \frac{T}{r} = \frac{0.2}{0.028} \approx 7.14 \, \text{N}
+\]
+
+---
+
 
 ---
 
