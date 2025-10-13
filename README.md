@@ -210,8 +210,8 @@ The Power and Sensor Management system of the vehicle is engineered to optimize 
    
    | Specification       | Details |
 |--------------------|--------|
-| Battery Type        | Rechargeable Lithium-Ion (Li-Ion) or 6x AA batteries (optional) |
-| Nominal Voltage     | 7.4 V (Li-Ion) / 9 V (6xAA) |
+| Battery Type        | Rechargeable Lithium-Ion (Li-Ion)  |
+| Nominal Voltage     | 7.4 V (Li-Ion) |
 | Capacity            | 2000 mAh (Li-Ion) |
 | Typical Usage Time  | Approximately 1–2 hours with intensive use of motors and sensors |
 | Charging Time       | 1.5 – 2 hours (Li-Ion) |
@@ -219,6 +219,7 @@ The Power and Sensor Management system of the vehicle is engineered to optimize 
 | Connector           | Integrated in EV3 Brick |
 | Note                | Using the official rechargeable Li-Ion battery is recommended for optimal performance and to avoid voltage variation from AA batteries |
 
+This battery is the recommended power source for the LEGO EV3. There are two options: the official rechargeable battery or six AA batteries. Using the official battery is preferable, as it provides a stable and consistent voltage, ensuring reliable operation of motors and sensors under varying loads. Additionally, it offers longer runtime, making it ideal for extended use and competitive scenarios.
 
 ### Power Management
 EV3 Brick controls all motors. Powered by 10V 2050 mAh battery.  
