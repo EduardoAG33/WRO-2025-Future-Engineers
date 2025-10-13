@@ -307,6 +307,20 @@ EV3 Brick controls all motors. Powered by 10V 2050 mAh battery.
   
 In terms of power consumption, the motor typically draws around 250–300 mA under normal load, but this can increase up to 1.2 A when operating under heavy load or stall conditions. Its power output reaches approximately 2.5 W, depending on the applied voltage and load.
 
+**measures and details**
+
+| **Feature** | **Value** |
+|--------------|-----------|
+| **Total length (with axle)** | 7.1 cm |
+| **Body length** | 5.5 cm |
+| **Width** | 3.8 cm |
+| **Height** | 4.7 cm |
+| **Axle diameter (LEGO cross axle)** | 4.8 mm |
+| **Weight** | ≈ 75 g |
+| **Connector type** | EV3 RJ12 (6-pin) |
+| **Rotation sensor resolution** | 1° per step |
+| **Rotation direction** | Bidirectional |
+| **Position feedback** | Integrated rotation sensor |
 
 <div align="center">
   <img width="326" height="96" alt="Medium Motor Voltage" src="https://github.com/user-attachments/assets/ea92cc7c-aa1b-4ce5-b05f-c80b4cd0d48a" />
