@@ -199,9 +199,22 @@ Distributes torque to wheels, enabling smooth cornering. Input via pinion and cr
 ---
 
 ## Power and Sense Management
+The Power and Sensor Management system of the vehicle is engineered to optimize energy distribution and ensure reliable operation of all electronic components. It carefully regulates the power supply to motors and sensors, maintaining stability and efficiency under varying load conditions. This system enables precise control over sensor readings and motor performance, supporting accurate navigation, obstacle detection, and overall vehicle functionality.
+   **Battery for EV3:**
+   <img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/baf83fc5-b1e4-444e-b0d3-33d77a03abcb" />
 
-<img width="825" height="237" alt="Power and Sense Diagram" src="https://github.com/user-attachments/assets/9167d4d9-a9f3-4ca6-bf3f-da7acba2cc4e" />  
-<p><em>Image 5.1: Power and Sense Diagram</em></p>
+   Specifications:
+   | Specification       | Details |
+|--------------------|--------|
+| Battery Type        | Rechargeable Lithium-Ion (Li-Ion) or 6x AA batteries (optional) |
+| Nominal Voltage     | 7.4 V (Li-Ion) / 9 V (6xAA) |
+| Capacity            | 2000 mAh (Li-Ion) |
+| Typical Usage Time  | Approximately 1–2 hours with intensive use of motors and sensors |
+| Charging Time       | 1.5 – 2 hours (Li-Ion) |
+| Weight              | 160 g (Li-Ion) |
+| Connector           | Integrated in EV3 Brick |
+| Note                | Using the official rechargeable Li-Ion battery is recommended for optimal performance and to avoid voltage variation from AA batteries |
+
 
 ### Power Management
 EV3 Brick controls all motors. Powered by 10V 2050 mAh battery.  
