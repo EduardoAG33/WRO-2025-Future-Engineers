@@ -235,7 +235,7 @@ This battery is the recommended power source for the LEGO EV3. There are two opt
 | **Nominal Voltage**     | 3.7 V                                          |
 | **Full Charge Voltage** | 4.2 V                                          |
 | **Capacity**            | 2600–3500 mAh (typical)                        |
-| **Discharge Current**   | 5–10 A (continuous), up to 20 A (peak)        |
+| **Discharge Current**   | 5–10 A (continuous), up to 20 A (peak)         |
 | **Charging Current**    | 0.5–1 C                                        |
 | **Dimensions**          | 18 mm diameter × 65 mm length                  |
 | **Weight**              | ~45 g                                          |
@@ -247,6 +247,9 @@ can safely deliver continuous currents of 5–10 A and occasional peak currents 
 In this setup, we use 18650 batteries to power the Arduino Nano for controlling the ultrasonic sensors. Two 18650 cells are connected to a DC-DC step-up module to increase the voltage, which is then supplied to the Arduino, ensuring stable operation and consistent sensor readings.
 
 **Microcontroller**
+
+<div align="center">
+<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/0d45ec5e-d666-4185-be01-94dc062a9f37" />
 
 
 ### Power Management
