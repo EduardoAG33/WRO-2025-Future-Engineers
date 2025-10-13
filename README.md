@@ -133,25 +133,11 @@ The measurements for the sensor support can be found in the datasheet.
 <div align="center">
 <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/034fa407-525b-413a-86d8-a455544e789a" />
 </div>
-## DATASHEET:
-https://github.com/EduardoAG33/WRO-2025-Future-Engineers/blob/main/Others/HC-SR04_Datasheet_with_Dimensions%20(1).pdf
-
-**Chassis render**
-<div align="center">
-<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/5a8c0801-5dba-4137-ac2b-e9e2eaf370f1" />
-
-**Assembly manual:**
-[chassis assambly instruction.pdf](https://github.com/user-attachments/files/22890187/chassis.assambly.instruction.pdf)
-
-**material that makes up the structure of the chassis:**
-<div align="center">
-<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/6be42468-d342-4a3f-bf52-336521bc3e64" />
-
-
-
 
 ## DATASHEET:
+
 https://github.com/EduardoAG33/WRO-2025-Future-Engineers/blob/main/Others/HC-SR04_Datasheet_with_Dimensions%20(1).pdf
+
 
 And for the upper level of the robot, we have the support for the camera and the Neo pixel light:  
 
@@ -164,6 +150,30 @@ The support is positioned at a 70° inclination to ensure the vehicle remains wi
   <img width="500" height="500" alt="Chassis" src="https://github.com/user-attachments/assets/f0f2ec53-35a1-495b-a551-b19bc37c49a3" />
   <p><em>Image 1.1: Chassis photo</em></p>
 </div>
+
+**Chassis render**
+<div align="center">
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/5a8c0801-5dba-4137-ac2b-e9e2eaf370f1" />
+
+**Assembly manual:**
+[chassis assambly instruction.pdf](https://github.com/user-attachments/files/22890187/chassis.assambly.instruction.pdf)
+
+**material that makes up the structure of the chassis:**
+<div align="center">
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/6be42468-d342-4a3f-bf52-336521bc3e64" />
+
+<div align="center">
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/3d160bbb-81db-4c22-88aa-1f6bce73b8f8" />
+
+<div align="center">
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/d0c6ef1d-8a5d-4c55-8a12-6d94522b6061" />
+
+In the Mexican National Tournament, we only used one differential, and the robot’s dimensions were both wider and taller. For the updated version, we decided to implement two differentials, as this configuration provides significantly better control when moving forward. Additionally, reducing the robot’s overall dimensions helps prevent collisions with obstacles and makes it easier to maneuver around them.
+
+
+
+
+
 
 [Manual Direction PDF](https://github.com/user-attachments/files/22270572/manual.direction.pdf)
 
