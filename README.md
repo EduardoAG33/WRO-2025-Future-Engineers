@@ -165,23 +165,25 @@ The support is positioned at a 70° inclination to ensure the vehicle remains wi
 <div align="center">
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/d0c6ef1d-8a5d-4c55-8a12-6d94522b6061" />
 
-In the Mexican National Tournament, we only used one differential, and the robot’s dimensions were both wider and taller. For the updated version, we decided to implement two differentials, as this configuration provides significantly better control when moving forward. Additionally, reducing the robot’s overall dimensions helps prevent collisions with obstacles and makes it easier to maneuver around them.
+In the Mexican National Tournament, we only used one differential, and the robot dimensions were both wider and taller. For the updated version, we decided to implement two differentials, as this configuration provides significantly better control when moving forward. Additionally, reducing the robot’s overall dimensions helps prevent collisions with obstacles and makes it easier to maneuver around them.
 
 
-
-
-
-
-[Manual Direction PDF](https://github.com/user-attachments/files/22270572/manual.direction.pdf)
-
----
 
 ### Steering System
-Medium motor from EV3 Core Set converts rotation into steering movement (max 45°). Gear train transfers motion, wheels connected via linkage bar.
+The EV3’s middle motor converts rotational motion into steering movement through a gear train mechanism. The wheels are linked by a connecting rod, allowing them to move freely. With the assistance of the front differential, this setup transmits motion through the drivetrain to the rear motors, enabling smooth and controlled movement.
+
+The steering rotation is limited to 45 degrees due to the chassis design; however, this range is sufficient for proper turning and obstacle avoidance. If needed, the rotation angle can be further reduced through the block programming.
+Functionality
+
+Pinion (circular gear): The circular gear located at the center of the structure. When it rotates, it moves the rack from side to side.
+
+Rack (toothed bar): A long bar with teeth that meshes with the pinion. As the pinion turns, the rack slides horizontally.
+
+Wheel connection: The ends of the rack are linked to the wheels through steering arms. When the rack moves, it pushes or pulls these arms, causing the wheels to turn.
 
 <div align="center">
-  <img width="300" height="300" alt="Steering system" src="https://github.com/user-attachments/assets/813a3d07-1033-4852-a699-a6eef89279d8" />
-  <p><em>Image 1.2: Steering system photo</em></p>
+  <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/6fa1eabc-dd34-4a60-99e5-533a9b5d4c33" />
+
 </div>
 
 <div align="center">
