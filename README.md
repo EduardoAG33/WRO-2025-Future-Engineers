@@ -249,7 +249,7 @@ In this setup, we use 18650 batteries to power the Arduino Nano for controlling 
 **Microcontroller**
 
 <div align="center">
-<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/0d45ec5e-d666-4185-be01-94dc062a9f37" />
+<img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/0d45ec5e-d666-4185-be01-94dc062a9f37" />
 
 **Specifications:**
 
