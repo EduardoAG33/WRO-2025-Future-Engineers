@@ -246,7 +246,7 @@ The 18650 is Li-ion battery is a high-capacity rechargeable cell widely used in 
 can safely deliver continuous currents of 5–10 A and occasional peak currents up to 20 A,When paired with a protection circuit, it safeguards against overcharging, over-discharging, and short circuits, increasing safety and durability.
 In this setup, we use 18650 batteries to power the Arduino Nano for controlling the ultrasonic sensors. Two 18650 cells are connected to a DC-DC step-up module to increase the voltage, which is then supplied to the Arduino, ensuring stable operation and consistent sensor readings.
 
-**Microcontroller**
+**Microcontroller(Arduino nano)**
 
 <div align="center">
 <img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/0d45ec5e-d666-4185-be01-94dc062a9f37" />
@@ -273,6 +273,7 @@ In this setup, we use 18650 batteries to power the Arduino Nano for controlling 
 
 The Arduino Nano is a compact,microcontroller board based on the ATmega328P. Despite its small size, it offers full functionality with 14 digital I/O pins, 8 analog inputs, and a 16 MHz clock speed.
 It operates at 5V and can be powered through a Mini USB connection, a regulated 5V pin, or an external 7–12V input, we used this embedded system for programming the ultrasonic sensor and after pass the information to ev3,We chose this microcontroller because it provides sufficient performance for our project requirements, and its compact size fits perfectly within the available space of our design.
+
 
 **Medium motor EV3**
 
@@ -370,8 +371,44 @@ Powered at 3.3V, max 480 mA, connected via custom PCB to EV3.
 
 The camera is mounted at a 70° angle on the highest point of the vehicle. This position was selected to maximize the field of view, allowing the vehicle to better detect obstacles and monitor the track, covering a larger area and facilitating the identification of the designated parking zone. Initially, the camera was positioned at the front of the vehicle, above the steering system. However, it faced visibility issues, as the field of view was limited, which led to errors when avoiding the pillars. 
 
----
+## 4x4 RGB LED Matrix
 
+<div align="center">
+<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/66861e06-8f1b-4c2e-b706-a11882cf633b" />
+
+
+**Specifications**
+
+| Specification               | Details                                                                 |
+|------------------------------|------------------------------------------------------------------------|
+| **Dimensions**               | 30 x 30 mm                                                              |
+| **LED Configuration**        | 4 x 4 (16 RGB LEDs)                                                     |
+| **LED Pitch**                | 3 mm                                                                    |
+| **Operating Voltage**        | 5V DC                                                                    |
+| **Current Consumption**      | 60–80 mA per LED at full brightness                                     |
+| **Data Interface**           | Single-wire digital input (Data In)                                     |
+| **Signal Protocol**          | WS2812B or compatible                                                   |
+| **Power Input**              | VCC and GND                                                             |
+| **LED Type**                 | Integrated RGB LEDs with built-in control                               |
+| **Color Depth**              | 16.7 million colors (24-bit)                                            |
+| **Control Method**           | PWM (Pulse Width Modulation)                                            |
+| **Addressability**           | Individually addressable LEDs                                           |
+| **Cascading Capability**     | Yes, via Data Out → Data In                                             |
+| **Compatible Platforms**     | Arduino, ESP32, Raspberry Pi                                           |
+| **Libraries**                | Adafruit NeoPixel, FastLED                                             |
+| **Applications**             | DIY projects, wearable tech, prototyping                                 |
+
+The 4x4 RGB LED matrix contains 16 individually addressable LEDs. Each LED operates at 5V DC and can draw approximately 60 mA at full brightness when displaying white (all three colors at maximum).
+
+Typical current per LED: 60 mA (max)
+
+Total current for 16 LEDs at full brightness: 16 × 60 mA = 960 mA
+
+**P = V × I = 5V × 0.96A ≈ 4.8 Watts**
+
+We use Neopixel LED to support the camera, as they help improve the distinction of colors in obstacles and the parking lot. The Neopixels are controlled using the NeoPixel library in Arduino, which then sends data to the EV3. This setup allows the EV3 to adjust the intensity of the Neopixels dynamically, enhancing the robot’s color detection and visual accuracy.
+---
+## Obstacle managament
 ## Detection and Avoidance Strategies
 
 **Metric:** X coordinate at blob base  
