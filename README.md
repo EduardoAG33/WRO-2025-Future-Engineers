@@ -241,74 +241,21 @@ A differential is a mechanical component that allows wheels on the same axle to 
   <p><em>Image 4.1: Differential example</em></p>
 </div>
 
-# LEGO Differential Calculations
+# LEGO Differential Calculations – Gear Ratio Table
 
+| Gear Ratio (i) | Wheel Speed (m/s) | Wheel Torque (N·m) | Traction Force (N) |
+|----------------|-----------------|------------------|------------------|
+| 1:1            | 0.50            | 0.20             | 7.14             |
+| 2:1            | 0.25            | 0.40             | 14.3             |
+| 3:1            | 0.17            | 0.60             | 21.4             |
+| 4:1            | 0.13            | 0.80             | 28.6             |
+| 5:1            | 0.10            | 1.00             | 35.7             |
 
-
-## 1. Initial Data
-
-- **LEGO medium motor:** speed ≈ 170 rpm (no load)  
-- **Torque:** 0.2 N·m  
-- **Wheel diameter:** 56 mm  
-- **Differential gear ratio:** 1:1 (standard LEGO differential)  
-
----
-
-## 2. Wheel Linear Speed
-
-The linear speed \(v\) is calculated as:  
-
-\[
-v = \omega \cdot r
-\]
-
-Where:  
-- \(\omega = \text{angular speed in rad/s}\)  
-- \(r = \text{wheel radius}\)
-
-Convert rpm to rad/s:  
-
-\[
-\omega = 170 \, \text{rpm} \cdot \frac{2\pi \, \text{rad}}{1 \, \text{rev}} \cdot \frac{1 \, \text{min}}{60 \, \text{s}} \approx 17.8 \, \text{rad/s}
-\]
-
-Wheel radius:  
-
-\[
-r = \frac{56 \, \text{mm}}{2} = 28 \, \text{mm} = 0.028 \, \text{m}
-\]
-
-\[
-v = 17.8 \cdot 0.028 \approx 0.50 \, \text{m/s}
-\]
-
-**Wheel linear speed:** ~0.5 m/s
-
----
-
-## 3. Torque Transmitted to the Wheel
-
-For a 1:1 gear ratio (standard LEGO differential):  
-
-\[
-T_{\text{wheel}} = T_{\text{motor}} = 0.2 \, \text{N·m}
-\]
-
-If a gear reduction \(i\) is used, torque multiplies:  
-
-\[
-T_{\text{wheel}} = T_{\text{motor}} \cdot i
-\]
-
----
-
-## 4. Maximum Traction Force
-
-\[
-F = \frac{T}{r} = \frac{0.2}{0.028} \approx 7.14 \, \text{N}
-\]
-
----
+**Notes:**  
+- **Wheel Speed** calculated as \(v = \frac{\omega \cdot r}{i}\)  
+- **Wheel Torque** calculated as \(T_{\text{wheel}} = T_{\text{motor}} \cdot i\)  
+- **Traction Force** calculated as \(F = \frac{T_{\text{wheel}}}{r}\)  
+- Assumes **motor speed = 170 rpm**, **torque = 0.2 N·m**, **wheel radius = 0.028 m**.
 
 
 ---
