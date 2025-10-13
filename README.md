@@ -204,7 +204,7 @@ The Power and Sensor Management system of the vehicle is engineered to optimize 
    **Battery for EV3:**
    
 <div align="center">
-<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/baf83fc5-b1e4-444e-b0d3-33d77a03abcb" />
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/baf83fc5-b1e4-444e-b0d3-33d77a03abcb" />
 
    **Specifications:**
    
@@ -223,7 +223,7 @@ This battery is the recommended power source for the LEGO EV3. There are two opt
 
 Battery 18650
 
-<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/343775dc-0e65-4a3e-8732-99fa9c5848e2" />
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/343775dc-0e65-4a3e-8732-99fa9c5848e2" />
 
 **Specifications:**
 
