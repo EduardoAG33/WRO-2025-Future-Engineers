@@ -368,7 +368,7 @@ Key considerations for energy management:
   
 Powered at 3.3V, max 480 mA, connected via custom PCB to EV3.
 
-
+The camera is mounted at a 70° angle on the highest point of the vehicle. This position was selected to maximize the field of view, allowing the vehicle to better detect obstacles and monitor the track, covering a larger area and facilitating the identification of the designated parking zone. Initially, the camera was positioned at the front of the vehicle, above the steering system. However, it faced visibility issues, as the field of view was limited, which led to errors when avoiding the pillars. 
 
 ---
 
