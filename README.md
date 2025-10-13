@@ -207,6 +207,8 @@ Wheel connection: The ends of the rack are linked to the wheels through steering
 
 ### Movement and Traction System
 Two medium motors with differential system transmit energy to wheels. Transmission: 20-tooth → 12-tooth gears → 28-tooth → 20-tooth driving wheels. Position accuracy ±1°, torque 0.08 Nm, speed 240 RPM.
+According to the competition rules, the engines cannot be mounted directly on the wheels. Therefore, we chose to implement a transmission system connected to the differential, allowing the engine’s motion to be transferred to the tires, causing them to rotate.
+We decided to use two motors because they offer greater speed, power, and stability to the vehicle’s base compared to using only one. This configuration allows for a more balanced distribution of torque, improving traction and control during movement. After testing different options, we chose the medium LEGO motor because it provides an optimal balance between size, weight, and energy efficiency, making it ideal for our chassis design. Additionally, its compact structure facilitates integration into the transmission system while maintaining low power consumption and reliable performance.
 
 **material that makes up the structure of the traction system:**
 
