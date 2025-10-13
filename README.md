@@ -128,13 +128,27 @@ This base is attached to the chassis using four screws in the middle to give it 
 
 The measurements for the sensor support can be found in the datasheet.
 
-<div align="center">
-<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/5a8c0801-5dba-4137-ac2b-e9e2eaf370f1" />
 
 
 <div align="center">
 <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/034fa407-525b-413a-86d8-a455544e789a" />
 </div>
+## DATASHEET:
+https://github.com/EduardoAG33/WRO-2025-Future-Engineers/blob/main/Others/HC-SR04_Datasheet_with_Dimensions%20(1).pdf
+
+**Chassis render**
+<div align="center">
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/5a8c0801-5dba-4137-ac2b-e9e2eaf370f1" />
+
+**Assembly manual:**
+[chassis assambly instruction.pdf](https://github.com/user-attachments/files/22890187/chassis.assambly.instruction.pdf)
+
+**material that makes up the structure of the chassis:**
+<div align="center">
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/6be42468-d342-4a3f-bf52-336521bc3e64" />
+
+
+
 
 ## DATASHEET:
 https://github.com/EduardoAG33/WRO-2025-Future-Engineers/blob/main/Others/HC-SR04_Datasheet_with_Dimensions%20(1).pdf
