@@ -251,6 +251,28 @@ In this setup, we use 18650 batteries to power the Arduino Nano for controlling 
 <div align="center">
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/0d45ec5e-d666-4185-be01-94dc062a9f37" />
 
+**Specifications:**
+
+| Specification            | Description |
+|---------------------------|-------------|
+| **Microcontroller**       | ATmega328P |
+| **Operating Voltage**     | 5 V |
+| **Input Voltage (recommended)** | 7–12 V |
+| **Input Voltage (limit)** | 6–20 V |
+| **Digital I/O Pins**      | 14 (6 PWM outputs) |
+| **Analog Input Pins**     | 8 |
+| **DC Current per I/O Pin** | 40 mA |
+| **Flash Memory**          | 32 KB (2 KB used by bootloader) |
+| **SRAM**                  | 2 KB |
+| **EEPROM**                | 1 KB |
+| **Clock Speed**           | 16 MHz |
+| **USB Connection**        | Mini USB |
+| **Dimensions**            | 45 mm x 18 mm |
+| **Weight**                | ~7 g |
+
+
+The Arduino Nano is a compact,microcontroller board based on the ATmega328P. Despite its small size, it offers full functionality with 14 digital I/O pins, 8 analog inputs, and a 16 MHz clock speed.
+It operates at 5V and can be powered through a Mini USB connection, a regulated 5V pin, or an external 7–12V input, we used this embedded system for programming the ultrasonic sensor and after pass the information to ev3,We chose this microcontroller because it provides sufficient performance for our project requirements, and its compact size fits perfectly within the available space of our design.
 
 ### Power Management
 EV3 Brick controls all motors. Powered by 10V 2050 mAh battery.  
