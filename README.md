@@ -327,9 +327,15 @@ In terms of power consumption, the motor typically draws around 250–300 mA und
   <p><em>Image 5.3: Medium Motor Voltage</em></p>
 </div>
 
+We found the information about the motor here:
 [Hardware Developer Kit PDF](https://github.com/user-attachments/files/22328277/hardware_developer_kit.pdf)
 
-### Sense Management
+## OpenMv H7 plus
+
+<div align="center">
+<img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/70af811b-02ed-4663-bd44-6418958fd6bd" />
+
+
 Two OpenMV H7 cameras:  
 - Camera 1 → Wall avoidance  
 - Camera 2 → Color detection, line counting, parking recognition  
