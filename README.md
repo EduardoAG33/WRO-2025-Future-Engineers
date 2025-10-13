@@ -243,7 +243,8 @@ Battery 18650
 
 The 18650 is Li-ion battery is a high-capacity rechargeable cell widely used in electronics and robotics due to its stable voltage output, high energy density, and long cycle life.
 can safely deliver continuous currents of 5–10 A and occasional peak currents up to 20 A,When paired with a protection circuit, it safeguards against overcharging, over-discharging, and short circuits, increasing safety and durability.
-In this case we use the 18650 to aliment the arduino nano for the control of the ultrasonic sensor.
+In this setup, we use 18650 batteries to power the Arduino Nano for controlling the ultrasonic sensors. Two 18650 cells are connected to a DC-DC step-up module to increase the voltage, which is then supplied to the Arduino, ensuring stable operation and consistent sensor readings.
+
 ### Power Management
 EV3 Brick controls all motors. Powered by 10V 2050 mAh battery.  
 - Movement motors (2): 150–250 mA  
