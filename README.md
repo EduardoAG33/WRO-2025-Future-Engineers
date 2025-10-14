@@ -174,6 +174,12 @@ The support is positioned at a 70° inclination to ensure the vehicle remains wi
 <div align="center">
 <img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/0357aaa9-5b2b-4398-9a27-d1c3b4e0fc45" />
 
+**draw measurements**
+
+<div align="center">
+<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/868f8ae4-8a06-42bf-8d9a-c28b34b1a74c" />
+
+
 This custom piece is designed to fit perfectly with LEGO components, allowing it to be mounted on the chassis and securely hold the sensor according to the dimensions specified in its datasheet.
 
 The custom piece and sensor are precisely positioned to ensure optimal alignment and secure integration with the LEGO chassis, based on the sensor’s datasheet dimensions.
