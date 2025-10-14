@@ -112,7 +112,7 @@ For full rules and official specifications:
 | **Mini 560 Step-Down Regulator** | Converts a higher voltage power source to a lower voltage efficiently. | <img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/51c8abdf-98bc-41fd-a258-7c256c0dce49" /> | [Buy here](https://uelectronics.com/producto/mini-560-regulador-step-down/?srsltid=AfmBOooF0lIfgnTp_5_7mmjziZz1XquqOzfXZdxR7m-WYIGU82qSsVjV) |
 | **VL53L0X Distance Sensor** | Distance measuring sensor based on Time-of-Flight (ToF) technology using a 940 nm infrared laser to determine the distance between the sensor and an object. | <img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/ad125e38-6a64-4817-a4ab-27632beffc03" /> | [Buy here](https://uelectronics.com/producto/vl53l0x-medidor-de-distancia-laser-i2c-940nm-tof/?srsltid=AfmBOoqeZNpqnOyOWnpBYegltXU-FcYC982yZjnCoTud8-vZ8um6ffo0) |
 | **DFRobot Gravity BNO055** | Intelligent 9-axis Absolute Orientation Sensor that integrates a triaxial accelerometer, gyroscope, geomagnetic sensor, and a 32-bit microcontroller in a single package. | <img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/928267d5-ceeb-4d6f-aa20-6b1da1306c2b" /> | [Buy here](https://es.aliexpress.com/i/32950220044.html?gatewayAdapt=glo2esp) |
-
+| **Digital Voltmeter** | A digital voltmeter is used to measure the electrical potential difference between two points in a circuit. It provides precise numerical readings, making it ideal for monitoring battery voltage and ensuring a stable power supply in robotic systems. | <img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/414b7cc2-f94e-4dab-97d9-6bc6ab0df812" /> | [Buy here](https://www.amazon.com.mx/Volt%C3%ADmetro-pulgadas-volt%C3%ADmetro-protecci%C3%B3n-amarillo/dp/B07P1RV5B1/ref=asc_df_B07P1RV5B1?mcid=6387c2ef254231499e8362066332bfa1&tag=gledskshopmx-20&linkCode=df0&hvadid=709873384261&hvpos=&hvnetw=g&hvrand=1934067081071435740&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1010132&hvtargid=pla-1676003973055&psc=1&language=es_MX&gad_source=1)
 
 
 
@@ -157,6 +157,18 @@ The measurements for the sensor support can be found in the datasheet.
 ## DATASHEET:
 
 https://github.com/EduardoAG33/WRO-2025-Future-Engineers/blob/main/Others/HC-SR04_Datasheet_with_Dimensions%20(1).pdf
+
+**base 3**
+
+On the PCB board, we mounted an additional acrylic base to secure the camera, and to place a voltmeter and a switch for the 18650 batteries. The gyroscope sensor is located in the central part of the assembly for optimal orientation measurement.
+
+<div align="center">
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/331af2ce-0cce-4646-9e9a-bf1a7cc7884d" />
+
+**view in the vehicle**
+
+<div align="center">
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/f7fd1152-2a27-4d11-a5e7-b53cf4603675" />
 
 
 
