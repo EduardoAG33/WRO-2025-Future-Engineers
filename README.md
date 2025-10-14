@@ -122,6 +122,7 @@ For full rules and official specifications:
 The main chassis consists of LEGO pieces selected for their accessibility and for enabling a compact and efficient design. Initially, the prototype was designed using Studio 2.0 software to ensure proper part selection and structural balance.  
 For the second level, an acrylic base (acrylate polymer) was used to support the ultrasonic sensors. The shape of this base was customized as part of the design by applying heat to specific areas to mold it into the desired form.  
 This level integrates five ultrasonic sensors, strategically distributed to enhance environmental detection and obstacle avoidance.
+This design was made in OnShape:
 
 <div align="center">
 <img width="800" height="800" alt="Ultrasonic and PCB Base" src="https://github.com/user-attachments/assets/48febdb7-b3fb-46fc-b429-0648d3b4971d" />
