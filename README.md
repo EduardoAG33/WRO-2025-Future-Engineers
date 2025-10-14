@@ -335,7 +335,7 @@ In this setup, we use 18650 batteries to power the Arduino Nano for controlling 
 
 
 The Arduino Nano is a compact,microcontroller board based on the ATmega328P. Despite its small size, it offers full functionality with 14 digital I/O pins, 8 analog inputs, and a 16 MHz clock speed.
-It operates at 5V and can be powered through a Mini USB connection, a regulated 5V pin, or an external 7–12V input, we used this embedded system for programming the ultrasonic sensor and after pass the information to ev3,We chose this microcontroller because it provides sufficient performance for our project requirements, and its compact size fits perfectly within the available space of our design.
+It operates at 5V and can be powered through a Mini USB connection, a regulated 5V pin, or an external 7–12V input,
 
 
 **Medium motor EV3**
@@ -495,9 +495,132 @@ DOUT (Data Out) – optional for chaining
 
 Allows connection to the Data In of another matrix for cascading multiple matrices.
 
+## Mini 560 Regulador Step down 
 
+<div align="center">
+<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/7566dcf4-fe6a-4349-af80-0a458462fb7a" />
+
+**Specifications**
+
+| Specification | Description |
+|----------------|-------------|
+| **Model** | Mini 560 DC-DC Step-Down Converter |
+| **Input Voltage (Vin)** | 4.5V – 28V DC |
+| **Output Voltage (Vout)** | Adjustable from 0.8V – 20V DC |
+| **Default Output (pre-set)** | 5V (depending on module version) |
+| **Output Current (Iout)** | Up to 3A (recommended continuous current: 2A for stability) |
+| **Efficiency** | Up to 95% (depending on voltage and load) |
+| **Switching Frequency** | 1.5 MHz |
+| **Voltage Ripple** | < 30 mV (typical) |
+| **Load Regulation** | ±0.5% |
+| **Conversion Type** | Step-Down (Buck) Converter |
+| **Control IC** | MP2307 or similar synchronous rectifier chip |
+| **Operating Temperature** | -40°C to +85°C |
+| **Dimensions** | 22 mm x 17 mm x 4 mm |
+| **Protection Features** | Short-circuit, over-temperature, and over-current protection |
+| **Typical Applications** | Power supply for microcontrollers, sensors, cameras, LED strips, and communication modules |
+
+The Mini 560 Step-Down Regulator is used to efficiently convert higher input voltages to lower, stable output voltages suitable for powering microcontrollers, sensors, and other electronic modules in the robot. Its compact design and high efficiency make it ideal for embedded and portable applications.
+
+We use this module to regulate the voltage supplied to the two Arduino PCBs, stepping it down from 7V to 5V to ensure stable operation and optimal performance.
+
+## VL53L0X distance sensor
+
+<div align="center">
+<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/ae66a7c1-ba64-46c7-90c4-b97431c4cd51" />
+
+**Specifications**
+
+| Specification | Description |
+|----------------|-------------|
+| **Model** | VL53L0X Time-of-Flight (ToF) Distance Sensor |
+| **Operating Principle** | Time-of-Flight (ToF) – measures distance using a 940 nm infrared laser |
+| **Measurement Range** | 30 mm – 2000 mm (up to 2 meters) |
+| **Accuracy** | ±3% (typical, depending on distance and surface reflectivity) |
+| **Resolution** | 1 mm |
+| **Operating Voltage (Vcc)** | 2.6V – 5.5V DC |
+| **Communication Interface** | I²C (up to 400 kHz) |
+| **Field of View (FoV)** | ~25° |
+| **Laser Wavelength** | 940 nm (invisible infrared light) |
+| **Current Consumption** | 10 mA (typical during operation) |
+| **Measurement Timing Budget** | Configurable (20 ms to 200 ms per measurement) |
+| **Output Data** | Distance in millimeters |
+| **Operating Temperature** | -20°C to +70°C |
+| **Dimensions** | Approx. 25 mm x 13 mm x 2 mm |
+
+| Pin | Name | Description |
+|------|------|-------------|
+| **VIN** | Power Input | Connect to 3.3V–5V DC power source. Powers the sensor. |
+| **GND** | Ground | Common ground connection with the microcontroller. |
+| **SDA** | I²C Data | Data line for I²C communication (connects to Arduino SDA pin). |
+| **SCL** | I²C Clock | Clock line for I²C communication (connects to Arduino SCL pin). |
+| **XSHUT** | Shutdown | Active-low pin used to enable or disable the sensor (optional, can be left unconnected if not used). |
+| **GPIO1** | Interrupt | Optional interrupt output pin (not required for basic operation). |
 
 ---
+
+### Usage in the Robot
+
+The **VL53L0X sensor** is used in our robot to measure the distance to nearby obstacles with high precision.  
+It helps improve navigation and obstacle avoidance by providing accurate range data that complements the ultrasonic sensors.  
+Because it uses **laser-based Time-of-Flight technology**, it offers more stable readings than ultrasonic sensors, especially on surfaces with irregular shapes or varying textures.
+
+**In our setup**, the sensor is connected to the Arduino through the I²C interface (SDA and SCL pins), allowing real-time distance measurement that assists the robot’s control system in path planning and obstacle detection.
+
+We placed this sensor at the back of the robot because it provides more available space compared to the ultrasonic sensor. Its main purpose is to assist during parking and exiting maneuvers by accurately measuring the distance between the robot and the parking walls.
+
+
+## DF Robot Gravity BNO055
+
+<div align="center">
+<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/f03d9b6b-f96a-4cee-b5f8-e8e562f1766e" />
+
+| Specification | Description |
+|----------------|-------------|
+| **Model** | DFRobot Gravity BNO055 |
+| **Sensor Type** | 9-Axis Absolute Orientation Sensor |
+| **Integrated Sensors** | 3-axis accelerometer, 3-axis gyroscope, 3-axis magnetometer |
+| **Operating Voltage (Vcc)** | 3.3V – 5V DC |
+| **Communication Interface** | I²C (default) or UART |
+| **I²C Address** | 0x28 (default) / 0x29 (configurable) |
+| **Measurement Range (Accelerometer)** | ±2g / ±4g / ±8g / ±16g |
+| **Measurement Range (Gyroscope)** | ±125°/s / ±250°/s / ±500°/s / ±1000°/s / ±2000°/s |
+| **Magnetometer Range** | ±1300 µT (X, Y), ±2500 µT (Z) |
+| **Absolute Orientation Output** | Quaternion, Euler angles, linear acceleration, gravity vector |
+| **Output Data Format** | 16-bit data through I²C or UART |
+| **Operating Temperature** | -40°C to +85°C |
+| **Power Consumption** | ~12 mA (typical) |
+| **Dimensions** | 30 mm × 22 mm × 7 mm |
+| **Mounting Type** | Gravity compatible (3-pin interface) |
+| **Applications** | Robotics, motion tracking, navigation, stabilization, and orientation detection |
+
+---
+
+### Description
+
+The **DFRobot Gravity BNO055** is an intelligent 9-axis absolute orientation sensor that combines an accelerometer, gyroscope, and magnetometer with an onboard 32-bit microcontroller running Bosch sensor fusion algorithms.  
+This integration allows the module to directly output orientation data (Euler angles or quaternions) without requiring complex calculations from the main microcontroller.
+
+In our robot, this sensor is used to determine the **precise orientation and tilt** of the vehicle, improving stability and movement control during navigation tasks.
+
+---
+
+### Pinout and Function
+
+| Pin | Name | Description |
+|------|------|-------------|
+| **VCC** | Power Input | Connect to 3.3V–5V DC power supply |
+| **GND** | Ground | Common ground with the microcontroller |
+| **SDA** | I²C Data | Data line for I²C communication |
+| **SCL** | I²C Clock | Clock line for I²C communication |
+| **RX / TX** | UART Communication | Optional serial communication interface |
+| **RST** | Reset | Used to reset the sensor (optional) |
+
+We use this sensor to count laps on the track, processing the data with the Arduino to send the information to the Ev3 and then with a programming block we decide the count of the laps based on its initial position where it will also end in the same place
+
+
+
+ ---
 ## Obstacle managament
 ## Detection and Avoidance Strategies
 
