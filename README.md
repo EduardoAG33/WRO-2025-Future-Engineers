@@ -152,7 +152,7 @@ The elaboration process:
 Using a heat gun, each side of the acrylic base designated for the sensors was carefully heated. Once the material reached the appropriate temperature, it was bent using a mold to achieve the 90° angle required for the optimal positioning and field of view of the sensors.
 
 <div align="center">
-  <img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/53dec651-0a3b-47fa-895d-e4c19290b290" />     
+  <img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/53dec651-0a3b-47fa-895d-e4c19290b290" />     
   <img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/6d716c07-a7b4-4b70-b3c2-c8264ffc2f77" />
 </div>
 
