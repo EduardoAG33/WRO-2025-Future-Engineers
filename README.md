@@ -12,6 +12,15 @@ Official repository of Team Los Grises Superiores for the Future Engineers – W
 
 ---
 
+## Eduardo Gonzalez
+<div align="center">
+<img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/20ccfb81-0bc1-4147-aa43-fefe649a55c0" />
+ </div>
+ **Role:** Coach and founder 
+
+ An engineer and professor founded the **Los Grises Superiores** in 2014, since then with outstanding national and international participations
+
+
 ### Eric Daniel Guerrero Uresti
 <div align="center">
   <img src="https://github.com/user-attachments/assets/9e1509ca-ad50-48b9-ab44-2787fcce8e0e" alt="Eric Guerrero photo" width="200" height="200">
