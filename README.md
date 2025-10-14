@@ -676,8 +676,6 @@ Fixed camera parameters (auto-gain, auto-white balance, exposure). LAB threshold
 
 ## References
 - [WRO 2025 Future Engineers – General Rules PDF](https://wro-association.org/wp-content/uploads/WRO-2025-Future-Engineers-Self-Driving-Cars-General-Rules.pdf)
-- [Manual Direction PDF](https://github.com/user-attachments/files/22270572/manual.direction.pdf)
-- [Differential Manual PDF](https://github.com/user-attachments/files/22326888/Diferencial.manual.pdf)
 - [Hardware Developer Kit PDF](https://github.com/user-attachments/files/22328277/hardware_developer_kit.pdf)
 
 ---
