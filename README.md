@@ -23,6 +23,7 @@ Official repository of Team Los Grises Superiores for the Future Engineers – W
 
 
 ### Eric Daniel Guerrero Uresti
+**Age:** 22
 <div align="center">
   <img src="https://github.com/user-attachments/assets/9e1509ca-ad50-48b9-ab44-2787fcce8e0e" alt="Eric Guerrero photo" width="200" height="200">
 </div>
@@ -34,6 +35,7 @@ I started participating in robotics tournaments from 2016 to 2019, achieving **t
 ---
 
 ### Paulina Ibarra Martínez
+**Age:** 20
 <div align="center">
   <img src="https://github.com/user-attachments/assets/86413c8a-610a-4270-a92d-cb3ed135d41b" alt="Paulina Martinez photo" width="200" height="200">
 </div>
