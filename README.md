@@ -181,7 +181,7 @@ The support is positioned at a 70° inclination to ensure the vehicle remains wi
 
 ## Base for the VL53L0X
 
-**Solidworks software design**
+**Solidworks software design**(metric system in mm)
 
 <div align="center">
 <img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/0357aaa9-5b2b-4398-9a27-d1c3b4e0fc45" />
