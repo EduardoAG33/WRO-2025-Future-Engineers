@@ -89,13 +89,18 @@ For full rules and official specifications:
 ## Components and Hardware
 
 | Component | Description | Image | Purchase Link |
-|-----------|------------|-------|---------------|
+|-----------|--------------|--------|----------------|
 | **45544 LEGO MINDSTORMS Education EV3 Core Set** | Forms the foundational structure and chassis. | <img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/a725c977-b28b-4b5d-b95c-506c84cd6706" /> | [Buy here](https://bricks-store.com/esp/item/585/66/45544-set-base-lego-mindstorms-education-ev3) |
-| **OpenMV Cam H7 Plus** | Smart camera for navigation and obstacle detection. | <img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/2f1dc12c-a2f9-4e47-b665-d9b37091a8ce" />| [Buy here](https://openmv.io/products/openmv-cam-h7-plus) |
-| **HC-SR04 Ultrasonic Sensor** | Distance measurement sensor | <img width="100" height="1000" alt="image" src="https://github.com/user-attachments/assets/f55c9c1f-b8f7-4d51-9b24-01f51de329b8" />| [Buy here](https://uelectronics.com/producto/sensor-ultrasonico-hc-sr04/) |
+| **OpenMV Cam H7 Plus** | Smart camera for navigation and obstacle detection. | <img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/2f1dc12c-a2f9-4e47-b665-d9b37091a8ce" /> | [Buy here](https://openmv.io/products/openmv-cam-h7-plus) |
+| **HC-SR04 Ultrasonic Sensor** | Distance measurement sensor. | <img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/f55c9c1f-b8f7-4d51-9b24-01f51de329b8" /> | [Buy here](https://uelectronics.com/producto/sensor-ultrasonico-hc-sr04/) |
 | **Arduino Nano** | ATmega328-based microcontroller for control tasks. | <img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/22e8f59c-909d-4ff2-b637-dc03e15f4de6" /> | [Buy here](https://www.steren.com.mx/placa-de-desarrollo-nano.html) |
-| **4x4 RGB LED Matrix** |Compact display module consisting of 16 individual LEDs arranged in a 4-row by 4-column grid | <img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/1dfe866c-7431-4e3f-93b5-e756a8c59637" />| [Buy here](https://mvelectronica.com/producto/matriz-de-led-rgb-4x4-ws2812-16bits-a-5v-led-5050) |
-| **LTC1871 DC-DC Step-up Boost Converter** | Increases low input voltage to a stable higher output. | <img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/5ebb04f5-a49e-4a5f-b0ff-865bd1fc2c5e" /> | [Buy here](https://mvelectronica.com/producto/elevador-de-voltaje-ltc1871-dc-dc-step-up-boost-entrada-3-35v-salida-3-5-35v-6a#2) |
+| **4x4 RGB LED Matrix** | Compact display module consisting of 16 individual LEDs arranged in a 4-row by 4-column grid. | <img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/1dfe866c-7431-4e3f-93b5-e756a8c59637" /> | [Buy here](https://mvelectronica.com/producto/matriz-de-led-rgb-4x4-ws2812-16bits-a-5v-led-5050) |
+| **Mini 560 Step-Down Regulator** | Converts a higher voltage power source to a lower voltage efficiently. | <img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/51c8abdf-98bc-41fd-a258-7c256c0dce49" /> | [Buy here](https://uelectronics.com/producto/mini-560-regulador-step-down/?srsltid=AfmBOooF0lIfgnTp_5_7mmjziZz1XquqOzfXZdxR7m-WYIGU82qSsVjV) |
+| **VL53L0X Distance Sensor** | Distance measuring sensor based on Time-of-Flight (ToF) technology using a 940 nm infrared laser to determine the distance between the sensor and an object. | <img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/ad125e38-6a64-4817-a4ab-27632beffc03" /> | [Buy here](https://uelectronics.com/producto/vl53l0x-medidor-de-distancia-laser-i2c-940nm-tof/?srsltid=AfmBOoqeZNpqnOyOWnpBYegltXU-FcYC982yZjnCoTud8-vZ8um6ffo0) |
+| **DFRobot Gravity BNO055** | Intelligent 9-axis Absolute Orientation Sensor that integrates a triaxial accelerometer, gyroscope, geomagnetic sensor, and a 32-bit microcontroller in a single package. | <img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/928267d5-ceeb-4d6f-aa20-6b1da1306c2b" /> | [Buy here](https://es.aliexpress.com/i/32950220044.html?gatewayAdapt=glo2esp) |
+
+
+
 
 ---
 
