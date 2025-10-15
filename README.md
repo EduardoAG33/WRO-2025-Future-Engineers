@@ -715,7 +715,7 @@ Fixed camera parameters (auto-gain, auto-white balance, exposure). LAB threshold
 
 **LEGO SET**
 | BLItemNo | PartName | Qty | Price per Piece (USD) | Total Price (USD) |
-|----------|----------|-----|-----------------------|-----------------|
+|----------|-----------|-----|-----------------------|-------------------|
 | 2780 | Technic, Pin with Short Friction Ridges | 17 | 0.08 | 1.36 |
 | 2905 | Technic, Liftarm, Modified Triangle Thin 3 x 5 with Full Supports | 2 | 0.05 | 0.10 |
 | 32034 | Technic, Axle and Pin Connector Angled #2 - 180 degrees | 1 | 0.50 | 0.50 |
@@ -751,6 +751,9 @@ Fixed camera parameters (auto-gain, auto-white balance, exposure). LAB threshold
 | 94925 | Technic, Gear 16 Tooth - Axle Hole with Closed Sides | 4 | 0.70 | 2.80 |
 | 99455 | Electric, Motor EV3, Medium | 3 | 35.00 | 105.00 |
 | 99773 | Technic, Liftarm, Modified Triangle Thin 3 x 5 with Short Supports | 6 | 1.20 | 7.20 |
+| **95646** | **LEGO MINDSTORMS EV3 Intelligent Brick** | 1 | 245.00 | 245.00 |
+| **—** | **TOTAL GENERAL** | **—** | **—** | **488.92 USD** |
+
 
 **Total:** $207.91 USD
 
