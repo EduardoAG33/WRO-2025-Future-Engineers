@@ -254,7 +254,7 @@ The steering rotation is limited to 45 degrees due to the chassis design; howeve
 - **Wheel connection:** The ends of the rack are linked to the wheels through steering arms. When the rack moves, it pushes or pulls these arms, causing the wheels to turn.
 
 <div align="center">
-  <img width="500" height="300" alt="steering system" src="https://github.com/user-attachments/assets/6fa1eabc-dd34-4a60-99e5-533a9b5d4c33" />
+  <img width="700" height="700" alt="steering system" src="https://github.com/user-attachments/assets/6fa1eabc-dd34-4a60-99e5-533a9b5d4c33" />
   <p><em>Steering system render</em></p>
 </div>
 
