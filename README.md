@@ -751,7 +751,7 @@ Fixed camera parameters (auto-gain, auto-white balance, exposure). LAB threshold
 | 99455 | Electric, Motor EV3, Medium | 3 | 0.00 | 0.00 |
 | 99773 | Technic, Liftarm, Modified Triangle Thin 3 x 5 with Short Supports | 6 | 1.20 | 7.20 |
 
-**Total aproximado:** 91.18 USD
+**Total aproximate:** 91.18 USD
 
 
 
