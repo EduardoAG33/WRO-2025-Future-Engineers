@@ -110,7 +110,7 @@ For full rules and official specifications:
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/7454f980-7fc9-454d-bd65-ce0c79626236" />
 
 
-| Top | Bottom |
+| Bottom | Top |
 |:--:|:--:|
 | <img width="500" height="300" alt="Top" src="https://github.com/user-attachments/assets/6325fc24-d175-4126-9392-f010eebdde21" /> | <img width="500" height="300" alt="Bottom" src="https://github.com/user-attachments/assets/26f38601-a131-497d-996f-47b13516da12" /> |
 
