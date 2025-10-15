@@ -655,6 +655,10 @@ In our robot, this sensor is used to determine the **precise orientation and til
 
 We use this sensor to count laps on the track, processing the data with the Arduino to send the information to the Ev3 and then with a programming block we decide the count of the laps based on its initial position where it will also end in the same place
 
+
+**Problems and solutions**
+
+
 ---
 
 ## Obstacle management
