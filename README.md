@@ -755,7 +755,6 @@ Fixed camera parameters (auto-gain, auto-white balance, exposure). LAB threshold
 | **—** | **TOTAL GENERAL** | **—** | **—** | **488.92 USD** |
 
 
-**Total:** $207.91 USD
 
 
 
