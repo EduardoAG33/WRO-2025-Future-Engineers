@@ -107,7 +107,7 @@ For full rules and official specifications:
 
 | Front | Back |
 |:--:|:--:|
-| <img width="500" height="300" alt="Front" src="https://github.com/user-attachments/assets/cc1bc8ca-dc5e-4037-9757-9398c5413b51" /> | <img width="500" height="300" alt="Back" src="https://github.com/user-attachments/assets/1f9aaf80-ad35-49d0-a334-b96ec7295267" /> |
+
 
 | Top | Bottom |
 |:--:|:--:|
