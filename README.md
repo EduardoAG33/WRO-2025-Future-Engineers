@@ -714,14 +714,14 @@ Fixed camera parameters (auto-gain, auto-white balance, exposure). LAB threshold
 
 **LEGO SET**
 | BLItemNo | PartName | Qty | Price per Piece (USD) | Total Price (USD) |
-|----------|----------|-----|---------------------|-----------------|
-| 2780 | Technic, Pin with Short Friction Ridges | 17 | 0.99 | 8.44 |
+|----------|----------|-----|-----------------------|-----------------|
+| 2780 | Technic, Pin with Short Friction Ridges | 17 | 0.08 | 1.36 |
 | 2905 | Technic, Liftarm, Modified Triangle Thin 3 x 5 with Full Supports | 2 | 0.05 | 0.10 |
-| 32034 | Technic, Axle and Pin Connector Angled #2 - 180 degrees | 1 | 1.32 | 1.32 |
+| 32034 | Technic, Axle and Pin Connector Angled #2 - 180 degrees | 1 | 0.50 | 0.50 |
 | 32062 | Technic, Axle 2L Notched | 16 | 0.01 | 0.16 |
 | 32073 | Technic, Axle 5L | 6 | 0.75 | 4.50 |
-| 4265c | Technic Bush 1/2 Smooth | 1 | 0.10 | 0.10 |
-| 32184 | Technic, Axle and Pin Connector Perpendicular 3L with Center Pin Hole | 1 | 3.53 | 3.53 |
+| 4265c | Technic Bush 1/2 Smooth | 1 | 0.08 | 0.08 |
+| 32184 | Technic, Axle and Pin Connector Perpendicular 3L with Center Pin Hole | 1 | 3.50 | 3.50 |
 | 32269 | Technic, Gear 20 Tooth Double Bevel | 7 | 0.15 | 1.05 |
 | 32278 | Technic, Liftarm Thick 1 x 15 | 4 | 2.59 | 10.36 |
 | 32316 | Technic, Liftarm Thick 1 x 5 | 1 | 1.21 | 1.21 |
@@ -729,11 +729,11 @@ Fixed camera parameters (auto-gain, auto-white balance, exposure). LAB threshold
 | 32524 | Technic, Liftarm Thick 1 x 7 | 5 | 1.74 | 8.70 |
 | 32526 | Technic, Liftarm, Modified Bent Thick L-Shape 3 x 5 | 5 | 1.77 | 8.85 |
 | 3713 | Technic Bush | 4 | 0.14 | 0.56 |
-| 39367pb01 | Wheel 56 x 14 Technic with Axle Hole and 8 Pin Holes with Molded Medium Azure Hard Rubber Tire Pattern | 4 | 0.00 | 0.00 |
+| 39367pb01 | Wheel 56 x 14 Technic with Axle Hole and 8 Pin Holes with Molded Medium Azure Hard Rubber Tire Pattern | 4 | 3.00 | 12.00 |
 | 40490 | Technic, Liftarm Thick 1 x 9 | 1 | 2.59 | 2.59 |
-| 4274 | Technic, Pin 1/2 without Friction Ridges | 8 | 0.095 | 0.76 |
+| 4274 | Technic, Pin 1/2 without Friction Ridges | 8 | 0.10 | 0.80 |
 | 4519 | Technic, Axle 3L | 6 | 0.43 | 2.58 |
-| 46372 | Technic, Gear 28 Tooth Double Bevel | 1 | 0.00 | 0.00 |
+| 46372 | Technic, Gear 28 Tooth Double Bevel | 1 | 0.50 | 0.50 |
 | 48989 | Technic, Pin Connector Perpendicular 3L with 4 Pins | 7 | 1.22 | 8.54 |
 | 55013 | Technic, Axle 8L with Stop | 2 | 1.18 | 2.36 |
 | 55615 | Technic, Pin Connector Perpendicular 3 x 3 Bent with 4 Pins | 2 | 1.90 | 3.80 |
@@ -744,14 +744,15 @@ Fixed camera parameters (auto-gain, auto-white balance, exposure). LAB threshold
 | 64781 | Technic, Gear Rack 1 x 13 with Axle and Pin Holes | 1 | 3.13 | 3.13 |
 | 6558 | Technic, Pin 3L with Friction Ridges | 14 | 0.31 | 4.34 |
 | 6589 | Technic, Gear 12 Tooth Bevel | 6 | 0.29 | 1.74 |
-| 71710 | Technic, Liftarm, Modified Perpendicular Holes Thick 1 x 15 | 2 | 0.00 | 0.00 |
-| 73507 | Technic, Liftarm, Modified Perpendicular Holes Thick 1 x 11 | 2 | 0.00 | 0.00 |
+| 71710 | Technic, Liftarm, Modified Perpendicular Holes Thick 1 x 15 | 2 | 1.00 | 2.00 |
+| 73507 | Technic, Liftarm, Modified Perpendicular Holes Thick 1 x 11 | 2 | 1.00 | 2.00 |
 | 87083 | Technic, Axle 4L with Stop | 1 | 0.59 | 0.59 |
 | 94925 | Technic, Gear 16 Tooth - Axle Hole with Closed Sides | 4 | 0.70 | 2.80 |
-| 99455 | Electric, Motor EV3, Medium | 3 | 0.00 | 0.00 |
+| 99455 | Electric, Motor EV3, Medium | 3 | 35.00 | 105.00 |
 | 99773 | Technic, Liftarm, Modified Triangle Thin 3 x 5 with Short Supports | 6 | 1.20 | 7.20 |
 
-**Total aproximate:** 91.18 USD
+**Total:** $207.91 USD
+
 
 
 
