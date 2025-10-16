@@ -542,6 +542,18 @@ Powered at 3.3V, max 480 mA, connected via custom PCB to EV3.
 
 The camera is mounted at a 70° angle on the highest point of the vehicle. This position was selected to maximize the field of view, allowing the vehicle to better detect obstacles and monitor the track, covering a larger area and facilitating the identification of the designated parking zone. Initially, the camera was positioned at the front of the vehicle, above the steering system. However, it faced visibility issues, as the field of view was limited, which led to errors when avoiding the pillars. 
 
+Block Camara Ev3
+
+<img width="932" height="320" alt="image" src="https://github.com/user-attachments/assets/8e0bb1af-8d6c-462a-bb1b-a5252f99d8cd" />
+
+With this block, we can obtain parameters such as the object's center position (X and Y) and also measure its width and height.
+The code shown below is an example of a line follower, which uses these parameters to detect and follow a path accurately.
+
+**You can found the block here:** https://github.com/ofdl-robotics-tw
+
+
+
+
 ## 4x4 RGB LED Matrix
 
 <div align="center">
