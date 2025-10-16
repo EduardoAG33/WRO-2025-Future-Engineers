@@ -718,7 +718,69 @@ This configuration enables seamless integration with the EV3 environment, allowi
 <img width="513" height="875" alt="image" src="https://github.com/user-attachments/assets/ae30f8e3-6049-48ef-a321-f5ad86f52243" /> <img width="502" height="823" alt="image" src="https://github.com/user-attachments/assets/daba766a-c335-4639-b2ee-4213f9ee6e2d" />
 <img width="662" height="862" alt="image" src="https://github.com/user-attachments/assets/86cf583d-b98d-42d5-9335-5e1cd355cfbd" /> <img width="536" height="836" alt="image" src="https://github.com/user-attachments/assets/810ae681-78ef-458c-b71c-ddbc244fcdb0" />
 <img width="620" height="860" alt="image" src="https://github.com/user-attachments/assets/dd5aa331-13fe-4061-888c-75a2396dc782" />
+## explication
 
+### Libraries
+- **`Wire.h`**: Handles I2C communication with the BNO055 sensor.  
+- **`SoftwareSerial.h`**: Provides an extra serial port for communication with a master device.  
+- **`NewPing.h`**: Efficient library for reading HC-SR04 ultrasonic sensors with filtering and timing control.  
+
+---
+
+### Ultrasonic Sensors
+- Four `NewPing` objects are created for the sensors: `l90`, `l45`, `r45`, `r90`.  
+- Maximum measurement distance is **200 cm**.  
+
+---
+
+### Lap Detection
+- **`LAPS_METHOD = 3`**: Combines accumulated yaw and gate crossing for reliable lap counting.  
+- **`LAP_TICKS16`**: 360° × 16 ticks per full rotation.  
+- **`LAP_MIN_MS`**: Minimum time (ms) between lap counts to prevent false detections.  
+- **`GATE_HALF_WIDTH`** + **`GATE_HYST`**: Gate angle thresholds for lap detection.  
+
+---
+
+### UART Communication
+- Uses `SoftwareSerial` on **D2 (RX) / D3 (TX)** to send CSV-formatted sensor data to a master device.  
+
+---
+
+### BNO055 Sensor
+- Custom minimal I2C implementation without external libraries.  
+- Provides **yaw angle (heading)** in 16 ticks.  
+- Initializes in **NDOF mode** and ensures valid heading data before operation.  
+
+---
+
+### Angle Utilities
+- **`yawDelta16()`**: Calculates the difference between two yaw readings, accounting for ±360° wraparound.  
+- **`angDiffDeg()`**: Calculates angular difference normalized to -180° … 180°.  
+
+---
+
+### State Variables
+- Store previous yaw (`yaw_prev16`), accumulated yaw (`yaw_accum16`), lap count (`lap_count`), gate state, and BNO055 initialization status (`bno_ok`).  
+
+---
+
+### Lap Calculation Functions
+- **`timeOk()`**: Ensures laps are not counted too quickly.  
+- **`tryCountLapAccumYaw()`**: Counts laps based on accumulated yaw rotation.  
+- **`tryCountLapGate()`**: Counts laps when crossing a gate angle threshold.  
+- **`resolveLapMethod3()`**: Combines both methods for a reliable lap count.  
+
+---
+
+### Ultrasonic Filter
+- **`filteredPing()`**: Applies a median + average filter on multiple readings to remove outliers and improve measurement stability.  
+
+---
+
+### Setup
+- Initializes **Serial**, **SoftwareSerial**, and **I2C** communication.  
+- Initializes **BNO055 sensor**.  
+- Sends CSV header:  
 
 
 ## 🧠 Arduino Nano – Ultrasonic + IMU Sensor Fusion System
