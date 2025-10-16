@@ -2,7 +2,7 @@
 
 | Front | Back |
 |:--:|:--:|
-| <img width="400" height="400" alt="Front" src="https://github.com/user-attachments/assets/cc1bc8ca-dc5e-4037-9757-9398c5413b51" /> | <img width="400" height="400" alt="Back" src="https://github.com/user-attachments/assets/1f9aaf80-ad35-49d0-a334-b96ec7295267" /> |
+| <img width="400" height="400" alt="Front" src="https://github.com/user-attachments/assets/cc1bc8ca-dc5e-4037-9757-9398c5413b51" /> | <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/df42b51e-19c5-4a8b-8104-9d87c46ed63f" />  |
 
 | Top | Bottom |
 |:--:|:--:|
