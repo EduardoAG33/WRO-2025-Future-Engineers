@@ -752,12 +752,12 @@ Fixed camera parameters (auto-gain, auto-white balance, exposure). LAB threshold
 | 2 | *OpenMV Cam H7 Plus* | 1 | 75.00 | *75.00* | [Buy here](https://openmv.io/products/openmv-cam-h7-plus) |
 | 3 | *HC-SR04 Ultrasonic Sensor* | 5 | 3.00 | *15.00* | [Buy here](https://uelectronics.com/producto/sensor-ultrasonico-hc-sr04/) |
 | 4 | *DFRobot URM09 Ultrasonic Sensor (Gravity Analog)* | 1 | 12.00 | *12.00* | [Buy here](https://wiki.dfrobot.com/URM09_Ultrasonic_Sensor_(Gravity_Analog)_SKU_SEN0307) |
-| 5 | *Arduino Nano* | 1 | 8.00 | *8.00* | [Buy here](https://www.steren.com.mx/placa-de-desarrollo-nano.html) |
+| 5 | *Arduino Nano* | 2 | 8.00 | *16.00* | [Buy here](https://www.steren.com.mx/placa-de-desarrollo-nano.html) |
 | 6 | *4x4 RGB LED Matrix (WS2812)* | 1 | 5.00 | *5.00* | [Buy here](https://mvelectronica.com/producto/matriz-de-led-rgb-4x4-ws2812-16bits-a-5v-led-5050) |
 | 7 | *Mini 560 Step-Down Regulator* | 1 | 4.00 | *4.00* | [Buy here](https://uelectronics.com/producto/mini-560-regulador-step-down/) |
 | 8 | *DFRobot Gravity BNO055* | 1 | 30.00 | *30.00* | [Buy here](https://es.aliexpress.com/i/32950220044.html) |
 | 9 | *Digital Voltmeter* | 1 | 3.00 | *3.00* | [Buy here](https://www.amazon.com.mx/Volt%C3%ADmetro-pulgadas-volt%C3%ADmetro-protecci%C3%B3n-amarillo/dp/B07P1RV5B1/) |
-|   | *💵 Total Estimated Cost* |   |   | *634.00 USD* |   |
+|   | *💵 Total Estimated Cost* |   |   | *650.00 USD* |   |
 
 ---
 
