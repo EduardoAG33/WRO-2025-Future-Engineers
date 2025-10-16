@@ -867,6 +867,11 @@ This code runs on an Arduino acting as an **I2C slave** that collects sensor dat
 
 This setup allows **real-time sensor fusion**, mapping, and I2C data delivery to a master controller while providing visual feedback through the NeoPixel matrix.
 
+**I2c Communication block to EV3**
+
+<div align="center">
+<img width="907" height="402" alt="image" src="https://github.com/user-attachments/assets/3cfa9a2d-41c9-4320-b84d-307c6e09d9fb" />
+
 
 
 
