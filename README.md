@@ -605,51 +605,34 @@ The Mini 560 Step-Down Regulator is used to efficiently convert higher input vol
 
 We use this module to regulate the voltage supplied to the two Arduino PCBs, stepping it down from 7V to 5V to ensure stable operation and optimal performance.
 
-## VL53L0X distance sensor
+## RM09 Ultrasonic Distance Sensor
 
-<div align="center">
-<img width="500" height="500" alt="VL53L0X module" src="https://github.com/user-attachments/assets/ae66a7c1-ba64-46c7-90c4-b97431c4cd51" />
-</div>
+<img width="736" height="552" alt="image" src="https://github.com/user-attachments/assets/0776f173-76e5-4585-9830-a7792d0bcac7" />
 
-**Specifications**
 
-| Specification | Description |
-|----------------|-------------|
-| **Model** | VL53L0X Time-of-Flight (ToF) Distance Sensor |
-| **Operating Principle** | Time-of-Flight (ToF) – measures distance using a 940 nm infrared laser |
-| **Measurement Range** | 30 mm – 2000 mm (up to 2 meters) |
-| **Accuracy** | ±3% (typical, depending on distance and surface reflectivity) |
-| **Resolution** | 1 mm |
-| **Operating Voltage (Vcc)** | 2.6V – 5.5V DC |
-| **Communication Interface** | I²C (up to 400 kHz) |
-| **Field of View (FoV)** | ~25° |
-| **Laser Wavelength** | 940 nm (invisible infrared light) |
-| **Current Consumption** | 10 mA (typical during operation) |
-| **Measurement Timing Budget** | Configurable (20 ms to 200 ms per measurement) |
-| **Output Data** | Distance in millimeters |
-| **Operating Temperature** | -20°C to +70°C |
-| **Dimensions** | Approx. 25 mm x 13 mm x 2 mm |
 
-| Pin | Name | Description |
-|------|------|-------------|
-| **VIN** | Power Input | Connect to 3.3V–5V DC power source. Powers the sensor. |
-| **GND** | Ground | Common ground connection with the microcontroller. |
-| **SDA** | I²C Data | Data line for I²C communication (connects to Arduino SDA pin). |
-| **SCL** | I²C Clock | Clock line for I²C communication (connects to Arduino SCL pin). |
-| **XSHUT** | Shutdown | Active-low pin used to enable or disable the sensor (optional, can be left unconnected if not used). |
-| **GPIO1** | Interrupt | Optional interrupt output pin (not required for basic operation). |
+## Specifications
 
----
+| Parameter                  | Value                                      |
+|-----------------------------|--------------------------------------------|
+| **Supply Voltage**          | 3.3V to 5.5V DC                            |
+| **Operating Current**       | 20 mA                                      |
+| **Operating Temperature**   | -10°C to +70°C                             |
+| **Measurement Range**       | 2 cm to 500 cm                              |
+| **Resolution**              | 1 cm                                       |
+| **Accuracy**                | ±1%                                        |
+| **Acoustic Frequency**      | 40 ± 2 kHz                                 |
+| **Ranging Frequency**       | Up to 25 Hz                                |
+| **Dimensions**              | 47 mm × 22 mm (1.85" × 0.87")             |
+| **Output Type**             | Analog voltage output                      |
+| **Beam Angle**              | ±15°                                       |
+| **Distance Formula**        | `Distance = Vout (mV) × 520 / Vin (mV)`   |
 
-### Usage in the Robot
+## Description
 
-The **VL53L0X sensor** is used in our robot to measure the distance to nearby obstacles with high precision.  
-It helps improve navigation and obstacle avoidance by providing accurate range data that complements the ultrasonic sensors.  
-Because it uses **laser-based Time-of-Flight technology**, it offers more stable readings than ultrasonic sensors, especially on surfaces with irregular shapes or varying textures.
+The RM09 Ultrasonic Distance Sensor (Gravity URM09) is a high-precision sensor designed for distance measurement applications. It operates by emitting ultrasonic waves and measuring the time it takes for the echo to return, providing accurate distance readings from 2 cm up to 500 cm. With a resolution of 1 cm and an accuracy of ±1%, it is suitable for robotics, automation, and obstacle detection projects.  
 
-**In our setup**, the sensor is connected to the Arduino through the I²C interface (SDA and SCL pins), allowing real-time distance measurement that assists the robot’s control system in path planning and obstacle detection.
-
-We placed this sensor at the back of the robot because it provides more available space compared to the ultrasonic sensor. Its main purpose is to assist during parking and exiting maneuvers by accurately measuring the distance between the robot and the parking walls.
+The sensor features analog voltage output, built-in temperature compensation, and fast ranging up to 25 measurements per second. Its compact design and wide voltage compatibility (3.3V to 5.5V).
 
 ---
 
