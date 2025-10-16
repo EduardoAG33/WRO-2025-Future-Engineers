@@ -205,8 +205,13 @@ However, issues arose with ambient light sensitivity, calibration time, and batt
 
 The sensors communicate with the EV3 via two Arduino Nanos: one collects the data, and the other sends it via I2C. The system is mounted on a custom PCB.
 
+**Before:**
 
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/bee38687-32cb-4b21-940e-3429a2b44f74" />
+
+**Now**
+
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/ba843fe4-d056-42f5-ae9d-76be0deb70ee" />
 
 
 
