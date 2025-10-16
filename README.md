@@ -954,6 +954,11 @@ We use ultrasonic sensors connected via I²C to measure distances, and the robot
 
 ## Obstacle management
 
+The obstacle avoidance system was designed following the competition rules: a **red pillar** indicates a right turn, while a **green pillar** indicates a left turn.  
+To determine the correct avoidance side, the robot calculates the difference between the **detected X position** from the camera and a predefined **X target**.  
+This approach ensures a reliable and consistent maneuver direction, improving the robot’s decision-making during navigation.
+
+**Camera calibration**
 
 
 ## Detection and Avoidance Strategies
