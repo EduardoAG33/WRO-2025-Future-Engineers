@@ -232,6 +232,8 @@ The change was implemented for an ultrasonic DF robot URM09, it is working bette
 <div align="center">
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/f3dd86f4-b4bb-4bd1-bec3-f6b2386d7e40" />
 
+---
+
 **Chassis render**
 <div align="center">
 <img width="500" height="500" alt="chassis render" src="https://github.com/user-attachments/assets/5a8c0801-5dba-4137-ac2b-e9e2eaf370f1" />
