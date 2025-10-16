@@ -953,18 +953,20 @@ We use ultrasonic sensors connected via I²C to measure distances, and the robot
 ---
 
 ## Obstacle management
+
+
+
 ## Detection and Avoidance Strategies
+## 2.4 Problems and Solutions
 
-**Metric:** X coordinate at blob base  
-
-| Problem | Solution |
-|---------|---------|
-| Light variations | Fixed auto-gain, auto-white balance, exposure |
-| Lost far pillars in curves | Extended dynamic ROIs, blob base compensation |
-| Oversized blobs | X coordinate as main metric |
-| Redundant OpenMV scripts | Unified via LPF2 protocol |
-| Non-reactive line follower | Corridor width as proportional KP |
-| Missed pillars → collision risk | Dedicated Black ROI |
+| **Identified Problem** | **Implemented Solution** |
+|-------------------------|---------------------------|
+| Light variations on the track caused unstable detections. | The OpenMV camera’s auto-gain, auto-white balance, and exposure parameters were fixed to ensure detection stability. |
+| In curves, the robot lost sight of distant pillars. | A compensation strategy was introduced using the base position of the blob, and dynamic ROIs were expanded to maintain coverage. |
+| The robot detected very large colored blobs, leading to confusing data. | The X-coordinate at the base of the blob was adopted as the main metric, keeping the area only as a secondary reference. |
+| OpenMV scripts were redundant and complicated integration with the EV3. | Data transmissions were unified through LPF2 slots, removing redundancies such as `PRINT_EVERY` and `SEND_EVERY`. |
+| The line follower was not reactive to corridor width changes. | The corridor width was incorporated as a proportional correction variable (KP adjustment on the EV3). |
+| Risk of collision when the robot failed to recognize pillars correctly. | The pillar ROI was replaced by a black ROI responsible for alerting possible collisions along the path. |
 
 ### Line Tracking
 Dynamic ROIs provide position error → proportional KP in EV3.
