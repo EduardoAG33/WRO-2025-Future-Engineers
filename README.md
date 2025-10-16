@@ -153,14 +153,14 @@ The elaboration process:
 Using a heat gun, each side of the acrylic base designated for the sensors was carefully heated. Once the material reached the appropriate temperature, it was bent using a mold to achieve the 90° angle required for the optimal positioning and field of view of the sensors.
 
 <div align="center">
-<img width="500" height="300" alt="Acrylic bending" src="https://github.com/user-attachments/assets/53dec651-0a3b-47fa-895d-e4c19290b290" />     
-<img width="500" height="300" alt="Molded base" src="https://github.com/user-attachments/assets/6d716c07-a7b4-4b70-b3c2-c8264ffc2f77" />
+<img width="500" height="500" alt="Acrylic bending" src="https://github.com/user-attachments/assets/53dec651-0a3b-47fa-895d-e4c19290b290" />     
+<img width="500" height="500" alt="Molded base" src="https://github.com/user-attachments/assets/6d716c07-a7b4-4b70-b3c2-c8264ffc2f77" />
 </div>
 
 The final result is mounted on the robot:
 
 <div align="center">
-<img width="500" height="300" alt="Mounted base" src="https://github.com/user-attachments/assets/7e76597a-44b9-4264-923c-65cb95d99f65" />
+<img width="500" height="500" alt="Mounted base" src="https://github.com/user-attachments/assets/7e76597a-44b9-4264-923c-65cb95d99f65" />
 </div>
 
 This base is attached to the chassis using four screws in the middle to give it stability, and on top of this locate the PCB is located where the ultrasonic sensors are connected.
@@ -168,7 +168,7 @@ This base is attached to the chassis using four screws in the middle to give it 
 The measurements for the sensor support can be found in the datasheet.
 
 <div align="center">
-<img width="500" height="300" alt="sensor support" src="https://github.com/user-attachments/assets/034fa407-525b-413a-86d8-a455544e789a" />
+<img width="500" height="500" alt="sensor support" src="https://github.com/user-attachments/assets/034fa407-525b-413a-86d8-a455544e789a" />
 </div>
 
 ## DATASHEET:
@@ -180,19 +180,19 @@ https://github.com/EduardoAG33/WRO-2025-Future-Engineers/blob/main/Others/HC-SR0
 On the PCB board, we mounted an additional acrylic base to secure the camera, and to place a voltmeter and a switch for the 18650 batteries. The gyroscope sensor is located in the central part of the assembly for optimal orientation measurement.
 
 <div align="center">
-<img width="500" height="300" alt="PCB acrylic base" src="https://github.com/user-attachments/assets/331af2ce-0cce-4646-9e9a-bf1a7cc7884d" />
+<img width="500" height="500" alt="PCB acrylic base" src="https://github.com/user-attachments/assets/331af2ce-0cce-4646-9e9a-bf1a7cc7884d" />
 </div>
 
 **view in the vehicle**
 
 <div align="center">
-<img width="500" height="300" alt="view in the vehicle" src="https://github.com/user-attachments/assets/f7fd1152-2a27-4d11-a5e7-b53cf4603675" />
+<img width="500" height="500" alt="view in the vehicle" src="https://github.com/user-attachments/assets/f7fd1152-2a27-4d11-a5e7-b53cf4603675" />
 </div>
 
 And for the upper level of the robot, we have the support for the camera and the Neo pixel light:  
 
 <div align="center">
-<img width="500" height="300" alt="camera support" src="https://github.com/user-attachments/assets/e680e149-5586-4c7b-b0e2-6f53eb4f0bf5" />
+<img width="500" height="500" alt="camera support" src="https://github.com/user-attachments/assets/e680e149-5586-4c7b-b0e2-6f53eb4f0bf5" />
 </div>
 
 The support is positioned at a 70° inclination to ensure the vehicle remains within the maximum allowed height. This angle was carefully chosen to optimize the camera’s field of view, as detailed in the Power and Sense Management section.
@@ -202,13 +202,13 @@ The support is positioned at a 70° inclination to ensure the vehicle remains wi
 **Solidworks software design**(metric system in mm)
 
 <div align="center">
-<img width="500" height="300" alt="VL53 base design" src="https://github.com/user-attachments/assets/0357aaa9-5b2b-4398-9a27-d1c3b4e0fc45" />
+<img width="500" height="500" alt="VL53 base design" src="https://github.com/user-attachments/assets/0357aaa9-5b2b-4398-9a27-d1c3b4e0fc45" />
 </div>
 
 **draw measurements**
 
 <div align="center">
-<img width="500" height="300" alt="draw measurements" src="https://github.com/user-attachments/assets/122f09ca-8fc3-44a3-8a7b-1d3dcdb98ac1" />
+<img width="500" height="500" alt="draw measurements" src="https://github.com/user-attachments/assets/122f09ca-8fc3-44a3-8a7b-1d3dcdb98ac1" />
 </div>
 
 
@@ -217,12 +217,12 @@ This custom piece is designed to fit perfectly with LEGO components, allowing it
 The custom piece and sensor are precisely positioned to ensure optimal alignment and secure integration with the LEGO chassis, based on the sensor’s datasheet dimensions.
 
 <div align="center">
-<img width="500" height="300" alt="custom piece" src="https://github.com/user-attachments/assets/677f5e71-31a7-43c6-98f3-dc6273959970" />
+<img width="500" height="500" alt="custom piece" src="https://github.com/user-attachments/assets/677f5e71-31a7-43c6-98f3-dc6273959970" />
 </div>
 
 **Chassis render**
 <div align="center">
-<img width="500" height="300" alt="chassis render" src="https://github.com/user-attachments/assets/5a8c0801-5dba-4137-ac2b-e9e2eaf370f1" />
+<img width="500" height="500" alt="chassis render" src="https://github.com/user-attachments/assets/5a8c0801-5dba-4137-ac2b-e9e2eaf370f1" />
 </div>
 
 **Assembly manual:**
@@ -230,15 +230,15 @@ The custom piece and sensor are precisely positioned to ensure optimal alignment
 
 **material that makes up the structure of the chassis:**
 <div align="center">
-<img width="500" height="300" alt="material 1" src="https://github.com/user-attachments/assets/6be42468-d342-4a3f-bf52-336521bc3e64" />
+<img width="500" height="500" alt="material 1" src="https://github.com/user-attachments/assets/6be42468-d342-4a3f-bf52-336521bc3e64" />
 </div>
 
 <div align="center">
-<img width="500" height="300" alt="material 2" src="https://github.com/user-attachments/assets/3d160bbb-81db-4c22-88aa-1f6bce73b8f8" />
+<img width="500" height="500" alt="material 2" src="https://github.com/user-attachments/assets/3d160bbb-81db-4c22-88aa-1f6bce73b8f8" />
 </div>
 
 <div align="center">
-<img width="500" height="300" alt="material 3" src="https://github.com/user-attachments/assets/d0c6ef1d-8a5d-4c55-8a12-6d94522b6061" />
+<img width="500" height="500" alt="material 3" src="https://github.com/user-attachments/assets/d0c6ef1d-8a5d-4c55-8a12-6d94522b6061" />
 </div>
 
 In the Mexican National Tournament, we only used one differential, and the robot dimensions were both wider and taller. For the updated version, we decided to implement two differentials, as this configuration provides significantly better control when moving forward. Additionally, reducing the robot’s overall dimensions helps prevent collisions with obstacles and makes it easier to maneuver around them.
@@ -262,7 +262,7 @@ The steering rotation is limited to 45 degrees due to the chassis design; howeve
 
 **material that makes up the structure of the steering:**
 <div align="center">
- <img width="500" height="300" alt="steering material" src="https://github.com/user-attachments/assets/5f12ed7e-0da7-49d1-aecc-cf8525e78320" />
+ <img width="500" height="500" alt="steering material" src="https://github.com/user-attachments/assets/5f12ed7e-0da7-49d1-aecc-cf8525e78320" />
 </div>
   
 **Assembly manual**
@@ -276,13 +276,13 @@ According to the competition rules, the engines cannot be mounted directly on th
 We decided to use two motors because they offer greater speed, power, and stability to the vehicle’s base compared to using only one. This configuration allows for a more balanced distribution of torque, improving traction and control during movement. After testing different options, we chose the medium LEGO motor because it provides an optimal balance between size, weight, and energy efficiency, making it ideal for our chassis design. Additionally, its compact structure facilitates integration into the transmission system while maintaining low power consumption and reliable performance.
 
 <div align="center">
-<img width="500" height="300" alt="traction system" src="https://github.com/user-attachments/assets/5b2d5fdf-bf02-4cb2-97f9-ac3fb9f56719" />
+<img width="500" height="500" alt="traction system" src="https://github.com/user-attachments/assets/5b2d5fdf-bf02-4cb2-97f9-ac3fb9f56719" />
 </div>
 
 **Traction system render**
 
 <div align="center">
- <img width="500" height="300" alt="traction render" src="https://github.com/user-attachments/assets/de4066aa-9ef0-4369-a0e5-4047937f75a1" />
+ <img width="500" height="500" alt="traction render" src="https://github.com/user-attachments/assets/de4066aa-9ef0-4369-a0e5-4047937f75a1" />
 </div>
 
 **Traction system manual**
@@ -296,7 +296,7 @@ Distributes torque to wheels, enabling smooth cornering. Input via pinion and cr
 A differential is a mechanical component that allows wheels on the same axle to rotate at different speeds while transmitting power from the motor. This is especially important when a vehicle turns, as the outer wheel needs to travel a greater distance than the inner wheel. The differential distributes torque between the wheels, ensuring smooth and efficient movement, reducing tire wear, and improving traction and stability. In our design, the differential receives motion from the transmission and transfers it to the tires, enabling precise control of the vehicle’s movement.
 
 <div align="center">
-  <img width="500" height="300" alt="Differential example" src="https://github.com/user-attachments/assets/841f8551-b8cd-43e2-a964-24c97eb4f7ce" />
+  <img width="500" height="500" alt="Differential example" src="https://github.com/user-attachments/assets/841f8551-b8cd-43e2-a964-24c97eb4f7ce" />
   <p><em>Image: Differential example</em></p>
 </div>
 
@@ -319,7 +319,7 @@ The Power and Sensor Management system of the vehicle is engineered to optimize 
    
 ### Battery for EV3:
 <div align="center">
-<img width="500" height="300" alt="EV3 Battery" src="https://github.com/user-attachments/assets/baf83fc5-b1e4-444e-b0d3-33d77a03abcb" />
+<img width="500" height="500" alt="EV3 Battery" src="https://github.com/user-attachments/assets/baf83fc5-b1e4-444e-b0d3-33d77a03abcb" />
 </div>
 
 **Specifications:**
@@ -339,7 +339,7 @@ This battery is the recommended power source for the LEGO EV3. There are two opt
 
 ### Battery 18650
 <div align="center">
-<img width="500" height="300" alt="18650 battery" src="https://github.com/user-attachments/assets/343775dc-0e65-4a3e-8732-99fa9c5848e2" />
+<img width="500" height="500" alt="18650 battery" src="https://github.com/user-attachments/assets/343775dc-0e65-4a3e-8732-99fa9c5848e2" />
 </div>
 
 **Specifications:**
@@ -364,7 +364,7 @@ In this setup, we use 18650 batteries to power the Arduino Nano for controlling 
 
 ### Microcontroller(Arduino nano)
 <div align="center">
-<img width="500" height="300" alt="Arduino Nano large" src="https://github.com/user-attachments/assets/0d45ec5e-d666-4185-be01-94dc062a9f37" />
+<img width="500" height="500" alt="Arduino Nano large" src="https://github.com/user-attachments/assets/0d45ec5e-d666-4185-be01-94dc062a9f37" />
 </div>
 
 **Specifications:**
@@ -391,7 +391,7 @@ It operates at 5V and can be powered through a Mini USB connection, a regulated 
 
 ### Medium motor EV3
 <div align="center">
-<img width="500" height="300" alt="EV3 Medium Motor" src="https://github.com/user-attachments/assets/c0c91a6f-02e9-4b4f-8271-1a25b965384c" />
+<img width="500" height="500" alt="EV3 Medium Motor" src="https://github.com/user-attachments/assets/c0c91a6f-02e9-4b4f-8271-1a25b965384c" />
 </div>
 
 **Specifications**
@@ -436,7 +436,7 @@ In terms of power consumption, the motor typically draws around 250–300 mA und
 | **Position feedback** | Integrated rotation sensor |
 
 <div align="center">
-  <img width="500" height="300" alt="Medium Motor Voltage" src="https://github.com/user-attachments/assets/ea92cc7c-aa1b-4ce5-b05f-c80b4cd0d48a" />
+  <img width="500" height="500" alt="Medium Motor Voltage" src="https://github.com/user-attachments/assets/ea92cc7c-aa1b-4ce5-b05f-c80b4cd0d48a" />
   <p><em>Image: Medium Motor Voltage</em></p>
 </div>
 
@@ -486,7 +486,7 @@ The camera is mounted at a 70° angle on the highest point of the vehicle. This 
 ## 4x4 RGB LED Matrix
 
 <div align="center">
-<img width="500" height="300" alt="4x4 RGB Matrix large" src="https://github.com/user-attachments/assets/66861e06-8f1b-4c2e-b706-a11882cf633b" />
+<img width="500" height="500" alt="4x4 RGB Matrix large" src="https://github.com/user-attachments/assets/66861e06-8f1b-4c2e-b706-a11882cf633b" />
 </div>
 
 
@@ -530,7 +530,7 @@ A 4x4 WS2812B matrix usually has 3 main pins:
 ## Mini 560 Regulador Step down 
 
 <div align="center">
-<img width="500" height="300" alt="Mini 560 module" src="https://github.com/user-attachments/assets/7566dcf4-fe6a-4349-af80-0a458462fb7a" />
+<img width="500" height="500" alt="Mini 560 module" src="https://github.com/user-attachments/assets/7566dcf4-fe6a-4349-af80-0a458462fb7a" />
 </div>
 
 **Specifications**
@@ -560,7 +560,7 @@ We use this module to regulate the voltage supplied to the two Arduino PCBs, ste
 ## VL53L0X distance sensor
 
 <div align="center">
-<img width="500" height="300" alt="VL53L0X module" src="https://github.com/user-attachments/assets/ae66a7c1-ba64-46c7-90c4-b97431c4cd51" />
+<img width="500" height="500" alt="VL53L0X module" src="https://github.com/user-attachments/assets/ae66a7c1-ba64-46c7-90c4-b97431c4cd51" />
 </div>
 
 **Specifications**
@@ -608,7 +608,7 @@ We placed this sensor at the back of the robot because it provides more availabl
 ## DF Robot Gravity BNO055
 
 <div align="center">
-<img width="500" height="300" alt="BNO055 module" src="https://github.com/user-attachments/assets/f03d9b6b-f96a-4cee-b5f8-e8e562f1766e" />
+<img width="500" height="500" alt="BNO055 module" src="https://github.com/user-attachments/assets/f03d9b6b-f96a-4cee-b5f8-e8e562f1766e" />
 </div>
 
 | Specification | Description |
