@@ -634,6 +634,8 @@ The RM09 Ultrasonic Distance Sensor (Gravity URM09) is a high-precision sensor d
 
 The sensor features analog voltage output, built-in temperature compensation, and fast ranging up to 25 measurements per second. Its compact design and wide voltage compatibility (3.3V to 5.5V).
 
+We use this sensor to assist with turns. At the end of the three-turn sequence, the robot may exit the section. To address this, the sensor is implemented to measure the distance to the wall and guide the robot forward, ensuring accurate entry into the next section.
+
 ---
 
 ## DF Robot Gravity BNO055
