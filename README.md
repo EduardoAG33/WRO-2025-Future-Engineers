@@ -954,17 +954,162 @@ We use ultrasonic sensors connected via I²C to measure distances, and the robot
 
 ## Obstacle management
 
-The obstacle avoidance system was designed following the competition rules: a **red pillar** indicates a right turn, while a **green pillar** indicates a left turn.  
+The obstacle avoidance system was designed in accordance with the competition rules: a **red pillar** indicates a right turn, while a **green pillar** indicates a left turn.  
 To determine the correct avoidance side, the robot calculates the difference between the **detected X position** from the camera and a predefined **X target**.  
 This approach ensures a reliable and consistent maneuver direction, improving the robot’s decision-making during navigation.
+he vision system was also designed to support the obstacle avoidance logic.
+For this purpose, the X-coordinate at the base of the detected blob was used as the main metric, providing more reliable results than using the object’s area, which occasionally produced inconsistent data.
 
 **Camera calibration**
 Fixed camera parameters (auto-gain, auto-white balance, exposure). LAB thresholds adjusted for white, red, green, blue, orange.
 
-Steps:
+**Steps:**
+The OpenMV IDE uses MicroPython for programming, and the scripts are directly uploaded to the camera module.
+To calibrate the color detection thresholds, follow these steps:
+
+Go to the Tools menu in the top taskbar.
+
+Navigate to Machine Vision → Threshold Editor.
+
+Capture an image from the camera to begin threshold calibration, which allows you to adjust color ranges for precise object or line detection.
+
+**Open Mv CODE**(this code works with the open challenga and obstacle)
+# OpenMV Vision System for WRO 2025
+
+
+---
+
+## Features
+
+- **Pillar Detection**: Detects red and green vertical pillars.
+- **Floor Detection**: Identifies white, blue, and orange floor regions.
+- **Magenta Marker**: Tracks a global magenta reference for robot positioning.
+- **LPF2 Communication**: Sends processed information to EV3 in real-time.
+- **Debug HUD**: Visual feedback on camera feed (optional).
+
+---
+
+## LPF2 Payload (8 Int16 Values)
+
+| Index | Description                                        |
+|-------|----------------------------------------------------|
+| 1     | Selected pillar ID (3 = green, 5 = red)           |
+| 2     | X position of the pillar corner (-100 to 100)     |
+| 3     | Collision ID (3 = green, 5 = red)                |
+| 4     | Floor error (EMA filtered)                        |
+| 5     | Selected pillar area (pixels)                     |
+| 6     | Magenta marker X position (-100 to 100)          |
+| 7     | Padding (0)                                      |
+| 8     | Padding (0)                                      |
+
+---
+
+## Detection Overview
+
+### Pillars
+- **Colors**: Red and Green.
+- **ROI**: `ROI_LOW` and `ROI_MID` for pillar corners; `COLLISION_ROI` for collision detection.
+- **Filters**: Minimum height, area, vertical orientation, max tilt angle, reject horizontal lines.
+
+### Floor
+- **Colors**: White, Blue, Orange.
+- **ROIs**: Left and right bands.
+- **Output**: Percentage coverage, smoothed using EMA filters (`err_ema`).
+
+### Magenta Marker
+- Detects largest magenta blob.
+- Normalizes X position for EV3 control.
+
+---
+
+## Debug HUD
+- Draws pillars, floor ROIs, magenta marker, and text info.
+- Red rectangles mark floor edges.
+- HUD is optional; can be disabled with `SHOW_DEBUG = False`.
+
+---
+
+## Requirements
+- OpenMV Cam H7
+- EV3 Brick with LPF2 support
+- Python 3 compatible OpenMV firmware
+
+---
+
+## Usage
+1. Load `main.py` to the OpenMV camera.
+2. Connect LPF2 wires to EV3 (P4 & P5).
+3. Run the script on the camera.
+4. EV3 receives real-time data for robot control.
+
+---
+
+## Notes
+- Color thresholds are defined in LAB format.
+- Multi-range thresholds improve detection accuracy.
+- EMA filters smooth floor error signals.
+- Pillars are identified based on vertical orientation and geometry.
+
+---
+
+## OpenMV Code Snippet
+
+```python
+import sensor, image, time, utime, micropython
+import LPF2
+micropython.alloc_emergency_exception_buf(200)
+
+# Debug options
+SHOW_DEBUG = True
+DRAW_BOXES = True
+DRAW_TEXT = True
+USE_MULTI_RANGES = True
+
+# Initialize LPF2 for EV3
+modes = [LPF2.mode('OV-ALL', size=8, type=LPF2.DATA16, format='3.0')]
+lpf2 = LPF2.EV3_LPF2(3, 'P4', 'P5', modes, 85, 4, 5)
+lpf2.initialize()
+
+# Camera setup
+sensor.reset()
+sensor.set_pixformat(sensor.RGB565)
+sensor.set_framesize(sensor.QVGA)
+sensor.skip_frames(time=800)
+sensor.set_auto_gain(False)
+sensor.set_auto_whitebal(False)
+sensor.set_auto_exposure(False, exposure_us=25000)
+sensor.skip_frames(time=300)
+
+CENTER_X = 320 // 2
+PIX_TH = 8
+AREA_TH = 8
+
+# Main loop
+while True:
+    if not lpf2.connected:
+        utime.sleep_ms(40)
+        lpf2.initialize()
+        continue
+
+    img = sensor.snapshot()
+    # --- Pillars, Floor, Magenta detection ---
+    # ... (full detection logic from main.py)
+    # Send processed data to EV3
+    DataToSend = [ID, X_CORNER, collision_id, err_ema, area_px, MAG_X, 0, 0]
+    if lpf2.current_mode == 0:
+        lpf2.load_payload('Int16', DataToSend)
+
+    # Optional HUD
+    if SHOW_DEBUG:
+        # Draw pillars, floor, magenta marker, and text
+        pass
 
 
 ## Detection and Avoidance Strategies
+To improve the system’s response, a dynamic horizontal ROI (Region of Interest) scheme was implemented.
+This approach allows the detection of the line’s relative position at different heights of the image, enhancing tracking accuracy.
+
+The position error is converted into a proportional signal within the EV3 controller, where the initial Kp value was set to 1 and later fine-tuned to improve sensitivity in both curves and straight segments.
 ##  Problems and Solutions
 
 | **Identified Problem** | **Implemented Solution** |
@@ -992,7 +1137,6 @@ LPF2 protocol: unified data slots.
 
 | **Sensor / Source** | **Extracted Metric** | **Use in Control System** |
 |----------------------|----------------------|----------------------------|
-| **OpenMV – Lower ROI** | Line error (relative floor position) | Main path tracking. |
 | **OpenMV – Middle ROI** | Corridor width and intermediate colors (red, green, orange) | Proportional regulation and obstacle anticipation. |
 | **OpenMV – Upper ROI** | Position of distant obstacles | Curve support and early avoidance preparation. |
 | **OpenMV – Black ROI** | Detection of dark areas (collision) | Collision alert, sending a binary indicator to the EV3. |
