@@ -959,10 +959,13 @@ To determine the correct avoidance side, the robot calculates the difference bet
 This approach ensures a reliable and consistent maneuver direction, improving the robot’s decision-making during navigation.
 
 **Camera calibration**
+Fixed camera parameters (auto-gain, auto-white balance, exposure). LAB thresholds adjusted for white, red, green, blue, orange.
+
+Steps:
 
 
 ## Detection and Avoidance Strategies
-## 2.4 Problems and Solutions
+##  Problems and Solutions
 
 | **Identified Problem** | **Implemented Solution** |
 |-------------------------|---------------------------|
@@ -985,30 +988,18 @@ Red → right, Green → left based on X coordinate vs target.
 ### Data Communication (OpenMV → EV3)
 LPF2 protocol: unified data slots.
 
-| Sensor / Source | Metric | Usage |
-|-----------------|--------|-------|
-| Low ROI | Line error | Main trajectory |
-| Middle ROI | Corridor width, colors | Proportional regulation & obstacle anticipation |
-| High ROI | Far obstacle position | Curve support |
-| Black ROI | Dark area detection | Collision alert |
-| Color blobs | X coordinate | Defines avoidance side |
-| EV3 Motors | Speed, distance | Smooth control |
-| EV3 Logic | KP | Dynamic correction |
+## Metrics
 
----
+| **Sensor / Source** | **Extracted Metric** | **Use in Control System** |
+|----------------------|----------------------|----------------------------|
+| **OpenMV – Lower ROI** | Line error (relative floor position) | Main path tracking. |
+| **OpenMV – Middle ROI** | Corridor width and intermediate colors (red, green, orange) | Proportional regulation and obstacle anticipation. |
+| **OpenMV – Upper ROI** | Position of distant obstacles | Curve support and early avoidance preparation. |
+| **OpenMV – Black ROI** | Detection of dark areas (collision) | Collision alert, sending a binary indicator to the EV3. |
+| **OpenMV – Color Blobs** | X-coordinate at the base (Y) of the detected object | Determination of the avoidance side (red = right, green = left). |
+| **EV3 – Motor Encoders** | Speed and distance traveled | Smooth motion control and maneuver execution. |
+| **EV3 – Internal Logic** | Proportional variable (KP) | Dynamic correction for both curves and straight paths. |
 
-## Calibration
-Fixed camera parameters (auto-gain, auto-white balance, exposure). LAB thresholds adjusted for white, red, green, blue, orange.
-
----
-
-## ROI Evolution
-| Stage | Description |
-|-------|------------|
-| Initial | Central dynamic ROI anchored to white floor |
-| Improvement | Trapezoidal ROIs for path and pillars |
-| September | Three horizontal ROIs (low, middle, high) |
-| Current | Four adaptive ROIs (Low, Middle, High, Black) covering full scene |
 
 ---
 
