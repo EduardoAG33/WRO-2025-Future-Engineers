@@ -1034,6 +1034,11 @@ Below are common issues encountered during setup and calibration, along with the
 
 
 **In this part of the code we activate the colors (True or False)**
+
+**example the values calibration for the color**
+
+# TH_COLOR = (Lmin, Lmax, Amin, Amax, Bmin, Bmax)  -> always the data is of the major to minor
+
 <div align="center">
 <img width="1000" height="1000" alt="image" src="https://github.com/user-attachments/assets/d4353c55-915a-4b98-b943-0900ec7928d6" />
 
