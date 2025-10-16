@@ -197,6 +197,18 @@ And for the upper level of the robot, we have the support for the camera and the
 
 The support is positioned at a 70° inclination to ensure the vehicle remains within the maximum allowed height. This angle was carefully chosen to optimize the camera’s field of view, as detailed in the Power and Sense Management section.
 
+**Changes and improvements**
+
+Initially, the robot used two cameras. The first camera detected walls, while the second read floor lines for lap counting and identified pillar colors in the Obstacle Challenge. This setup aimed to avoid extra sensors due to the cameras’ high precision.
+
+However, issues arose with ambient light sensitivity, calibration time, and battery consumption. To improve reliability, the second camera was replaced with five ultrasonic sensors positioned at frontal, 90°, and 45° angles to measure distances to walls.
+
+The sensors communicate with the EV3 via two Arduino Nanos: one collects the data, and the other sends it via I2C. The system is mounted on a custom PCB.
+
+
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/bee38687-32cb-4b21-940e-3429a2b44f74" />
+
+
 
 
 ## Base for the VL53L0X
