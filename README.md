@@ -749,11 +749,6 @@ Fixed camera parameters (auto-gain, auto-white balance, exposure). LAB threshold
 
 ---
 
-*Notes:*  
-- Prices are estimated using 2025 average online listings (DFRobot, OpenMV Store, Amazon MX, UElectronics).  
-- Total excludes shipping and taxes.  
-- Quantities based on current robot configuration: *7 ultrasonic sensors in total (5 HC-SR04 + 2 URM09)*.  
-- Values can be updated if parts are replaced or re-sourced.
 
 
 
