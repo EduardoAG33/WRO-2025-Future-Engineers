@@ -496,6 +496,17 @@ We found the information about the motor here:
 <img width="500" height="300" alt="OpenMV H7" src="https://github.com/user-attachments/assets/70af811b-02ed-4663-bd44-6418958fd6bd" />
 </div
 
+**PCB Design**
+<div align="center">
+<img width="605" height="513" alt="image" src="https://github.com/user-attachments/assets/7cf83de3-7098-41f8-abd3-0c67ef3e76e9" />
+</div
+
+**PCB Schematic**
+<div align="center">
+<img width="557" height="610" alt="image" src="https://github.com/user-attachments/assets/d05fcec9-58d9-4e48-892a-33a44d8ab74b" />
+</div
+
+
 ## Specifications
 
 | Feature              | Details                                                                 |
