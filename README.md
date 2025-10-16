@@ -713,113 +713,114 @@ Arduino 2 manages data communication and transmits processed information to the 
 
 This configuration enables seamless integration with the EV3 environment, allowing real-time data exchange and programming through EV3 graphical blocks.
 
-Arduino IDE code 
+**Arduino Code ultrasonic program**
+
+```arduino
 // ---- Nano (ATmega328P): 4x HC-SR04 + BNO055 -> UART D2/D3 (CSV + Laps) ----
-// CSV Format: l90, l45, r45, r90, laps
-// Requirements: HC-SR04 + BNO055 without Adafruit libraries
+// CSV format: l90, l45, r45, r90, laps
+// Requirements: HC-SR04 + BNO055 (without Adafruit libraries)
 
 #include <Wire.h>
 #include <SoftwareSerial.h>
 #include <NewPing.h>
 
-// ------------------- ULTRASONIC SENSORS -------------------
+// ------------------- ULTRASONIC CONFIGURATION -------------------
 #define MAX_DISTANCE 200
 NewPing r90(12, 11, MAX_DISTANCE);
 NewPing r45(10, 9, MAX_DISTANCE);
 NewPing l45(8, 7, MAX_DISTANCE);
 NewPing l90(6, 5, MAX_DISTANCE);
 
-// ------------------- LAP CONFIGURATION -------------------
+// ------------------- LAP DETECTION CONFIGURATION -------------------
 #define LAPS_METHOD 3
 const long LAP_TICKS16 = 360L * 16;
 const unsigned long LAP_MIN_MS = 3000;
-
 const int GATE_HALF_WIDTH = 15;
 const int GATE_HYST = 5;
 int c = 0;
 
-// ------------------- UART --------------------------
-SoftwareSerial link(2, 3);  // D3 = TX (output to master)
+// ------------------- UART COMMUNICATION --------------------------
+SoftwareSerial link(2, 3);  
 
-// ------------------- BNO055 MINIMAL CONFIG ----------------
+// ------------------- BNO055 MINIMAL IMPLEMENTATION ----------------
 namespace BNO {
-  static uint8_t ADDR = 0x28;
-  const uint8_t REG_CHIP_ID = 0x00;
-  const uint8_t REG_EUL_HEADING_LSB = 0x1A;
-  const uint8_t REG_OPR_MODE = 0x3D;
-  const uint8_t REG_SYS_TRIG = 0x3F;
-  const uint8_t REG_PAGE_ID = 0x07;
-  const uint8_t REG_PWR_MODE = 0x3E;
-  const uint8_t REG_UNIT_SEL = 0x3B;
-  const uint8_t OPR_CONFIG = 0x00;
-  const uint8_t OPR_NDOF = 0x0C;
-  const uint8_t PWR_NORMAL = 0x00;
+static uint8_t ADDR = 0x28;
+const uint8_t REG_CHIP_ID = 0x00;
+const uint8_t REG_EUL_HEADING_LSB = 0x1A;
+const uint8_t REG_OPR_MODE = 0x3D;
+const uint8_t REG_SYS_TRIG = 0x3F;
+const uint8_t REG_PAGE_ID = 0x07;
+const uint8_t REG_PWR_MODE = 0x3E;
+const uint8_t REG_UNIT_SEL = 0x3B;
+const uint8_t OPR_CONFIG = 0x00;
+const uint8_t OPR_NDOF = 0x0C;
+const uint8_t PWR_NORMAL = 0x00;
 
-  inline void write8(uint8_t reg, uint8_t val) {
-    Wire.beginTransmission(ADDR);
-    Wire.write(reg);
-    Wire.write(val);
-    Wire.endTransmission();
-  }
+inline void write8(uint8_t reg, uint8_t val) {
+  Wire.beginTransmission(ADDR);
+  Wire.write(reg);
+  Wire.write(val);
+  Wire.endTransmission();
+}
 
-  inline void readLen(uint8_t reg, uint8_t *buf, uint8_t len) {
-    Wire.beginTransmission(ADDR);
-    Wire.write(reg);
-    Wire.endTransmission();
-    Wire.requestFrom((int)ADDR, (int)len);
-    for (uint8_t i = 0; i < len && Wire.available(); i++) buf[i] = Wire.read();
-  }
+inline void readLen(uint8_t reg, uint8_t *buf, uint8_t len) {
+  Wire.beginTransmission(ADDR);
+  Wire.write(reg);
+  Wire.endTransmission();
+  Wire.requestFrom((int)ADDR, (int)len);
+  for (uint8_t i = 0; i < len && Wire.available(); i++) buf[i] = Wire.read();
+}
 
-  inline uint8_t read8(uint8_t reg) {
-    uint8_t v = 0;
-    readLen(reg, &v, 1);
-    return v;
-  }
+inline uint8_t read8(uint8_t reg) {
+  uint8_t v = 0;
+  readLen(reg, &v, 1);
+  return v;
+}
 
-  // Probe I2C address
-  bool probeAny() {
-    delay(700);
-    uint8_t posibles[2] = { 0x28, 0x29 };
-    for (uint8_t i = 0; i < 2; i++) {
-      ADDR = posibles[i];
-      for (uint8_t j = 0; j < 10; j++) {
-        delay(20);
-        if (read8(REG_CHIP_ID) == 0xA0) return true;
-      }
+bool probeAny() {
+  delay(700);
+  uint8_t posibles[2] = { 0x28, 0x29 };
+  for (uint8_t i = 0; i < 2; i++) {
+    ADDR = posibles[i];
+    for (uint8_t j = 0; j < 10; j++) {
+      delay(20);
+      if (read8(REG_CHIP_ID) == 0xA0) return true;
     }
-    return false;
   }
+  return false;
+}
 
-  bool begin() {
-    if (!probeAny()) return false;
-    write8(REG_OPR_MODE, OPR_CONFIG);
-    delay(25);
-    write8(REG_SYS_TRIG, 0x20);
-    delay(700);
-    if (!probeAny()) return false;
-    write8(REG_PAGE_ID, 0x00);
-    delay(5);
-    write8(REG_PWR_MODE, PWR_NORMAL);
-    delay(10);
-    write8(REG_UNIT_SEL, 0x00);
-    delay(10);
-    write8(REG_OPR_MODE, OPR_NDOF);
-    delay(50);
-    uint32_t t0 = millis();
-    while (millis() - t0 < 300) {
-      uint8_t b[2];
-      readLen(REG_EUL_HEADING_LSB, b, 2);
-      if (b[0] || b[1]) break;
-      delay(10);
-    }
-    return true;
-  }
+bool begin() {
+  if (!probeAny()) return false;
+  write8(REG_OPR_MODE, OPR_CONFIG);
+  delay(25);
+  write8(REG_SYS_TRIG, 0x20);
+  delay(700);
+  if (!probeAny()) return false;
+  write8(REG_PAGE_ID, 0x00);
+  delay(5);
+  write8(REG_PWR_MODE, PWR_NORMAL);
+  delay(10);
+  write8(REG_UNIT_SEL, 0x00);
+  delay(10);
+  write8(REG_OPR_MODE, OPR_NDOF);
+  delay(50);
 
-  inline int16_t readHeading16() {
+  uint32_t t0 = millis();
+  while (millis() - t0 < 300) {
     uint8_t b[2];
     readLen(REG_EUL_HEADING_LSB, b, 2);
-    return (int16_t)((uint16_t)b[0] | ((uint16_t)b[1] << 8));
+    if (b[0] || b[1]) break;
+    delay(10);
   }
+  return true;
+}
+
+inline int16_t readHeading16() {
+  uint8_t b[2];
+  readLen(REG_EUL_HEADING_LSB, b, 2);
+  return (int16_t)((uint16_t)b[0] | ((uint16_t)b[1] << 8));
+}
 }  // namespace BNO
 
 // ------------------- ANGLE UTILITIES -----------------
@@ -829,7 +830,6 @@ static inline int16_t yawDelta16(int16_t cur, int16_t prev) {
   while (d < -2880) d += 5760;
   return d;
 }
-
 static inline int angDiffDeg(int a, int b) {
   int d = a - b;
   while (d > 180) d -= 360;
@@ -850,7 +850,7 @@ bool yaw_pending = false;
 bool gate_pending = false;
 bool bno_ok = false;
 
-// ------------------- LAP LOGIC -------------------
+// ------------------- LAP CALCULATION FUNCTIONS -------------------
 inline bool timeOk() { return (millis() - lastLapMs) > LAP_MIN_MS; }
 inline void countedNow() { lastLapMs = millis(); }
 
@@ -906,28 +906,23 @@ unsigned int filteredPing(NewPing &sensor) {
     delay(10);
   }
   if (valid == 0) return 0;
-  // Simple sorting
+
   for (int i = 1; i < valid; i++) {
     int key = vals[i];
     int j = i - 1;
-    while (j >= 0 && vals[j] > key) {
-      vals[j + 1] = vals[j];
-      j--;
-    }
+    while (j >= 0 && vals[j] > key) { vals[j + 1] = vals[j]; j--; }
     vals[j + 1] = key;
   }
+
   int median = vals[valid / 2];
   int sum = 0, count = 0;
   for (int i = 0; i < valid; i++) {
-    if (abs(vals[i] - median) < 15) {
-      sum += vals[i];
-      count++;
-    }
+    if (abs(vals[i] - median) < 15) { sum += vals[i]; count++; }
   }
   return (count > 0) ? (sum / count) : median;
 }
 
-// ------------------- SERIAL VARIABLES -------------------
+// ------------------- SERIAL DATA -------------------
 String line = "";
 
 // ------------------- SETUP -------------------
@@ -935,50 +930,33 @@ void setup() {
   Serial.begin(9600);
   link.begin(115200);
   Wire.begin();
+
   bno_ok = BNO::begin();
-
   if (!bno_ok) link.println(F("ERR_BNO"));
-  if (bno_ok) {
-    int16_t h16 = BNO::readHeading16();
-    gate0_deg = (int)((h16 + 8) / 16);
-  }
 
-  link.println(F("l90,l45,r45,r90,laps"));
+  if (bno_ok) { int16_t h16 = BNO::readHeading16(); gate0_deg = (int)((h16 + 8) / 16); }
+
+  link.println(F("l90,l45,r45,r90,lap_count"));
 }
 
 // ------------------- MAIN LOOP -------------------
 void loop() {
-  // --- Command reception ---
   if (link.available()) c = link.read(); else c = 0;
-
-  // Reset condition
-  if (c == 10) {
-    lap_count = 0;
-    yaw_accum16 = 0;
-    yaw_sinceLap16 = 0;
-    yaw_has_prev = false;
-    gate_armed = false;
-    yaw_pending = false;
-    gate_pending = false;
-  }
+  if (c == 10) { lap_count = 0; yaw_accum16 = 0; yaw_sinceLap16 = 0; yaw_has_prev = false; gate_armed = false; yaw_pending = false; gate_pending = false; }
 
   Serial.println(lap_count);
 
-  // --- Filtered ultrasonic readings ---
   int l90b = filteredPing(l90);
   int l45b = filteredPing(l45);
   int r45b = filteredPing(r45);
   int r90b = filteredPing(r90);
 
-  // --- BNO055 heading and lap detection ---
   int pos_deg = 0, deg_now = 0;
   if (bno_ok) {
     int16_t yaw_now16 = BNO::readHeading16();
     deg_now = (int)((yaw_now16 + 8) / 16);
-    if (!yaw_has_prev) {
-      yaw_prev16 = yaw_now16;
-      yaw_has_prev = true;
-    } else {
+    if (!yaw_has_prev) { yaw_prev16 = yaw_now16; yaw_has_prev = true; }
+    else {
       int16_t d16 = yawDelta16(yaw_now16, yaw_prev16);
       yaw_accum16 += (long)d16;
       yaw_sinceLap16 += (long)d16;
@@ -990,15 +968,11 @@ void loop() {
     pos_deg = (int)(yaw_accum16 / 16L);
   }
 
-  // --- CSV Data output ---
-  link.print(l90b); link.print(',');
-  link.print(l45b); link.print(',');
-  link.print(r45b); link.print(',');
-  link.print(r90b); link.print(',');
-  link.println(lap_count);
+  link.print(l90b); link.print(','); link.print(l45b); link.print(','); link.print(r45b); link.print(','); link.print(r90b); link.print(','); link.println(lap_count);
 
   delay(40);
 }
+
 
 ## 🧠 Arduino Nano – Ultrasonic + IMU Sensor Fusion System
 
