@@ -1104,7 +1104,7 @@ while True:
         # Draw pillars, floor, magenta marker, and text
         pass
 
-
+---
 ## Detection and Avoidance Strategies
 To improve the system’s response, a dynamic horizontal ROI (Region of Interest) scheme was implemented.
 This approach allows the detection of the line’s relative position at different heights of the image, enhancing tracking accuracy.
