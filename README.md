@@ -222,6 +222,16 @@ The custom piece and sensor are precisely positioned to ensure optimal alignment
 <img width="500" height="500" alt="custom piece" src="https://github.com/user-attachments/assets/677f5e71-31a7-43c6-98f3-dc6273959970" />
 </div>
 
+## Problems and solutions
+**Change of the sensor** 
+
+we decided to change the previous sensor (VL53L0X) since when doing tests we had performance failures based on the walls since the distances varied a lot because the sensor laser is affected by the black color of the walls. We determined this by changing to a white color and seeing that the distances no longer varied with this, at the time of having the error this causing it to collide with the stops.
+Solution:
+The change was implemented for an ultrasonic DF robot URM09, it is working better, the objective changed it was no longer necessary to use it for parking, but as an aid to the turn sensor at the end of the laps of the open challenge round in case the vehicle finished outside the section, this ultrasonic would mark the distance (or the one in front depending on the height at which the robot finishes) to join the final arrival area.
+
+<div align="center">
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/f3dd86f4-b4bb-4bd1-bec3-f6b2386d7e40" />
+
 **Chassis render**
 <div align="center">
 <img width="500" height="500" alt="chassis render" src="https://github.com/user-attachments/assets/5a8c0801-5dba-4137-ac2b-e9e2eaf370f1" />
