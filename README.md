@@ -16,7 +16,7 @@ Official repository of Team Los Grises Superiores for the **Future Engineers –
 
 ## 👥 Team Members
 
-### Eduardo Gonzalez
+### Eduardo Alvarado Gonzalez
 <div align="center">
 <img width="200" height="200" alt="Eduardo Gonzalez" src="https://github.com/user-attachments/assets/20ccfb81-0bc1-4147-aa43-fefe649a55c0" />
 </div>
