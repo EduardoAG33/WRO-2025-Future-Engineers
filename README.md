@@ -197,6 +197,8 @@ And for the upper level of the robot, we have the support for the camera and the
 
 The support is positioned at a 70° inclination to ensure the vehicle remains within the maximum allowed height. This angle was carefully chosen to optimize the camera’s field of view, as detailed in the Power and Sense Management section.
 
+
+
 ## Base for the VL53L0X
 
 **Solidworks software design**(metric system in mm)
@@ -312,6 +314,20 @@ A differential is a mechanical component that allows wheels on the same axle to 
 
 - Assumes **motor speed = 170 rpm**, **torque = 0.2 N·m**, **wheel radius = 0.028 m**.
 
+## Impact of vehicle dimensions
+
+The robot’s compact dimensions — 15 cm wide, 29 cm long, and 26 cm high — allow for the precise integration of both the steering and traction systems, enabling accurate and stable turns.
+It was designed to be as narrow as possible, minimizing the risk of collisions with walls during sharp turns.
+
+In the Open Challenge, our robot uses five ultrasonic sensors together with an OpenMV camera, creating an intelligent system that allows it to detect obstacles and move safely.
+The front ultrasonic sensor detects when a curve begins. The camera and ultrasonic sensors work together through a PID control system, and we also correct measurement errors from the ultrasonic sensors using gain adjustments depending on their inclination.
+This helps the robot identify whether a corridor is open or closed, effectively avoiding collisions with walls and improving navigation accuracy.
+
+For the Obstacle Challenge, we took advantage of the robot’s width, length, and height to optimize its performance in different scenarios.
+The width, being narrow, allows the vehicle to pass easily between pillars without collisions.
+The length was optimized for the parking task — we extended the vehicle and added a rear spoiler to make the most of the rule that define the parking area as 1.5 times the vehicle’s length. This provides more freedom and precision when parking.
+The height was designed to ensure better visibility of obstacles, allowing the sensors and camera to detect objects from their base to their top. This also prevents the robot from re-detecting the same obstacle after an evasive maneuver or a sharp turn, ensuring smoother navigation and preventing unnecessary repeated avoidance actions.
+
 ---
 
 ## Power and Sense Management
@@ -361,6 +377,9 @@ This battery is the recommended power source for the LEGO EV3. There are two opt
 The 18650 is Li-ion battery is a high-capacity rechargeable cell widely used in electronics and robotics due to its stable voltage output, high energy density, and long cycle life.
 can safely deliver continuous currents of 5–10 A and occasional peak currents up to 20 A,When paired with a protection circuit, it safeguards against overcharging, over-discharging, and short circuits, increasing safety and durability.
 In this setup, we use 18650 batteries to power the Arduino Nano for controlling the ultrasonic sensors. Two 18650 cells are connected to a DC-DC step-up module to increase the voltage, which is then supplied to the Arduino, ensuring stable operation and consistent sensor readings, we We use two 18650 batteries connected in series, providing an output voltage of approximately 7V.
+
+
+
 
 ### Microcontroller(Arduino nano)
 <div align="center">
