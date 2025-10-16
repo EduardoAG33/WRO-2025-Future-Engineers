@@ -800,7 +800,10 @@ The system measures distances, detects orientation, and counts laps, transmittin
 
 
 **2 Arduino code for communication**
+
 <img width="547" height="878" alt="image" src="https://github.com/user-attachments/assets/165ae61a-07fb-4665-89bd-e707babb8823" /> <img width="627" height="876" alt="image" src="https://github.com/user-attachments/assets/d3209595-8380-4189-9c9a-1a64bbec2a34" />
+
+
 ## Arduino Slave with NeoPixel & HC-SR04 Sensors – I2C Communication
 
 This code runs on an Arduino acting as an **I2C slave** that collects sensor data, maps it, and sends it to a master device. It also controls a NeoPixel matrix for lighting feedback.
