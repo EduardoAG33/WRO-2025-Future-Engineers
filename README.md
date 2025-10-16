@@ -799,6 +799,69 @@ The system measures distances, detects orientation, and counts laps, transmittin
 - **UART serial communication** at 115200 baud, sending real-time data in CSV format:
 
 
+**2 Arduino code for communication**
+<img width="547" height="878" alt="image" src="https://github.com/user-attachments/assets/165ae61a-07fb-4665-89bd-e707babb8823" /> <img width="627" height="876" alt="image" src="https://github.com/user-attachments/assets/d3209595-8380-4189-9c9a-1a64bbec2a34" />
+## Arduino Slave with NeoPixel & HC-SR04 Sensors – I2C Communication
+
+This code runs on an Arduino acting as an **I2C slave** that collects sensor data, maps it, and sends it to a master device. It also controls a NeoPixel matrix for lighting feedback.
+
+---
+
+### Libraries
+- **`Wire.h`**: Handles I2C communication as a slave device.  
+- **`SoftwareSerial.h`**: Creates a secondary serial port to read CSV data from another Nano.  
+- **`Adafruit_NeoPixel.h`**: Controls a 16-LED NeoPixel matrix.  
+- **`NewPing.h`**: Manages ultrasonic HC-SR04 sensors efficiently.
+
+---
+
+### Sensors
+- Front ultrasonic sensor (`frontU`) reads distance in cm.  
+- Rear analog sensors connected to `A6` and `A7` are scaled to 0–500 units.  
+- Additional distance sensors (`l45`, `r45`, `l90`, `r90`) and lap counter are read via a secondary Nano through SoftwareSerial.  
+
+---
+
+### Data Mapping
+- Distance readings are mapped to **-100…100**.  
+- Analog readings are mapped to **-127…127**.  
+- `frontbyte`, `l45byte`, `r45byte`, `l90byte`, `r90byte`, `A6byte`, `A7byte` store the mapped values.
+
+---
+
+### NeoPixel Control
+- Initializes a 16-LED matrix on pin 9.  
+- Brightness is mapped using `POT_LUZ` from 0–100 to 0–255.  
+- Shows initial static color on setup.
+
+---
+
+### I2C Communication
+- Arduino acts as **slave with address 0x04**.  
+- `sendData()` sends a requested byte depending on `mind_n_DATO_1`.  
+- `onreceiveEvent()` reads commands from the master device.  
+- Case 6 uses a **flag (`linkSent`)** to send a single pulse only once.  
+
+---
+
+### CSV Processing
+- Receives lines from the secondary Nano via `SoftwareSerial`.  
+- Each CSV line contains 5 values: `l90, l45, r45, r90, laps`.  
+- `processLine()` parses the string and updates sensor variables.
+
+---
+
+### Loop Behavior
+1. Reads front ultrasonic sensor and analog values.  
+2. Reads CSV from the secondary Nano and parses it.  
+3. Maps all sensor values to the specified ranges.  
+4. Updates internal state for I2C requests.  
+
+---
+
+This setup allows **real-time sensor fusion**, mapping, and I2C data delivery to a master controller while providing visual feedback through the NeoPixel matrix.
+
+
 
 
 
