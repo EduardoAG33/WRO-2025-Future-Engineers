@@ -66,11 +66,7 @@ I have been part of the **Robotics Club** at *Escuela Normal Superior “Profr. 
 - [Obstacle Management](#obstacle-management)
   - [Vision System](#vision-system)
 - [Calibration](#calibration)
-- [ROI Evolution](#roi-evolution)
 - [Detection and Avoidance Strategies](#detection-and-avoidance-strategies)
-- [Manual Direction PDF](#manual-direction-pdf)
-- [Differential Manual PDF](#differential-manual-pdf)
-- [Hardware Developer Kit PDF](#hardware-developer-kit-pdf)
 - [WRO 2025 Competition Info](#wro-2025-competition-info)
 
 ---
