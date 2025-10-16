@@ -710,6 +710,56 @@ In our robot, this sensor is used to determine the **precise orientation and til
 
 We use this sensor to count laps on the track, processing the data with the Arduino to send the information to the Ev3 and then with a programming block we decide the count of the laps based on its initial position where it will also end in the same place
 
+## Ultrasonic HC-SR04
+
+<div align="center">
+<img width="745" height="448" alt="image" src="https://github.com/user-attachments/assets/da485b0f-8730-43e4-9475-f638a68670e4" />
+</div>
+
+
+### Specifications
+
+| **Parameter**             | **Description**                              |
+|----------------------------|----------------------------------------------|
+| **Operating Voltage**      | 5V DC                                        |
+| **Operating Current**      | 15 mA (typical)                              |
+| **Frequency**              | 40 kHz                                       |
+| **Max Range**              | 400 cm (4 m)                                 |
+| **Min Range**              | 2 cm                                         |
+| **Accuracy**               | ±3 mm                                        |
+| **Measuring Angle**        | < 15°                                        |
+| **Trigger Input Signal**   | 10 µs TTL pulse                              |
+| **Echo Output Signal**     | TTL signal, proportional to distance         |
+| **Dimensions**             | 45 mm x 20 mm x 15 mm                        |
+| **Working Temperature**    | -15°C to +70°C                               |
+
+The **HC-SR04** is an ultrasonic distance sensor that uses sonar to determine the distance to an object.  
+It provides accurate and stable readings and is commonly used in robotics for obstacle detection and distance measurement.
+
+### Pin Connections
+
+| **Pin** | **Label** | **Description**                          |
+|----------|------------|------------------------------------------|
+| 1        | VCC        | Power supply (+5V)                      |
+| 2        | Trig       | Trigger input to start measurement      |
+| 3        | Echo       | Output pulse proportional to distance   |
+| 4        | GND        | Ground connection (0V)                  |
+
+
+
+**Program in Ev3 to solve the Open challenge using an ultrasonic sensor and gyro**
+
+<div align="center">
+<img width="1746" height="602" alt="image" src="https://github.com/user-attachments/assets/7602f60b-4330-48af-8a41-2941999afef7" />
+  
+First, the front ultrasonic sensor measures a specific distance to determine when to start a curve.
+During the turns, we correct potential errors from the ultrasonic sensors positioned at 45° and 90°, ensuring more accurate distance readings and smoother movement.
+
+A PID control system is then used to manage both the speed and steering angle, allowing the robot to perform stable and precise turns.
+
+After completing the curve, the same process is repeated to identify whether the corridor is open or closed, since each type requires different movement configurations and adjustments.
+
+
 **PCB**
 During the PCB design process, we engraved the circuit using a laser machine. Afterward, we applied ferric chloride to etch away the excess copper, leaving only the designed traces. The board was then drilled, cleaned, and prepared for soldering and component assembly.
 
@@ -717,7 +767,7 @@ The PCBs designed for the ultrasonic sensors and camera are fully fabricated, cl
 
 <img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/32ba56aa-95e7-4949-b6ce-f05d55db3b8c" />
 
-**arduinos for the ultrasonic sensors design**
+**arduino's for the ultrasonic sensors design**
 
 <img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/8aa4a668-4f34-4dfe-ba09-587816f9b7b8" />
 
