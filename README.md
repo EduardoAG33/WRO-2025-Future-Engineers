@@ -725,13 +725,13 @@ This configuration enables seamless integration with the EV3 environment, allowi
 - **`SoftwareSerial.h`**: Provides an extra serial port for communication with a master device.  
 - **`NewPing.h`**: Efficient library for reading HC-SR04 ultrasonic sensors with filtering and timing control.  
 
----
+
 
 ### Ultrasonic Sensors
 - Four `NewPing` objects are created for the sensors: `l90`, `l45`, `r45`, `r90`.  
 - Maximum measurement distance is **200 cm**.  
 
----
+
 
 ### Lap Detection
 - **`LAPS_METHOD = 3`**: Combines accumulated yaw and gate crossing for reliable lap counting.  
@@ -739,30 +739,27 @@ This configuration enables seamless integration with the EV3 environment, allowi
 - **`LAP_MIN_MS`**: Minimum time (ms) between lap counts to prevent false detections.  
 - **`GATE_HALF_WIDTH`** + **`GATE_HYST`**: Gate angle thresholds for lap detection.  
 
----
+
 
 ### UART Communication
 - Uses `SoftwareSerial` on **D2 (RX) / D3 (TX)** to send CSV-formatted sensor data to a master device.  
 
----
 
 ### BNO055 Sensor
 - Custom minimal I2C implementation without external libraries.  
 - Provides **yaw angle (heading)** in 16 ticks.  
 - Initializes in **NDOF mode** and ensures valid heading data before operation.  
 
----
 
 ### Angle Utilities
 - **`yawDelta16()`**: Calculates the difference between two yaw readings, accounting for ±360° wraparound.  
 - **`angDiffDeg()`**: Calculates angular difference normalized to -180° … 180°.  
 
----
+
 
 ### State Variables
 - Store previous yaw (`yaw_prev16`), accumulated yaw (`yaw_accum16`), lap count (`lap_count`), gate state, and BNO055 initialization status (`bno_ok`).  
 
----
 
 ### Lap Calculation Functions
 - **`timeOk()`**: Ensures laps are not counted too quickly.  
@@ -770,12 +767,10 @@ This configuration enables seamless integration with the EV3 environment, allowi
 - **`tryCountLapGate()`**: Counts laps when crossing a gate angle threshold.  
 - **`resolveLapMethod3()`**: Combines both methods for a reliable lap count.  
 
----
+
 
 ### Ultrasonic Filter
 - **`filteredPing()`**: Applies a median + average filter on multiple readings to remove outliers and improve measurement stability.  
-
----
 
 ### Setup
 - Initializes **Serial**, **SoftwareSerial**, and **I2C** communication.  
@@ -808,7 +803,7 @@ The system measures distances, detects orientation, and counts laps, transmittin
 
 This code runs on an Arduino acting as an **I2C slave** that collects sensor data, maps it, and sends it to a master device. It also controls a NeoPixel matrix for lighting feedback.
 
----
+
 
 ### Libraries
 - **`Wire.h`**: Handles I2C communication as a slave device.  
@@ -816,28 +811,27 @@ This code runs on an Arduino acting as an **I2C slave** that collects sensor dat
 - **`Adafruit_NeoPixel.h`**: Controls a 16-LED NeoPixel matrix.  
 - **`NewPing.h`**: Manages ultrasonic HC-SR04 sensors efficiently.
 
----
+
 
 ### Sensors
 - Front ultrasonic sensor (`frontU`) reads distance in cm.  
 - Rear analog sensors connected to `A6` and `A7` are scaled to 0–500 units.  
 - Additional distance sensors (`l45`, `r45`, `l90`, `r90`) and lap counter are read via a secondary Nano through SoftwareSerial.  
 
----
 
 ### Data Mapping
 - Distance readings are mapped to **-100…100**.  
 - Analog readings are mapped to **-127…127**.  
 - `frontbyte`, `l45byte`, `r45byte`, `l90byte`, `r90byte`, `A6byte`, `A7byte` store the mapped values.
 
----
+
 
 ### NeoPixel Control
 - Initializes a 16-LED matrix on pin 9.  
 - Brightness is mapped using `POT_LUZ` from 0–100 to 0–255.  
 - Shows initial static color on setup.
 
----
+
 
 ### I2C Communication
 - Arduino acts as **slave with address 0x04**.  
@@ -845,14 +839,12 @@ This code runs on an Arduino acting as an **I2C slave** that collects sensor dat
 - `onreceiveEvent()` reads commands from the master device.  
 - Case 6 uses a **flag (`linkSent`)** to send a single pulse only once.  
 
----
 
 ### CSV Processing
 - Receives lines from the secondary Nano via `SoftwareSerial`.  
 - Each CSV line contains 5 values: `l90, l45, r45, r90, laps`.  
 - `processLine()` parses the string and updates sensor variables.
 
----
 
 ### Loop Behavior
 1. Reads front ultrasonic sensor and analog values.  
