@@ -974,6 +974,68 @@ Navigate to Machine Vision → Threshold Editor.
 Capture an image from the camera to begin threshold calibration, which allows you to adjust color ranges for precise object or line detection.
 
 **Open Mv CODE**(this code works with the open challenga and obstacle)
+---
+
+## Color Calibration (LAB)
+
+For optimal performance, each color threshold must be calibrated under the same lighting conditions as in the competition area.  
+Calibration is done using the **OpenMV IDE** → *Tools → Machine Vision → Threshold Editor*.
+
+### Recommended Steps
+
+1. Place the OpenMV camera at the same height and angle used on the robot.  
+2. Open the **Threshold Editor** and capture each color region individually.  
+3. Adjust the LAB values until detection boxes remain stable and consistent.  
+4. Test again under different lighting intensities to ensure robustness.
+
+---
+
+### Example LAB Thresholds
+
+| Color     | LAB Min (L, A, B) | LAB Max (L, A, B) | Description                  |
+|------------|------------------|-------------------|------------------------------|
+| **Red**    | (30, 60, 10)     | (80, 128, 80)     | Vertical red pillar detection |
+| **Green**  | (20, -80, 0)     | (80, -20, 80)     | Vertical green pillar detection |
+| **Blue**   | (0, 0, -128)     | (40, 64, -20)     | Floor area detection (blue regions) |
+| **White**  | (70, -10, -10)   | (100, 10, 10)     | Base floor color             |
+| **Orange** | (35, 40, 60)     | (85, 90, 128)     | Marked zone or boundaries     |
+| **Magenta**| (25, 20, -10)    | (70, 90, 30)      | Reference marker detection    |
+
+---
+
+### Tips for Fine Tuning
+
+- Recalibrate colors if lighting changes significantly.  
+- Avoid shadows or reflections during calibration.  
+- Increase the **ROI area** temporarily to ensure color stability.  
+- If detection flickers, apply **EMA filtering** to the color signal.  
+- Always validate using both **Pillar** and **Floor** detection modes before final testing.
+## Troubleshooting
+
+Below are common issues encountered during setup and calibration, along with their possible causes and solutions.
+
+| Problem | Possible Cause | Solution |
+|----------|----------------|-----------|
+| **Pillars are not detected** | Color thresholds too narrow or poor lighting | Recalibrate LAB ranges for red and green; verify ROI zones are correctly positioned. |
+| **False positives in floor detection** | Shadows or reflections affecting color reading | Reduce ROI area or add light shielding; adjust white/blue thresholds. |
+| **Magenta marker not recognized** | Insufficient color contrast or incorrect ROI height | Increase magenta LAB range; ensure marker is within detection area. |
+| **Unstable floor error (err_ema fluctuating)** | Too much noise or rapid color variation | Increase EMA smoothing factor; use median filtering if available. |
+| **Data not received by EV3** | LPF2 communication issue | Check wiring between OpenMV (P4, P5) and EV3; confirm baud rate and I²C configuration. |
+| **Lag in visualization (slow HUD refresh)** | Debug display consuming resources | Disable HUD by setting `SHOW_DEBUG = False` for smoother performance. |
+| **Inconsistent detection in bright areas** | Overexposure in the camera sensor | Lower camera gain or exposure settings in OpenMV IDE. |
+
+
+
+**threshold calibration part in the code**
+
+<div align="center">
+<img width="1000" height="1000" alt="image" src="https://github.com/user-attachments/assets/74930007-4c6c-4ccf-a5fd-29c3bac2cb40" />
+
+
+
+**In this part of the code we activate the colors (True or False)**
+<div align="center">
+<img width="1000" height="1000" alt="image" src="https://github.com/user-attachments/assets/d4353c55-915a-4b98-b943-0900ec7928d6" />
 
 ---
 ## Detection and Avoidance Strategies
