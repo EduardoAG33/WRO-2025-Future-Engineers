@@ -145,7 +145,7 @@ This level integrates five ultrasonic sensors, strategically distributed to enha
 This design was made in OnShape:
 
 <div align="center">
-<img width="500" height="500" alt="Ultrasonic and PCB Base" src="https://github.com/user-attachments/assets/48febdb7-b3fb-46fc-b429-0648d3b4971d" />
+<img width="1000" height="1000" alt="Ultrasonic and PCB Base" src="https://github.com/user-attachments/assets/48febdb7-b3fb-46fc-b429-0648d3b4971d" />
 </div>
 
 The elaboration process:
