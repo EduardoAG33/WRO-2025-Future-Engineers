@@ -687,8 +687,28 @@ In our robot, this sensor is used to determine the **precise orientation and til
 
 We use this sensor to count laps on the track, processing the data with the Arduino to send the information to the Ev3 and then with a programming block we decide the count of the laps based on its initial position where it will also end in the same place
 
+**PCB**
+During the PCB design process, we engraved the circuit using a laser machine. Afterward, we applied ferric chloride to etch away the excess copper, leaving only the designed traces. The board was then drilled, cleaned, and prepared for soldering and component assembly.
 
-**Problems and solutions**
+The PCBs designed for the ultrasonic sensors and camera are fully fabricated, cleaned, and ready for component mounting and final assembly.
+
+<img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/32ba56aa-95e7-4949-b6ce-f05d55db3b8c" />
+
+**arduinos for the ultrasonic sensors design**
+
+<img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/8aa4a668-4f34-4dfe-ba09-587816f9b7b8" />
+
+
+This PCB is powered by two 18650 lithium batteries connected in series, providing a total supply voltage of approximately 8V. A voltage regulator steps down the voltage to 5V to reliably power the ultrasonic sensors and the NeoPixel LED module.
+
+The system architecture includes two Arduino microcontrollers:
+
+Arduino 1 handles the acquisition and processing of data from the ultrasonic sensors.
+
+Arduino 2 manages data communication and transmits processed information to the LEGO EV3 brick via the I2C communication protocol.
+
+This configuration enables seamless integration with the EV3 environment, allowing real-time data exchange and programming through EV3 graphical blocks.
+
 
 
 ---
