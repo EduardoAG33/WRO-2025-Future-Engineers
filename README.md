@@ -713,7 +713,7 @@ We use this sensor to count laps on the track, processing the data with the Ardu
 ## Ultrasonic HC-SR04
 
 <div align="center">
-<img width="745" height="448" alt="image" src="https://github.com/user-attachments/assets/da485b0f-8730-43e4-9475-f638a68670e4" />
+<img width="1000" height="1000" alt="image" src="https://github.com/user-attachments/assets/da485b0f-8730-43e4-9475-f638a68670e4" />
 </div>
 
 
