@@ -876,10 +876,12 @@ This setup allows **real-time sensor fusion**, mapping, and I2C data delivery to
 
 https://www.dexterindustries.com/howto/connecting-ev3-arduino/
 
-div align="center">
-<img width="1356" height="427" alt="image" src="https://github.com/user-attachments/assets/e29b92d7-da73-4420-a06c-7068e7d26ca5" />
 
 We use ultrasonic sensors connected via I²C to measure distances, and the robot turns using EV3 blocks.
+
+<div align="center">
+<img width="1356" height="427" alt="image" src="https://github.com/user-attachments/assets/e29b92d7-da73-4420-a06c-7068e7d26ca5" />
+
 
 
 
