@@ -1078,6 +1078,77 @@ LPF2 protocol: unified data slots.
 | **EV3 – Motor Encoders** | Speed and distance traveled | Smooth motion control and maneuver execution. |
 | **EV3 – Internal Logic** | Proportional variable (KP) | Dynamic correction for both curves and straight paths. |
 
+**EV3 BLOCKS CODE EXPLICATION**
+
+This is the start of the program. After leaving the parking area, the camera uses comparators to detect the pillar color. It distinguishes between red and green based on the predefined values 3 and 5.
+
+<div align="center">
+<img width="1215" height="488" alt="image" src="https://github.com/user-attachments/assets/bd37ff0a-d596-46bb-852b-eef7d273d99d" />
+
+<img width="1500" height="1500" alt="image" src="https://github.com/user-attachments/assets/bd491345-76b8-4bdd-8a2b-5e45af6a3411" />
+
+
+
+## Parking Exit and Entrance Area
+**Exit**
+"For the obstacle challenge, we integrated parts of the open challenge program. In this program, we primarily work with the extended open corridors and track the number of laps using the gyroscope sensor upon completing the general loop. Additional camera modules assist in the detection process.
+
+For pillar detection, we use mapping techniques to identify the precise area of each pillar. Once obstacles are detected, the robot employs a PID control system to execute smooth and precise avoidance maneuvers.
+
+This approach allows the robot to navigate complex environments effectively, combining sensor data, mapping, and control algorithms to safely avoid obstacles while maintaining its course
+For exiting the parking space, the robot uses a similar mechanized approach, relying on precise motor rotations and steering adjustments to maneuver safely. The camera continues to play a critical role by detecting the magenta color of the parking area, ensuring that the robot avoids collisions while leaving the space.
+
+Once the exit maneuver is completed, the robot begins the detection of pillar colors using logical comparators. This enables it to distinguish between different pillar colors and make informed navigation decisions for the next stage of its path.
+
+
+<div align="center">
+<img width="1247" height="1000" alt="image" src="https://github.com/user-attachments/assets/c5f08429-d659-42a1-a7bf-b80ac757f2b7" /> 
+  
+<img width="1000" height="1000" alt="image" src="https://github.com/user-attachments/assets/afe58f02-5c69-403f-804d-66fe39ac5d27" />
+
+**Entrance**
+
+For the parking maneuver, once the robot completes the three laps, it uses a camera-based follower to locate the parking area by detecting the magenta color.
+After identifying the parking zone, the robot aligns itself accordingly. Using precise movements, the robot executes a series of maneuvers to position itself parallel within the designated parking space.
+This method ensures accurate and autonomous parking, leveraging visual guidance and controlled mechanical adjustments to achieve a reliable placement every time."
+
+<div align="center">
+<img width="975" height="900" alt="image" src="https://github.com/user-attachments/assets/07d1dec6-31cf-4e1c-9bb9-bbf6dea1b5e9" />
+
+
+
+**Recovery in case of crash or stuck**
+
+
+<div align="center">
+<img width="652" height="600" alt="image" src="https://github.com/user-attachments/assets/d5f1862c-1deb-416d-8535-6c821a9215b4" />
+
+The vehicle is designed to prevent getting stuck in the event of a collision. In our programming, if the robot comes very close to a wall, the OpenMV camera detects it as an obstacle. When this happens, the robot executes a reverse maneuver to avoid the collision.
+
+In the event that the robot fails to follow this instruction and collides, potentially becoming stuck, it is programmed to repeatedly attempt the reverse maneuver. This process continues until the robot successfully clears the obstacle and can move forward freely.
+
+This approach ensures that the robot can autonomously recover from unexpected collisions, maintaining continuous operation without human intervention.
+
+## Extra and important information
+
+A **PID controller** is a feedback control system widely used in robotics and automation to maintain a desired state. It continuously calculates the difference (error) between a target value (setpoint) and the current measured value (process variable) and adjusts outputs to minimize this error.  
+
+- **Proportional (P):** Reacts to the current error, providing immediate corrective action.  
+- **Integral (I):** Accounts for the accumulation of past errors to eliminate steady-state errors.  
+- **Derivative (D):** Predicts future error based on the rate of change, providing damping and stability.  
+
+**In this robot**, the PID controller is used to adjust motor speeds and steering angles for smooth path following and precise obstacle avoidance. This ensures that movements are stable, efficient, and responsive to environmental changes.
+
+---
+
+This combination of visual detection, sensor feedback, mapping, and PID control allows the robot to operate autonomously through complex tasks such as lap tracking, obstacle avoidance, and precise parking.
+
+**PID IN EV3 BLOCKS**
+
+<div align="center">
+<img width="601" height="316" alt="image" src="https://github.com/user-attachments/assets/0f1ee2cc-b12e-4ebb-83cd-6e8dfc98221e" />
+
+
 
 ---
 
