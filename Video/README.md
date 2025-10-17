@@ -1,16 +1,15 @@
-# VIDEO OPEN CHALLENGE
+## 🎥 Project Videos
 
+<div align="center">
 
+### 🧩 Open Challenge  
+[![Watch the video](https://img.shields.io/badge/▶️%20Watch%20on-YouTube-red?logo=youtube&style=for-the-badge)](https://youtu.be/1m1DtpiEMQE)
 
-[![Ver el video](https://img.youtube.com/vi/ddZvpzC4xFE/0.jpg)](https://youtu.be/ddZvpzC4xFE)
+---
 
-link:
-[https://youtu.be/ddZvpzC4xFE](https://youtu.be/ddZvpzC4xFE)
+### 🚧 Obstacle Challenge  
+[![Watch the video](https://img.shields.io/badge/▶️%20Watch%20on-YouTube-red?logo=youtube&style=for-the-badge)](https://youtu.be/9271onx2KII?si=sX-anvJybtzA0IHB)
 
+</div>
 
-# VIDEO OBSTACLE CHALLENGE
-
-
-
-Link:
-[Ver en YouTube](https://youtu.be/6IZq3YB_JEY)
+---
